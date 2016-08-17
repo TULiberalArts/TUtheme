@@ -9,15 +9,15 @@
 title: TU Theme
 email: c.hill@temple.edu
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Example of what the TU Theme will look like and all the wiz-bang things it can do. This Static
+  Site was generated with Jekyll.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://tu-chill.github.io" # the base hostname & protocol for your site
+url: "http://tu-chill.github.io/tutheme" # the base hostname & protocol for your site
 twitter_username: libarts_bot
 github_username:  tu-chill
 
 # Build settings
+include: ['_pages']
 sass:
   sass_dir: _sass
 markdown: kramdown
