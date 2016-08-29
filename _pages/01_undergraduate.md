@@ -2,7 +2,7 @@
 layout: page
 title: Undergraduate
 permalink: /undergraduate
-navigation_weight: 2
+navigation_weight: 1
 ---
 
 Undergraduate

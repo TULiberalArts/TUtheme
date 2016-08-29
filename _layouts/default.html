@@ -6,15 +6,22 @@
   <body>
 
     {% include header.html %}
+    {% include carousel.html %}
+    {% include primary-nav.html %}
+
 
     <div class="page-content">
       <div class="wrapper">
+
         {{ content }}
       </div>
     </div>
 
     {% include footer.html %}
-
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="/js/bin/materialize.js"></script>
+    <script type="text/javascript" src="/js/init.js"></script>
   </body>
 
 </html>
