@@ -6,8 +6,8 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: TU Theme Config Dev
-email: c.hill@tmeple.edu
+title: TU Theme prototype
+email: c.hill@temple.edu
 description: > # this means to ignore newlines until "baseurl:"
   Example of what the TU Theme will look like and all the wiz-bang things it can do. This Static Site was generated with Jekyll.
 baseurl: "" # the subpath of your site, e.g. /blog
