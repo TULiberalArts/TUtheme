@@ -7,16 +7,26 @@
 
 # Site settings
 title: TU Theme prototype
-email: c.hill@temple.edu
 description: > # this means to ignore newlines until "baseurl:"
   Example of what the TU Theme will look like and all the wiz-bang things it can do. This Static Site was generated with Jekyll.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://127.0.0.1:4000" # the base hostname & protocol for your site
+# permalink:
+#paginate:
+#paginate_path
+#developer
+name: christopher-hill
+bio: senior web developer
+email: c.hill@temple.edu
 twitter_username: chiladelphia
 github_username:  tu-chill
+#facebook_username:
 
 # Build settings
-include: ['_pages']
+markdown: kramdown
+
 sass:
   sass_dir: _sass
-markdown: kramdown
+  style: :compressed
+include: ['_pages']
+#exclude:
