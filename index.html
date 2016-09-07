@@ -2,7 +2,7 @@
 layout: page
 ---
 
-<div class="home">
+<main class="home">
 
   <h1 class="page-heading">Posts</h1>
   <div class="card-panel teal lighten-2 hoverable">This is a card panel with a teal lighten-2 class</div>
@@ -78,7 +78,7 @@ layout: page
      <a href="#!" class="collection-item">Alan</a>
      <a href="#!" class="collection-item">Alan<span class="badge">14</span></a>
    </div>
-   
+
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
@@ -93,4 +93,4 @@ layout: page
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-</div>
+</main>
