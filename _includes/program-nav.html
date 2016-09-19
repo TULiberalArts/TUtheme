@@ -1,12 +1,16 @@
 {% assign current = page.url | downcase | split: '/' %}
-<h1>
-  <a class="program-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-</h1>
+<div class="container">
+  <h1>
+    <a class="program-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+  </h1>
+</div>
 <nav class="program-nav">
-  <ul>
-    <li><a href='/undergraduate' {% if current[1] == 'undergraduate' %}class='current'{% endif %}>Undergraduate</a></li>
-    <li><a href='/graduate' {% if current[1] == 'graduate' %}class='current'{% endif %}>Graduate</a></li>
-    <li><a href='/faculty' {% if current[1] == 'faculty' %}class='current'{% endif %}>Faculty</a></li>
-    <li><a href='/resources' {% if current[1] == 'resources' %}class='current'{% endif %}>Resources</a></li>
-  </ul>
+  <div class="container">
+    <ul>
+      <li><a href='/undergraduate' {% if current[1] == 'undergraduate' %}class='current'{% endif %}>Undergraduate</a></li>
+      <li><a href='/graduate' {% if current[1] == 'graduate' %}class='current'{% endif %}>Graduate</a></li>
+      <li><a href='/faculty' {% if current[1] == 'faculty' %}class='current'{% endif %}>Faculty</a></li>
+      <li><a href='/resources' {% if current[1] == 'resources' %}class='current'{% endif %}>Resources</a></li>
+    </ul>
+  </div>
 </nav>
