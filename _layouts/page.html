@@ -1,18 +1,22 @@
-<!DOCTYPE html>
-<html>
+---
+layout: doc
+---
 
-  {% include head.html %}
+{% include header.html %}
 
-  <body>
+<div class="page-content container">
+<main>
+{{ content }}
+  <div class="col s12 m8 l9"> <!-- Note that "m8 l9" was added -->
+    <!-- Teal page content
 
-    <div class="page-content container">
-    {% include header.html %}
-    {% include primary-nav.html %}
-    {% include secondary-nav.html %}
-    {{ content }}
-    {% include footer.html %}
-    </div>
+          This content will be:
+      9-columns-wide on large screens,
+      8-columns-wide on medium screens,
+      12-columns-wide on small screens  -->
 
-  </body>
+  </div>
+</main>
+  {% include footer.html %}
 
-</html>
+</div>

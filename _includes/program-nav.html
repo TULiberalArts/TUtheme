@@ -1,6 +1,8 @@
 {% assign current = page.url | downcase | split: '/' %}
-
-<nav class="primary-nav">
+<h1>
+  <a class="program-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+</h1>
+<nav class="program-nav">
   <ul>
     <li><a href='/undergraduate' {% if current[1] == 'undergraduate' %}class='current'{% endif %}>Undergraduate</a></li>
     <li><a href='/graduate' {% if current[1] == 'graduate' %}class='current'{% endif %}>Graduate</a></li>

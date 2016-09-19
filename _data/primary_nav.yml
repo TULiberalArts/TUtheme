@@ -1,0 +1,12 @@
+# Navigation
+navigation:
+- text: Undergratuate
+  url: /undergraduate
+- text: Graduate
+  url: /graduate
+- text: Faculty
+  url: /faculty
+- text: Research
+  url: /research
+- text: Resourcess
+  url : /resources
