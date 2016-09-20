@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Faculty
-permalink: /faculty
+permalink: "/faculty"
+layout: page
 navigation_weight: 3
 ---
 

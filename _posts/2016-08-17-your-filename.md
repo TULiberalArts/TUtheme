@@ -1,8 +1,9 @@
 ---
+title: proseio
+date: 2016-08-17 04:29:36 Z
 layout: post
-title:  "proseio"
-date:   2016-08-17 00:29:36 -0400
 ---
+
 <div class="card small">
 ## A New Post
 

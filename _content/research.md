@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Research
-permalink: /research
+permalink: "/research"
+layout: page
 navigation_weight: 4
 ---
 

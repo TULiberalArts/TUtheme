@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Graduate
-permalink: /graduate
+permalink: "/graduate"
+layout: page
 navigation_weight: 2
 ---
 
