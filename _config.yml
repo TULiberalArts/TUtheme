@@ -8,7 +8,7 @@
 # Site settings
 university: Temple University
 college: College of Liberal Arts
-title: Program 
+title: Program
 tagline: This is our life's work
 description: > # this means to ignore newlines until "baseurl:"
   Example of what the TU Theme will look like and all the wiz-bang things it can do. This Static Site was generated with Jekyll.
@@ -23,14 +23,6 @@ keywords: "highered, college, university, philadelphia, Temple"
 # program_logo:
 # Background image to be tiled on all pages
 # background:
-developer:
-  name: christopher-hill
-  bio: senior web developer
-  email: c.hill@temple.edu
-  twitter_username: TULiberalArts
-  github_username:  tu-chill
-  facebook_username: templeliberalarts
-
 
 # Build settings
 markdown: kramdown
