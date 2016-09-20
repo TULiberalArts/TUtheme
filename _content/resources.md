@@ -1,7 +1,7 @@
 ---
-layout: page
 title: resources
-permalink: /resources
+permalink: "/resources"
+layout: page
 navigation_weight: 5
 ---
 

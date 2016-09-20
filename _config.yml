@@ -1,45 +1,28 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
+---
+title: Program
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 university: Temple University
 college: College of Liberal Arts
-title: Program
 tagline: This is our life's work
-description: > # this means to ignore newlines until "baseurl:"
-  Example of what the TU Theme will look like and all the wiz-bang things it can do. This Static Site was generated with Jekyll.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://127.0.0.1:4000" # the base hostname & protocol for your site
-keywords: "highered, college, university, philadelphia, Temple"
-# permalink:
-# paginate:
-# paginate_path
-# University_logo:
-# college_logo:
-# program_logo:
-# Background image to be tiled on all pages
-# background:
+description: 'Example of what the TU Theme will look like and all the wiz-bang things
+  it can do. This Static Site was generated with Jekyll.
 
-# Build settings
+'
+baseurl: ''
+url: http://127.0.0.1:4000
+keywords: highered, college, university, philadelphia, Temple
 markdown: kramdown
 highlighter: rouge
-
 sass:
   sass_dir: _sass
   style: :compressed
-include: ['_content']
-
-
-# Analytics and webmaster tools stuff goes here
-#google_analytics:   UA-39365944-4
-#google_verify:
-
-
-
-# This is for the editing function in _/includes/improve_content
-# Leave it empty if your site is not on GitHub/GitHub Pages
+include:
+- _content
 improve_content: https://github.com/Phlow/feeling-responsive/edit/gh-pages

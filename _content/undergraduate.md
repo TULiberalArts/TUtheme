@@ -1,9 +1,8 @@
 ---
-layout: page
 title: Undergraduate
-permalink: /undergraduate
+permalink: "/undergraduate"
+layout: page
 navigation_weight: 1
-published: true
 ---
 
 program undergraduate stuff is cool
