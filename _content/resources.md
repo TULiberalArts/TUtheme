@@ -1,8 +1,8 @@
 ---
-title: resources
+title: Resources
 permalink: "/resources"
-layout: page
 navigation_weight: 5
+layout: page
 ---
 
 Resources
