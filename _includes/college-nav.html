@@ -1,14 +1,34 @@
+<!--
 <div class="college">
   <div class="container">
-    <a class="colege-title" href="{{ site.baseurl }}/">{{ site.college }}</a>
-    <div class="right">
-      <a href='https://liberalarts.temple.edu/about-us/newsroom'>News</a>
-      <a href='https://events.temple.edu/department/college-of-liberal-arts'>Events</a>
-    </div>
+    <a class="college-title" href="{{ site.baseurl }}/">{{ site.college }}</a>
   </div>
 </div>
-<div class="container">
-  <h1>
-    <a class="program-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-  </h1>
+-->
+<div class="college-nav">
+  <div class="container">
+    <div class="row">
+      <div class="col l10 s12">
+        <a class="college-title" href="{{ site.baseurl }}/">{{ site.college }}</a>
+        <br>
+        <h1>
+          <a class="program-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+        </h1>
+      </div>
+      <div class="col l1 s12 college-link">
+        <a href="https://liberalarts.temple.edu/about-us/newsroom">
+          <i class="material-icons">description</i>
+          <br>
+          News
+        </a>
+      </div>
+      <div class="col l1 s12 college-link">
+        <a href="https://events.temple.edu/department/college-of-liberal-arts">
+          <i class="material-icons">event</i>
+          <br>
+          Events
+        </a>
+      </div>
+    </div>
+  </div>
 </div>

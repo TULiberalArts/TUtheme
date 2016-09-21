@@ -5,6 +5,12 @@ footer.page-footer {
     font-size: 1.4rem;
     line-height: .85rem;
   }
+  a {
+    display: block;
+    &:focus, &:active {
+      outline: 2px dotted white;
+    }
+  }
   .footer-copyright {
     background-color: rgba(0,0,0,.75);
   }
