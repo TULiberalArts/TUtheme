@@ -1,13 +1,20 @@
-
-<div class="container">
-  <a class="university-title" href="{{ site.baseurl }}/">{{ site.university }}</a>
-</div>
 <nav class="university-nav">
   <div class="container">
-    <ul>
-      <li><a href='http://temple.edu/admissions' class='tu-global-apply-link'>Apply</a></li>
+    <ul class="left">
+      <a class="university-title" href="{{ site.baseurl }}/"><img src="/images/logos/temple-university-logo.svg" alt="Temple University Logo"></a>
+    </ul>
+    <form class="right" action="https://search.temple.edu/search.php" id="templesearch" method="get" name="templesearch">
+      <div class="input-field">
+        <input id="search" name="searchString" placeholder="Search this Site" type="search" required>
+        <label for="search"><i class="material-icons">search</i></label>
+        <label for="submit" onclick="document.getElementById('templesearch').submit();"><i class="material-icons">arrow_forward</i></label>
+      </div>
+    </form>
+    <ul class="right">
       <li><a href='http://admissions.temple.edu/visit' class='tu-global-visit-link'>Visit</a></li>
+      <li><a href='http://temple.edu/admissions' class='tu-global-apply-link'>Apply</a></li>
       <li><a href='http://www.alumni.temple.edu/s/705/alumni/16/home.aspx' class='tu-global-alumni-link'>Alumni</a></li>
+      <li><a href='https://tuportal4.temple.edu/cp/home/displaylogin' class='tu-global-visit-link'>TUPortal</a></li>
     </ul>
   </div>
 </nav>

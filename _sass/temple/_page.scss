@@ -1,0 +1,24 @@
+main {
+  background: $tu-light-gray;
+  & > .container {
+    background: white;
+    padding: 0 20px;
+    max-width: calc(1280px + 40px);
+  }
+  & > .container {
+    width: calc(90% + 40px);
+  }
+  @media #{$medium-and-up} {
+    & > .container {
+      width: calc(85% + 40px);
+    }
+  }
+  @media #{$large-and-up} {
+    & > .container {
+      width: calc(70% + 40px);
+    }
+  }
+  .page-content {
+    padding: 2rem 20px;
+  }
+}

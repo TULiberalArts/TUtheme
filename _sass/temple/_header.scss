@@ -1,0 +1,111 @@
+nav.university-nav {
+  color: $navbar-university-font-color;
+  background-color: $navbar-university-backgroud-color;
+  height: $navbar-university-height;
+  line-height: $navbar-university-height;
+  box-shadow: none;
+  border-bottom: 1px solid lightGray;
+
+  a { color: $navbar-university-font-color; }
+
+  a.university-title {
+    margin-left: -20px;
+    padding-top: 5px;
+    padding-bottom: 0;
+    height: 50px;
+  }
+
+  i,
+  [class^="mdi-"], [class*="mdi-"],
+  i.material-icons {
+    font-size: 1.25rem;
+    height: $navbar-university-height;
+    line-height: $navbar-university-height;
+  }
+
+  // Collapse button
+  .button-collapse {
+    height: $navbar-university-height;
+
+    i {
+      font-size: 2.5rem;
+      height: $navbar-university-height;
+      line-height: $navbar-university-height;
+    }
+  }
+
+  // Navbar Links
+  ul {
+
+    li {
+
+      &.active {
+        background-color: rgba(0,0,0,.1);
+      }
+    }
+    a {
+      font-size: $navbar-university-font-size;
+      color: $navbar-university-font-color;
+      padding: 0 15px;
+
+      &:hover {
+        background-color: rgba(0,0,0,.1);
+      }
+    }
+
+    &.left {
+      float: left;
+    }
+  }
+
+  // Navbar Search Form
+  .input-field {
+    overflow: hidden;
+    input {
+      transition: width 250ms ease;
+      font-size: 1rem;
+      margin-bottom: 0;
+      padding-right: 0;
+      padding-left: 2.75rem;
+      padding-right: 40px;
+      line-height: $navbar-university-height - 1px;
+      height: $navbar-university-height - 1px;
+      width: 0px;
+      cursor: pointer;
+      &:valid, &:focus, &:active {
+        width: 130px;
+        cursor: text;
+      }
+    }
+    &:focus input, &:active input {
+      width: 130px;
+      cursor: text;
+    }
+    label[for="search"] {
+      pointer-events: none;
+      -webkit-pointer-events: none;
+    }
+    label[for="submit"] {
+      // float: right;
+      // float: right;
+      margin-left: 170px;
+      border-radius: 60px;
+      .material-icons {
+        border-radius: 50%;
+        background: $tu-cherry;
+        color: white;
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        text-align: center;
+        margin-top: 10px;
+        box-shadow: 1px 1px 13px darkgrey;
+        cursor: pointer;
+      }
+    }
+
+    label {
+      &.active i { color: $navbar-university-font-color; }
+    }
+  }
+}
