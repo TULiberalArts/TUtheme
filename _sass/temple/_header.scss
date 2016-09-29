@@ -47,12 +47,13 @@ nav.university-nav {
       font-size: $navbar-university-font-size;
       color: $navbar-university-font-color;
       padding: 0 15px;
-
+      @media #{$medium-and-down} {
+        padding: 0 12px;
+      }      
       &:hover {
         background-color: rgba(0,0,0,.1);
       }
     }
-
     &.left {
       float: left;
     }
@@ -67,7 +68,8 @@ nav.university-nav {
       margin-bottom: 0;
       padding-right: 0;
       padding-left: 2.75rem;
-      padding-right: 40px;
+      // padding-right: 40px;
+      padding-right: 0;
       line-height: $navbar-university-height - 1px;
       height: $navbar-university-height - 1px;
       width: 0px;
@@ -75,11 +77,13 @@ nav.university-nav {
       &:valid, &:focus, &:active {
         width: 130px;
         cursor: text;
+        padding-right: 40px;
       }
     }
     &:focus input, &:active input {
       width: 130px;
       cursor: text;
+      padding-right: 40px;
     }
     label[for="search"] {
       pointer-events: none;
@@ -103,34 +107,109 @@ nav.university-nav {
         cursor: pointer;
       }
     }
-
     label {
       &.active i { color: $navbar-university-font-color; }
     }
   }
 }
 
-.college-title {
-  font-size: 1.25em;
+div.college-nav {
+  .college-title {
+    font-size: 1.25em;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 2.5em;
+  }
+
+  h1.program-title {
+    // margin: .25rem 0 .55rem 0;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: $title-font-family;
+    display: inline-block;
+    @media #{$small-and-down} {
+      font-size: 2rem;
+      vertical-align: top;
+      margin-top: 1.5rem;
+    }
+  }
+
+  .college-nav h1 {
+    margin: .25rem 0 .55rem 0;
+    @media #{$medium-and-down} {
+      text-align: center;
+    }
+  }
+
+  .college-link {
+    text-align: center;
+    margin-top: 3rem;
+    display: inline-block;
+  }
+  .nav-toggle-link {
+    text-align: center;
+    margin-top: .75rem;
+    margin-right: 1.5rem;
+    padding-right: 1.5rem;
+    display: inline-block;
+    padding-bottom: 0.25rem;
+    border-right: 1px solid lightGray;
+    font-weight: bold;
+    @media #{$medium-and-up} {
+      display: none;
+    }
+  }
+}
+
+// Program Nav
+nav.program-nav ul {
+  overflow: hidden;
   font-weight: bold;
-  font-style: italic;
-  line-height: 2.5em;
 }
 
-.program-title {
-  // margin: .25rem 0 .55rem 0;
-  font-size: 3rem;
-  font-weight: bold;
+
+@media #{$large-and-up} {
+  nav.program-nav ul {
+    // width: 100%;
+    display: flex;
+    width: calc(100% + 40px);
+    margin: 0 -20px;
+    li {
+      flex-grow: 1;
+      text-align: center;
+      a {
+        border-right: 1px solid transparentize(white, .5);
+      }
+      &:first-of-type a {
+        border-left: 1px solid transparentize(white, .5);
+      }
+    }
+  }
 }
 
-.college-nav h1 {
-  margin: .25rem 0 .55rem 0;
+@media #{$small-and-down} {
+  nav.program-nav {
+    height: auto;
+    ul {
+      overflow: hidden;
+      height: auto;
+      li {
+        display: block;
+        font-weight: bold;
+        width: 100%;
+      }
+    }
+  }
 }
 
-.college-link {
-  text-align: center;
-  margin-top: 3rem;
-  a {
-
+// Nav Toggle
+@media #{$small-and-down} {
+  div.college-nav .college-link, nav.program-nav {
+    display: none;
+  }
+  body.nav-is-open {
+    div.college-nav .college-link, nav.program-nav {
+      display: block;
+    }
   }
 }

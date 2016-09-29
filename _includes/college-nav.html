@@ -8,30 +8,37 @@
 <div class="college-nav">
   <div class="container">
     <div class="row">
-      <div class="col l9 s12">
+      <div class="col l9 m9 s12">
         <a class="college-title" href="{{ site.baseurl }}/">{{ site.college }}</a>
         <br>
-        <h1>
-          <a class="program-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+        <div class="nav-toggle-link">
+          <a href="#menu" nav-toggle="true">
+            <i class="material-icons">menu</i>
+            <br>
+            Menu
+          </a>
+        </div>
+        <h1 class="program-title">
+          <a href="{{ site.baseurl }}/">{{ site.title }}</a>
         </h1>
       </div>
-      <div class="col l1 s4 college-link">
+      <div class="col l1 m1 s4 college-link">
         <a href="https://liberalarts.temple.edu/about-us/newsroom">
           <i class="material-icons">description</i>
           <br>
           News
         </a>
       </div>
-      <div class="col l1 s4 college-link">
+      <div class="col l1 m1 s4 college-link">
         <a href="https://events.temple.edu/department/college-of-liberal-arts">
           <i class="material-icons">event</i>
           <br>
           Events
         </a>
       </div>
-      <div class="col l1 s4 college-link college-link-heart">
+      <div class="col l1 m1 s4 college-link college-link-heart">
         <a href="http://www.giving.temple.edu/givetocla">
-          <img src="/images/icons/heart-red.svg" alt="Heart" height="24" width="24">
+          <img src="/images/icons/heart-red.svg" alt="Heart" height="24" width="20">
           <br>
           Give
         </a>
@@ -39,3 +46,10 @@
     </div>
   </div>
 </div>
+
+<ul class="side-nav" id="mobile-demo">
+  <li><a href="sass.html">Sass</a></li>
+  <li><a href="badges.html">Components</a></li>
+  <li><a href="collapsible.html">Javascript</a></li>
+  <li><a href="mobile.html">Mobile</a></li>
+</ul>
