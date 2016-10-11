@@ -4,3 +4,4 @@ _site
 .idea/
 .idea/workspace.xml
 .DS_Store
+test_content/
