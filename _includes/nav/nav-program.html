@@ -2,10 +2,9 @@
 <nav class="program-nav">
   <div class="container">
     <ul>
-      <li><a href='/undergraduate' {% if current[1] == 'undergraduate' %}class='current'{% endif %}>Undergraduate</a></li>
-      <li><a href='/graduate' {% if current[1] == 'graduate' %}class='current'{% endif %}>Graduate</a></li>
-      <li><a href='/faculty' {% if current[1] == 'faculty' %}class='current'{% endif %}>Faculty</a></li>
-      <li><a href='/resources' {% if current[1] == 'resources' %}class='current'{% endif %}>Resources</a></li>
+      {% for item in site.data.primary_nav %}
+        <li><a href='{{ item.url }}' {% if current[1] == {{ item.url }} %}class='current'{% endif %}>{{ item.text }}</a></li>
+      {% endfor %}
     </ul>
   </div>
 </nav>
