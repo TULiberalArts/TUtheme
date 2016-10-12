@@ -18,6 +18,7 @@ nav.university-nav {
   i,
   [class^="mdi-"], [class*="mdi-"],
   i.material-icons {
+    // font-size: 24px;
     font-size: 1.25rem;
     height: $navbar-university-height;
     line-height: $navbar-university-height;
@@ -158,6 +159,9 @@ div.college-nav {
     @media #{$medium-and-up} {
       display: none;
     }
+  }
+  i.material-icons {
+    font-size: 24px;
   }
 }
 

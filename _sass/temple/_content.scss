@@ -1,0 +1,19 @@
+// People bios
+.person {
+  &-photo {
+    text-align: right;
+    img {
+      // margin-top: 60px;
+      margin-top: .5rem;
+      width: 150px;
+      height: 150px;
+      border-top-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+      border-bottom-left-radius: 50%;
+    }
+  }
+  &-bio {
+    border-bottom: 2px solid lightGray;
+    // padding-bottom: 2rem!important;
+  }
+}

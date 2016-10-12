@@ -1,7 +1,37 @@
 html {
   font-family: $body-font-family;
   color: $tu-black;
+  font-size: 16px;
 }
 b, strong {
   font-weight: bold;
+}
+a {}
+.material-icons {
+  font-size: inherit;
+  font-size: 1.2rem;
+  vertical-align: sub;
+}
+h1, h2, h3 {
+  line-height: 1.5em;
+  margin: 0;
+}
+h1 {
+  font-size: 42px;
+  font-weight: bold;
+  color: $tu-cherry;
+  &.title {
+    border-bottom: 2px solid;
+    margin-bottom: 2rem;
+    padding-bottom: .5rem;
+    text-align: left;
+  }
+}
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+h3 {
+  font-size: 28px;
+  // font-weight: bold;
 }
