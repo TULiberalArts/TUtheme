@@ -1,0 +1,12 @@
+---
+layout: page
+permalink: /faculty
+---
+
+<h1>Faculty</h1>
+{% for person in site.data.faculty %}
+<img src="{{ person.photo }}" alt="{{ person.name }}">
+{{ person.name }}
+{{ person.email }}
+{{ person.bio }}
+{% endfor %}
