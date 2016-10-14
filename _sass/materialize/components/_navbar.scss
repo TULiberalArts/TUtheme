@@ -8,15 +8,6 @@ nav {
 
   a { color: $navbar-font-color; }
 
-  i,
-  [class^="mdi-"], [class*="mdi-"],
-  i.material-icons {
-    display: block;
-    font-size: 2rem;
-    height: $navbar-height-mobile;
-    line-height: $navbar-height-mobile;
-  }
-
   .nav-wrapper {
     position: relative;
     height: 100%;
@@ -104,7 +95,7 @@ nav {
       font-size: $navbar-font-size;
       color: $navbar-font-color;
       display: block;
-      padding: 0 15px;
+      padding: 0 10px;
       cursor: pointer;
 
       &.btn, &.btn-large, &.btn-flat, &.btn-floating {
@@ -116,6 +107,17 @@ nav {
       &:hover {
         background-color: rgba(0,0,0,.1);
       }
+
+      &.home-link {
+        padding: 0;
+        i,
+        [class^="mdi-"], [class*="mdi-"],
+        i.material-icons {
+          font-size: 1.75rem;
+          vertical-align: middle;
+          line-height: 1rem;
+        }
+      }
     }
 
     &.left {
@@ -126,6 +128,16 @@ nav {
   // Navbar Search Form
   form {
     height: 100%;
+
+    i,
+    [class^="mdi-"], [class*="mdi-"],
+    i.material-icons {
+      display: block;
+      font-size: 2rem;
+      height: $navbar-height-mobile;
+      line-height: $navbar-height-mobile;
+    }
+
   }
 
   .input-field {

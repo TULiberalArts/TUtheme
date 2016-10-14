@@ -2,6 +2,11 @@
 <nav class="program-nav">
   <div class="container">
     <ul>
+      <li>
+        <a href="/" title="Program Homepage" class="home-link hide-on-med-and-down">
+          <i class="material-icons">home</i>
+        </a>
+      </li>
       {% for item in site.data.primary_nav %}
         <li><a href='{{ item.url }}' {% if current[1] == {{ item.url }} %}class='current'{% endif %}>{{ item.text }}</a></li>
       {% endfor %}
