@@ -1,0 +1,14 @@
+<div class="card horizontal {{ include.size }}">
+  <div class="card-image">
+    <img src="{{ include.image }}">
+  </div>
+  <div class="card-stacked">
+    <div class="card-content">
+      {% if include.title %}<span class="card-title">{{ include.title }}</span>{% endif %}
+      <p>{{ include.content }}</p>
+    </div>
+    <div class="card-action">
+      <a href="#">This is a link</a>
+    </div>
+  </div>
+</div>
