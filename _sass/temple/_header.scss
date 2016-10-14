@@ -116,10 +116,18 @@ nav.university-nav {
 
 div.college-nav {
   .college-title {
-    font-size: 1.25em;
     font-weight: bold;
-    font-style: italic;
     line-height: 2.5em;
+    background: #a41e35;
+    color: white;
+    font-style: normal;
+    padding: 0rem .75rem 0rem 1rem;
+    display: inline-block;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 1rem;
+    margin-left: -1rem;
+    letter-spacing: 0px;
   }
 
   h1.program-title {
