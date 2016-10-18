@@ -1,5 +1,5 @@
 ---
-title: Program
+title: Nuclear Energy
 timezone: UTC
 collections:
   faculty:
@@ -12,7 +12,7 @@ collections:
     title: Uploads
     output: true
 university: Temple University
-college: College of Liberal Arts
+college: College of Atomic Sciences
 tagline: This is our life's work
 description: 'Example of what the TU Theme will look like and all the wiz-bang things
   it can do. This Static Site was generated with Jekyll.

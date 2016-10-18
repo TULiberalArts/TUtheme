@@ -12,3 +12,38 @@ $tu-alert: rgb(255,221,0); // TU Alert Yellow
 $tu-black: rgb(14,16,20); // Temple Black
 
 $tu-light-gray: #f1f1f1; // Light Gray
+
+$colorsb: (
+  "materialize-red": $tu-cherry,
+  "red": $tu-cherry,
+  // "pink": $pink,
+  "purple": $tu-purple,
+  // "deep-purple": $deep-purple,
+  // "indigo": $indigo,
+  "blue": $tu-denim,
+  // "light-blue": $light-blue,
+  // "cyan": $cyan,
+  "teal": $tu-seagreen,
+  "green": $tu-olive,
+  // "light-green": $light-green,
+  // "lime": $lime,
+  "yellow": $tu-alert,
+  "amber": $tu-gold // ,
+  // "orange": $orange,
+  // "deep-orange": $deep-orange,
+  // "brown": $brown,
+  // "blue-grey": $blue-grey,
+  // "grey": $grey,
+  // "shades": $shades
+);
+
+// Color Classes
+
+@each $color_nameb, $colorb in $colorsb {
+  .#{$color_nameb} {
+    background-color: $colorb !important;
+  }
+  .#{$color_nameb}-text {
+    color: $colorb !important;
+  }
+}

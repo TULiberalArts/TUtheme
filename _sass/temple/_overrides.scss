@@ -1,7 +1,7 @@
 html {
   font-family: $body-font-family;
   color: $tu-black;
-  font-size: 16px;
+  font-size: 15px;
 }
 b, strong {
   font-weight: bold;
@@ -34,4 +34,38 @@ h2 {
 h3 {
   font-size: 28px;
   // font-weight: bold;
+}
+.container > .row {
+  margin-left: (-1 * $gutter-width / 2);
+  margin-right: (-1 * $gutter-width / 2);
+}
+// Card
+.card {
+  .card-title {
+    font-size: 1.25em;
+  }
+  .card-image {
+    min-height: 120px;
+    background: $tu-black;
+    img {
+      opacity: .65;
+    }
+  }
+  .card-action {
+    // text-align: right;
+    a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):not(.white-text) {
+      color: $tu-cherry;
+      font-weight: bold;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+  .card-icon {
+    font-size: 1.25em;
+  }
+}
+// Waves
+.waves-effect {
+  display: inherit;
 }

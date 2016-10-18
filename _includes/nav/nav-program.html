@@ -3,12 +3,12 @@
   <div class="container">
     <ul>
       <li>
-        <a href="/" title="Program Homepage" class="home-link hide-on-med-and-down">
+        <a href="/" title="Program Homepage" class="home-link hide-on-med-and-down waves-effect">
           <i class="material-icons">home</i>
         </a>
       </li>
       {% for item in site.data.primary_nav %}
-        <li><a href='{{ item.url }}' {% if current[1] == {{ item.url }} %}class='current'{% endif %}>{{ item.text }}</a></li>
+        <li><a href="{{ item.url }}" class="waves-effect {% if current[1] == {{ item.url }} %}current{% endif %}">{{ item.text }}</a></li>
       {% endfor %}
     </ul>
   </div>

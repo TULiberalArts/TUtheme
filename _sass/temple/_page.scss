@@ -3,22 +3,36 @@ main {
   & > .container {
     background: white;
     padding: 0 20px;
-    max-width: calc(1280px + 40px);
+    max-width: calc(1180px + 40px);
   }
   & > .container {
     width: calc(90% + 40px);
   }
   @media #{$medium-and-up} {
     & > .container {
-      width: calc(85% + 40px);
+      width: calc(90% + 40px);
     }
   }
   @media #{$large-and-up} {
     & > .container {
-      width: calc(70% + 40px);
+      width: calc(95% + 40px);
+      max-width: calc(1180px + 40px);
+      // max-width: 996px;
     }
   }
   .page-content {
     padding: 2rem 20px;
+  }
+}
+// Larger containers
+@media #{$medium-and-up} {
+  .container {
+    width: 90%;
+  }
+}
+@media #{$large-and-up} {
+  .container {
+    width: 95%;
+    max-width: 1180px;
   }
 }
