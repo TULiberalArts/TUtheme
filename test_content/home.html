@@ -1,0 +1,55 @@
+---
+layout: page
+permalink: /
+---
+
+<div class="row">
+  <h3>Welcome</h3>
+  <h1>Department of {{ site.title }}</h1>
+  <p class="lead">
+    The Fox School’s Department of Marketing and Supply Chain Management (MSCM) is a leader in marketing research and practice.
+  </p>
+</div>
+
+
+<h1>Perspective Students</h1>
+<div class="row">
+
+  <div class="col s12 m4">
+    {% include cards/card-image.html title="Schedule a Tour" content="Be nice, or else" image="/assets/img/placeholder/flower1.jpeg" %}
+  </div>
+  <div class="col s12 m4">
+    {% include cards/card-image.html title="Financial Aid &amp; Scholarships" content="Be nice, or else" image="/assets/img/placeholder/flower2.jpeg" %}
+  </div>
+  <div class="col s12 m4">
+    {% include cards/card-image.html title="Study &amp; Research Abroad" content="Be nice, or else" image="/assets/img/placeholder/flower3.jpeg" %}
+  </div>
+
+</div>
+
+
+<h1>Posts</h1>
+<div class="row">
+  {% for post in site.posts %}
+    <div class="col s4">
+      {% include cards/card-basic.html title=post.title content="" image="" %}
+    </div>
+  {% endfor %}
+</div>
+<!--  <ul class="post-list">
+  {% for post in site.posts %}
+    <li>
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+      <h2>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+      </h2>
+    </li>
+  {% endfor %}
+</ul> -->
+
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+
+<h1>Events</h1>
+{% include cards/card-event.html title="Featured event:<br>May 24, 2016<br>7-11pm" content="Be nice, or else" image="/assets/img/placeholder/flower3.jpeg" icon="event" %}
