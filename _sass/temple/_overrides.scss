@@ -6,7 +6,11 @@ html {
 b, strong {
   font-weight: bold;
 }
-a {}
+a {
+  &:hover {
+    text-decoration: underline;
+  }
+}
 .material-icons {
   font-size: inherit;
   font-size: 1.2rem;
@@ -62,7 +66,9 @@ h3 {
     }
   }
   .card-icon {
-    font-size: 1.25em;
+    i.material-icons {
+      font-size: 1.25em;
+    }
   }
 }
 // Waves

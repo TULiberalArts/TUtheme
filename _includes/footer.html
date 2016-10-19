@@ -3,44 +3,71 @@
     <div class="row">
      <div class="col l3 s12">
         <ul>
-          <li><a class="white-text" href="https://temple.edu/"><strong>Temple University</strong></a></li>
-          <li><a class="white-text" href="https://liberalarts.temple.edu">College of Liberal Arts</a></li>
-          <li><a class="white-text" href="/">Dept of {{ site.title }}</a></li>
+          <li><a class="white-text" href="{{ site.university.url }}"><strong>{{ site.university }}</strong></a></li>
+          <li><a class="white-text" href="{{ site.college.url }}">{{ site.college }}</a></li>
+          <li><a class="white-text" href="{{ site.url }}">{{ site.title }}</a></li>
         </ul>
       </div>
       <div class="col l3 s12">
         <ul>
-            <li class="grey-text">Anderson Hall</li>
-            <li class="grey-text">1114 Polett Walk</li>
-            <li class="grey-text">Phialdelphia, PA 19122</li>
+          {% for line in site.address %}
+            <li class="grey-text">{{ line[1] }}</li>
+          {% endfor %}
+          <!-- <li>
+            <a href="https://iseptaphilly.com/plan-your-trip?dest={{ site.address.street }}, {{ site.address.city }}" class="white-text"><i class="material-icons">train</i>Transit Directions</a>
+          </li> -->
         </ul>
       </div>
       <div class="col l3 s12">
         <ul>
             <li>
-              <a href="https://directory.temple.edu/" class="white-text"><i class="material-icons">contacts</i> University Directory</a>
+              <a href="/faculty" class="white-text"><i class="material-icons">face</i>Faculty List</a>
             </li>
             <li>
-              <a href="#" class="white-text"><i class="material-icons">place</i> Maps &amp; Directions</a>
+              <a href="https://directory.temple.edu/" class="white-text"><i class="material-icons">contacts</i>University Directory</a>
             </li>
             <li>
-              <a href="#" class="white-text"><i class="material-icons">email</i> Contact Us</a>
+              <a href="https://temple.edu/maps-and-directions" class="white-text" target="_blank"><i class="material-icons">place</i>Maps &amp; Directions</a>
+            </li>
+            <li>
+              <a href="https://temple.edu/contact" class="white-text" target="_b;ank"><i class="material-icons">email</i>Contact Us</a>
             </li>
         </ul>
       </div>
       <div class="col l3 s12">
         <ul>
-          <li><a class="grey-text text-lighten-3" title="Temple Liberal Arts on Facebook" href="https://www.facebook.com/templeliberalarts/" target="_blank"><img src="/assets/img/icons/facebook-white.svg" width="14" height="14"/> Facebook</a></li>
-          <li><a class="grey-text text-lighten-3" title="Temple Liberal Arts on Twitter" href="https://twitter.com/tuliberalarts" target="_blank"><img src="/assets/img/icons/twitter-white.svg" width="14" height="14"/> Twitter</a></li>
-          <li><a class="grey-text text-lighten-3" title="Temple Liberal Arts on Instagram" href="https://www.instagram.com/tuliberalarts" target="_blank"><img src="/assets/img/icons/instagram-white.svg" width="14" height="14"/> Instagram</a></li>
+          {% if site.social.facebook %}<li><a class="white-text" title="{{ site.university }} {{ site.title }} on Facebook" href="https://facebook.com/{{ site.social.facebook }}" target="_blank"><img src="/assets/img/icons/facebook-white.svg" class="vector-icons"/>/{{ site.social.facebook }}</a></li>{% endif %}
+          {% if site.social.twitter %}<li><a class="white-text" title="{{ site.university }} {{ site.title }} on Twitter" href="https://twitter.com/{{ site.social.twitter }}" target="_blank"><img src="/assets/img/icons/twitter-white.svg" class="vector-icons"/>@{{ site.social.twitter }}</a></li>{% endif %}
+          {% if site.social.instagram %}<li><a class="white-text" title="{{ site.university }} {{ site.title }} on Instagram" href="https://instagram.com/{{ site.social.instagram }}" target="_blank"><img src="/assets/img/icons/instagram-white.svg" class="vector-icons"/>@{{ site.social.twitter }}</a></li>{% endif %}
+          {% if site.social.snapchat %}<li class="hide-on-small-and-down">
+            <a class="white-text dropdown-button" title="{{ site.university }} {{ site.title }} on Snapchat" href="#" data-activates="dropdown-snapchat" data-constrainwidth="false"><img src="/assets/img/icons/snapchat-white.svg" class="vector-icons"/>{{ site.social.snapchat }}</a>
+            <ul id="dropdown-snapchat" class="dropdown-content" style="padding:1rem;">
+              <li><img src="https://feelinsonice-hrd.appspot.com/web/deeplink/snapcode?username={{ site.social.snapchat }}&type=SVG&size=150"></li>
+            </ul>
+          </li>
+          <li class="show-on-small" style="display:none;">
+            <a class="white-text" title="{{ site.university }} {{ site.title }} on Snapchat" href="https://www.snapchat.com/add/{{ site.social.snapchat }}"><img src="/assets/img/icons/snapchat-white.svg" class="vector-icons"/>{{ site.social.snapchat }}</a>
+          </li>{% endif %}
+          {% if site.social.github %}<li><a class="white-text" title="{{ site.university }} {{ site.title }} on GitHub" href="https://github.com/{{ site.social.github }}" target="_blank"><img src="/assets/img/icons/github-white.svg" class="vector-icons"/>GitHub</a></li>{% endif %}
+          {% if site.social.deviantart %}<li><a class="white-text" title="{{ site.university }} {{ site.title }} on DeviantArt" href="https://deviantart.com/{{ site.social.deviantart }}" target="_blank"><img src="/assets/img/icons/deviantart-white.svg" class="vector-icons"/>DeviantArt</a></li>{% endif %}
+          {% if site.social.vimeo %}<li><a class="white-text" title="{{ site.university }} {{ site.title }} on Vimeo" href="https://vimeo.com/{{ site.social.vimeo }}" target="_blank"><img src="/assets/img/icons/vimeo-white.svg" class="vector-icons"/>Vimeo</a></li>{% endif %}
+          {% if site.social.youtube %}<li><a class="white-text" title="{{ site.university }} {{ site.title }} on YouTube" href="{{ site.social.youtube }}" target="_blank"><img src="/assets/img/icons/youtube-white.svg" class="vector-icons"/>YouTube</a></li>{% endif %}
+          {% if site.social.linkedin %}<li><a class="white-text" title="{{ site.university }} {{ site.title }} on LinkedIn" href="{{ site.social.linkedin }}" target="_blank"><img src="/assets/img/icons/linkedin-white.svg" class="vector-icons"/>LinkedIn</a></li>{% endif %}
+          {% if site.social.slack %}<li><a class="white-text" title="{{ site.university }} {{ site.title }} on Slack" href="{{ site.social.slack }}" target="_blank"><img src="/assets/img/icons/slack-white.svg" class="vector-icons"/>Slack</a></li>{% endif %}
         </ul>
       </div>
     </div>
   </div>
   <div class="footer-copyright">
     <div class="container">
-    &copy; Copyright 1884-{{ site.time | date: '%Y' }} Temple University. All rights reserved.
-    <a href="#top" class="right"><i class="material-icons">arrow_upward</i> Back to Top</a>
+    &copy; Copyright 1884-{{ site.time | date: '%Y' }} {{ site.university }}. All rights reserved.
+    <a href="#top" class="right"><i class="material-icons">arrow_upward</i>Back to Top</a>
     </div>
   </div>
 </footer>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="{{ "/assets/js/bin/materialize.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/assets/js/init.js | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/assets/js/temple.js | prepend: site.baseurl }}"></script>

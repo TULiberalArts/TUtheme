@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="406px" height="374px" viewBox="0 0 406 374" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
+    <title>heart-white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M174.65,344.95 C69.35,251.8 0.5,189.025 0.5,112.075 C0.5,49.3 49.1,0.7 111.875,0.7 C146.3,0.7 180.725,16.9 203,43.225 C225.275,16.9 259.7,0.7 294.125,0.7 C356.9,0.7 405.5,49.3 405.5,112.075 C405.5,189.025 336.65,251.8 231.35,344.95 L203,373.3 L174.65,344.95 L174.65,344.95 Z" id="heart-red" fill="white"></path>
+    </g>
+</svg>

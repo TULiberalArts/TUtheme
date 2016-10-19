@@ -1,31 +1,70 @@
 ---
+# Program/Department Title
 title: Nuclear Energy
+# URL
+url: https://nuclearenergy.temple.edu/
+baseurl: ''
+
+# Program Information
+tagline: This is our life's work
+description: 'Example of what the TU Theme will look like and all the wiz-bang things
+  it can do. This Static Site was generated with Jekyll.'
+keywords: highered, college, university, philadelphia, Temple
+
+# Address
+address:
+  building: Anderson Hall
+  room: Room 832
+  street: 1114 Polett Walk
+  city: Phialdelphia, PA 19122
+
+# Social Media
+# Put in only the username unless otherwise noted
+# If social media does not apply to your department, keep it blank or use the default values.
+social: 
+  # Facebook - https://facebook.com/USERNAME
+  # if your page does not have a custom URL, create one!
+  facebook: TempleLiberalArts
+  # Twitter - https://twitter.com/USERNAME
+  twitter: TULiberalArts
+  # Instagram - https://www.instagram.com/USERNAME
+  instagram: TULiberalArts
+  # Snapchat - USERNAME
+  snapchat: 
+  # GitHub - https://github.com/USERNAME or https://github.com/USERNAME/REPO
+  github: 
+  # DeviantArt - http://USERNAME.deviantart.com/
+  deviantart: 
+  # Vimeo - https://vimeo.com/USERNAME
+  vimeo: 
+  # YouTube - Paste the FULL URL below
+  youtube: 
+  # LinkedIn - Paste the FULL URL below
+  linkedin: 
+  # Slack - Paste the FULL URL below
+  slack: 
+
+# University & College Information
+university: Temple University
+university.url: https://temple.edu/
+college: College of Liberal Arts
+college.url: https://liberalarts.temple.edu/
+
+# Global Site Config
+# DO NOT edit below unless if you know what you're doing!
+markdown: kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: :compressed
 timezone: UTC
 collections:
-  faculty:
-    title: Faculty
-    output: true
+  # faculty:
+  #   title: Faculty
+  #   output: true
   posts:
     title: Posts
     output: true
   uploads:
     title: Uploads
     output: true
-university: Temple University
-college: College of Atomic Sciences
-tagline: This is our life's work
-description: 'Example of what the TU Theme will look like and all the wiz-bang things
-  it can do. This Static Site was generated with Jekyll.
-
-'
-baseurl: ''
-url: http://127.0.0.1:4000
-keywords: highered, college, university, philadelphia, Temple
-markdown: kramdown
-highlighter: rouge
-sass:
-  sass_dir: _sass
-  style: :compressed
-include:
-- _content
-improve_content: https://github.com/Phlow/feeling-responsive/edit/gh-pages
