@@ -3,8 +3,8 @@
 title: Nuclear Energy
 # Site URL (without /)
 url: https://nuclearenergy.temple.edu
-# Subdirectory (ending with /)
-baseurl: /
+# Subdirectory (with / at only at beginning)
+baseurl: ''
 
 # Program Information
 # Short tagline for tweets (<100 characters)
