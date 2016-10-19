@@ -1,14 +1,17 @@
 ---
 # Program/Department Title
 title: Nuclear Energy
-# URL
-url: https://nuclearenergy.temple.edu/
-baseurl: ''
+# Site URL (without /)
+url: https://nuclearenergy.temple.edu
+# Subdirectory (ending with /)
+baseurl: /
 
 # Program Information
+# Short tagline for tweets (<100 characters)
 tagline: This is our life's work
-description: 'Example of what the TU Theme will look like and all the wiz-bang things
-  it can do. This Static Site was generated with Jekyll.'
+# Longer descriptions for link previews (<250 characters)
+description: 'Example of what the TU Theme will look like and all the wiz-bang things it can do. This Static Site was generated with Jekyll.'
+# List of related keywords for search engines
 keywords: highered, college, university, philadelphia, Temple
 
 # Address
@@ -68,3 +71,4 @@ collections:
   uploads:
     title: Uploads
     output: true
+# theme: tutheme
