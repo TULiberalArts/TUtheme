@@ -1,20 +1,5 @@
 ---
 permalink: "/faculty"
-layout: page
+layout: faculty
 ---
 
-<h1>Faculty</h1>
-{% for person in site.data.faculty %}
-<div class="row person">
-  <div class="col s3 person-photo"><img src="{{ person.photo }}" alt="{{ person.name }}"></div>
-  <div class="col s9 person-bio">
-    <h3>{{ person.name }}</h3>
-    <p>{{ person.bio }}</p>
-    <p>
-      <i class="material-icons">email</i> <a href="mailto:{{ person.email }}">{{ person.email }}</a>
-    </p>
-  </div>
-</div>
-
-
-{% endfor %}

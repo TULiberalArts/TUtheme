@@ -37,6 +37,7 @@ h2 {
 }
 h3 {
   font-size: 28px;
+  // color: rgba(0,0,0,.45);
   // font-weight: bold;
 }
 .container > .row {
@@ -45,8 +46,10 @@ h3 {
 }
 // Card
 .card {
-  .card-title {
-    font-size: 1.25em;
+  .card-title, .card-content .card-title {
+    font-size: 1.5em;
+    font-weight: normal;
+    line-height: 1.75em;
   }
   .card-image {
     min-height: 120px;

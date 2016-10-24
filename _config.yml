@@ -53,6 +53,10 @@ university.url: https://temple.edu/
 college: College of Liberal Arts
 college.url: https://liberalarts.temple.edu/
 
+# Development Config
+# If you do not have access to 'tutheme', use 'minima' instead.
+# theme: tutheme
+
 # Global Site Config
 # DO NOT edit below unless if you know what you're doing!
 markdown: kramdown
@@ -71,4 +75,3 @@ collections:
   uploads:
     title: Uploads
     output: true
-# theme: tutheme

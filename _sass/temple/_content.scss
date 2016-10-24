@@ -1,19 +1,51 @@
 // People bios
 .person {
+  padding-left: 150px;
   &-photo {
     text-align: right;
     img {
+      float: left;
       // margin-top: 60px;
       margin-top: .5rem;
-      width: 150px;
-      height: 150px;
-      border-top-left-radius: 50%;
-      border-bottom-right-radius: 50%;
-      border-bottom-left-radius: 50%;
+      width: 120px;
+      max-height: 150px;
+      border-radius: 4px;
+      
+      background-color: lightGray;
+      width: 120px;
+      height: 120px;
+      margin-left: -150px;
+      // border-radius: 50%;
+      background-size: cover;
+      background-position: center;
+      min-height: 100%;
+      display: block;
+      float: left;
+      // Teardrop shape
+      // border-top-left-radius: 50%;
+      // border-bottom-right-radius: 50%;
+      // border-bottom-left-radius: 50%;
     }
   }
   &-bio {
     border-bottom: 2px solid lightGray;
     // padding-bottom: 2rem!important;
+  }
+  h3 {
+    font-weight: bold;
+    margin-bottom: 0;
+    small {
+      opacity: 0.5;
+    }
+  }
+  &-links {
+    background: lightGray;
+    padding: .5rem;
+    border-radius: 4px;
+    li {
+      display: inline-block;
+      list-style-type: none;
+      margin-right: 1.5rem;
+    }
   }
 }

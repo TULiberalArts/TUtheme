@@ -8,7 +8,7 @@
         </a>
       </li>
 
-      {% for item in site.data.primary_nav %}
+      {% for item in site.data.navigation %}
         <li><a href="{{ item.url | prepend: site.baseurl | prepend: site.url }}" class="waves-effect {% if current[1] == {{ item.url | prepend: site.baseurl | prepend: site.url }} %}current{% endif %}">{{ item.text }}</a></li>
       {% endfor %}
     </ul>
