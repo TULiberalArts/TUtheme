@@ -114,6 +114,25 @@ nav.university-nav {
   }
 }
 
+// College Dropdown
+div.college-dropdown {
+  background: $tu-cherry;
+  color: white;
+  margin-bottom: -1.35em;
+  padding: 1rem 0;
+  a {
+    color: white;
+    display: block;
+  }
+  a {
+    display: block;
+    &:focus, &:active {
+      outline: 2px dotted white;
+    }
+  }
+}
+
+// College Nav
 div.college-nav {
   .college-title {
     font-weight: bold;
