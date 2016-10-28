@@ -1,7 +1,7 @@
 html {
   font-family: $body-font-family;
   color: $tu-black;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.75em;
 }
 b, strong {
@@ -70,9 +70,7 @@ h3 {
     }
   }
   .card-icon {
-    i.material-icons {
-      font-size: 1.25em;
-    }
+    font-size: 1.5em;
   }
 }
 // Waves

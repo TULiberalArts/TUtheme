@@ -14,5 +14,9 @@ $('[nav-toggle]').click(function(){
     $('body').toggleClass('nav-is-open');
 });
 
+$('[college-dropdown-toggle]').click(function(){
+    $('.college-dropdown').toggleClass('is-open');
+});
+
 
 });

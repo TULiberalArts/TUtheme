@@ -118,7 +118,6 @@ nav.university-nav {
 div.college-dropdown {
   background: $tu-cherry;
   color: white;
-  margin-bottom: -1.35em;
   padding: 1rem 0;
   a {
     color: white;
@@ -129,6 +128,16 @@ div.college-dropdown {
     &:focus, &:active {
       outline: 2px dotted white;
     }
+  }
+  transition: margin 100ms linear,height 100ms linear;
+  height: 0px;
+  overflow: hidden;
+  background: none;
+  margin-bottom: -2em;
+  &.is-open {
+    height: auto;
+    background: $tu-cherry;
+    margin-bottom: -1.35em;
   }
 }
 
