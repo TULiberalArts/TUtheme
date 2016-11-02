@@ -7,7 +7,7 @@ nav.university-nav {
   border-bottom: 1px solid lightGray;
 
   a { color: $navbar-university-font-color; }
-
+  
   a.university-title {
     margin-left: -20px;
     padding-top: 5px;
@@ -15,9 +15,7 @@ nav.university-nav {
     height: 50px;
   }
 
-  i,
-  [class^="mdi-"], [class*="mdi-"],
-  i.material-icons {
+  form i.material-icons {
     // font-size: 24px;
     font-size: 1.25rem;
     height: $navbar-university-height;
@@ -95,7 +93,7 @@ nav.university-nav {
       // float: right;
       margin-left: 170px;
       border-radius: 60px;
-      .material-icons {
+      i.material-icons {
         border-radius: 50%;
         background: $tu-cherry;
         color: white;
@@ -182,6 +180,13 @@ div.college-nav {
     text-align: center;
     margin-top: 3rem;
     display: inline-block;
+    a {
+      display: inline-block;
+      i.material-icons {
+        font-size: 24px;
+        margin-right: 0;
+      }
+    }
   }
   .nav-toggle-link {
     text-align: center;
@@ -196,9 +201,7 @@ div.college-nav {
       display: none;
     }
   }
-  i.material-icons {
-    font-size: 24px;
-  }
+
 }
 
 // Program Nav
