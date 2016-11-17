@@ -1,10 +1,10 @@
 _site
 .sass-cache
 .jekyll-metadata
-.idea/
+.idea
 .idea/workspace.xml
 .DS_Store
 _config.yml
-test_content/
-_data/
-_posts/
+test_content
+_data
+_posts
