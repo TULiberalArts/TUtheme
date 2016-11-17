@@ -1,7 +1,6 @@
 main {
   background: $tu-light-gray;
   & > .container {
-    background: white;
     padding: 0 20px;
     max-width: calc(1180px + 40px);
   }
@@ -19,6 +18,9 @@ main {
       max-width: calc(1180px + 40px);
       // max-width: 996px;
     }
+  }
+  .page-content {
+    background: white;
   }
   .page-header .container, .page-content {
     padding: 2rem 20px;
@@ -50,6 +52,34 @@ main {
 .page-header {
   border-bottom: 4px solid lightgray;
   padding-bottom: .5rem;
+}
+
+// Page feature
+.page-feature {
+  .container {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  // 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("http://liberalarts.temple.edu/sites/liberalarts/files/styles/featured_article_hero/public/field/image/Amma%20BOV.jpg?itok=JtLWVaUT");
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  min-height: 350px;
+  max-height: 450px;
+  text-align: center;
+  color: white;
+  padding-top: 1rem;
+  
+  h1, h2, {
+    color: white;
+  }
+  .headline {
+    text-align: left;
+    max-width: 450px;
+    border: 4px solid white;
+    padding: 1rem;
+  }
 }
 
 // Page content

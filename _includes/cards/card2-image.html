@@ -1,0 +1,10 @@
+<div class="card2" style="background-image: url('{{ include.image }}')">
+  <div class="overlay-unit {{ include.color }}"></div>
+  <div class="card-content">
+    {% if include.title %}<h3 class="card-title">{{ include.title }}</h3>{% endif %}
+    <p>{{ include.content }}</p>
+  </div>
+  <div class="card2-action">
+    <a class="waves-effect waves-light btn-large"><i class="material-icons right">arrow_forward</i> Learn More</a>
+  </div>
+</div>
