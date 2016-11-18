@@ -3,9 +3,10 @@
     <img src="{{ include.image }}">
     {% if include.title %}<h3 class="card-title">{{ include.title }}</h3>{% endif %}
   </div>
-  <div class="card-content">
+  {% if include.content %}<div class="card-content">
     <p>{{ include.content }}</p>
   </div>
+  {% endif %}
   <div class="card-action">
     <a href="#" class="waves-effect">This is a link</a>
   </div>

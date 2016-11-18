@@ -1,0 +1,9 @@
+<div class="card2 card2-stat" style="background-image: url('{{ include.image }}')">
+  <div class="overlay-unit {{ include.color }}">
+    <i class="material-icons overlay-icon">{{ include.icon }}</i>
+  </div>
+  <div>
+    {% if include.title %}<h1>{{ include.title }}</h1>{% endif %}
+    <p>{{ include.content }}</p>
+  </div>
+</div>

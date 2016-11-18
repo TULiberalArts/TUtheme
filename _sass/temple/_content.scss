@@ -1,6 +1,7 @@
 // People bios
 .person {
   padding-left: 150px;
+  margin-bottom: 1rem;
   &-photo {
     text-align: right;
     img {
@@ -18,7 +19,7 @@
       // border-radius: 50%;
       background-size: cover;
       background-position: center;
-      min-height: 100%;
+      max-width: 100%;
       display: block;
       float: left;
       // Teardrop shape
@@ -49,6 +50,23 @@
       display: inline-block;
       list-style-type: none;
       margin-right: 1.5rem;
+    }
+  }
+}
+
+// Courses you could take
+.courses-you-could-take {
+  color: black;
+  li.active {
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .collapsible-body {
+    background: rgb(232, 232, 232);
+    p {
+      padding: 1em;
+      font-size: .8rem;
+      line-height: 1.5em;
     }
   }
 }

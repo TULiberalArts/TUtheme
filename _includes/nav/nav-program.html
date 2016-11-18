@@ -3,13 +3,13 @@
   <div class="container">
     <ul>
       <li>
-        <a href="{{ '/' | prepend: site.baseurl | prepend: site.url }}" title="Program Homepage" class="home-link hide-on-med-and-down waves-effect">
+        <a href="{{ '/' | prepend: site.baseurl }}" title="Program Homepage" class="home-link hide-on-med-and-down waves-effect">
           <i class="material-icons">home</i>
         </a>
       </li>
 
       {% for item in site.data.navigation %}
-        <li><a href="{{ item.url | prepend: site.baseurl | prepend: site.url }}" class="waves-effect {% if current[1] == {{ item.url | prepend: site.baseurl | prepend: site.url }} %}current{% endif %}">{{ item.text }}</a></li>
+        <li><a href="{{ item.url | prepend: site.baseurl }}" class="waves-effect {% if current[1] == {{ item.url | prepend: site.baseurl }} %}current{% endif %}">{{ item.text }}</a></li>
       {% endfor %}
     </ul>
   </div>

@@ -12,6 +12,9 @@ a {
     text-decoration: underline;
   }
 }
+p {
+  margin-top: 0;
+}
 .material-icons {
   font-size: inherit;
   font-size: 1.2rem;
@@ -47,7 +50,8 @@ h5 {
   font-size: 1.25em;
   // text-transform: uppercase;
   font-weight: bold;
-  opacity: .85;
+  // opacity: .85;
+  border-bottom: 4px solid;
 }
 hr {
   border-style: solid;
@@ -56,6 +60,7 @@ hr {
   margin: auto;
   display: block;
   opacity: .5;
+  margin: 2em 0;
 }
 .container > .row {
   margin-left: (-1 * $gutter-width / 2);
@@ -85,6 +90,11 @@ hr {
 // Card
 .card {
   border-radius: 4px;
+  transition: all 300ms ease;
+  &:hover {
+    @extend .z-depth-2;
+    transform: translateY(-2px);
+  }
   .card-title, .card-content .card-title {
     font-size: 1.5em;
     font-weight: normal;
@@ -99,6 +109,10 @@ hr {
   }
   .card-action {
     // text-align: right;
+    a {
+      text-transform: none!important;
+      font-weight: bold;
+    }
     a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):not(.white-text) {
       color: $tu-cherry;
       font-weight: bold;
@@ -125,15 +139,34 @@ hr {
   transition: all 300ms ease;
   margin-bottom: 1.5em;
   @extend .z-depth-1;
-  .card-content {
+  h1, h2, h3 {
+    font-weight: bold;
+    color: inherit;
+  }
+  * {
     position: relative;
+  }
+  .card2-content {
     min-height: 12rem;
   }
   &:hover {
     @extend .z-depth-2;
     transform: translateY(-2px);
   }
-
+  &-stat {
+    font-size: 1.35em;
+    padding: 2rem;
+    h1 {
+      font-size: 60px;
+    }
+    p {
+      margin: 0;
+      min-height: 3em;
+    }
+    .overlay-unit {
+      opacity: 1;
+    }
+  }
 }
 // Overlay units
 .overlay-unit {
@@ -145,6 +178,16 @@ hr {
   height: 100%;
   opacity: .75;
   border-radius: 4px;
+  i.material-icons {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 4rem;
+    opacity: .25;
+    background: rgba(0, 0, 0, .5);
+    padding: 1.25rem;
+    border-radius: 50%;
+  }
 }
 // Waves
 .waves-effect {
