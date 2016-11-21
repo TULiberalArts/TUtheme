@@ -5,7 +5,7 @@
         <ul>
           <li><a class="white-text" href="{{ site.university.url }}"><strong>{{ site.university }}</strong></a></li>
           <li><a class="white-text" href="{{ site.college.url }}">{{ site.college }}</a></li>
-          <li><a class="white-text" href="{{ site.url }}">{{ site.title }}</a></li>
+          <li><a class="white-text" href="{{ '/' | prepend: site.baseurl }}">{{ site.title }}</a></li>
           <li>
             <a href="/faculty" class="white-text"><i class="material-icons">people</i>Faculty List</a>
           </li>
@@ -55,4 +55,5 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="{{ '/assets/js/bin/materialize.js' | prepend: site.baseurl }}"></script>
 <script type="text/javascript" src="{{ '/assets/js/init.js' | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ '/assets/js/jquery.fluidbox.js' | prepend: site.baseurl }}"></script>
 <script type="text/javascript" src="{{ '/assets/js/temple.js' | prepend: site.baseurl }}"></script>
