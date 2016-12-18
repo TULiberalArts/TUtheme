@@ -1,0 +1,25 @@
+---
+layout: doc
+---
+
+{% include header.html %}
+
+<main>
+{% if page.title %}
+<div class="page-header container">
+  <div class="container">
+    <h1>{{ page.title }}</h1>
+  </div>
+</div>
+{% endif %}
+
+
+
+<div class="page-content container">
+
+    {{ content }}
+
+</div>
+</main>
+
+{% include footer.html %}

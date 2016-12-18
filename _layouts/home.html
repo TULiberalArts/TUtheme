@@ -1,0 +1,103 @@
+---
+layout: doc
+---
+
+{% include header.html %}
+
+<main>
+
+{% if page.headline %}
+<div class="page-feature container" style="background-image: url('{{ page.headline-image }}');">
+  <div class="container">
+    {% if page.headline-title %}
+    <div class="headline">
+      <h2>{{ page.headline-title }}</h2>
+      {% if page.headline-link %}
+      <a class="waves-effect waves-light btn-large" href="{{ page.headline-link }}"><i class="material-icons right">arrow_forward</i> Read More</a>
+      {% endif %}
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endif %}
+
+<div class="page-content container">
+
+  <div class="row">
+    <div class="col m12 l8">
+
+      <!-- <div class="welcome-note">
+        <h1>{{ site.title }}</h1>
+      </div> -->
+
+      <div class="content">
+        {{ content }}
+      </div>
+
+    </div>
+    <div class="col m12 l4 page-sidebar">
+      <div class="col s12 m6 l12">
+        {% if site.data.courses %}
+        <h5>Courses you could take:</h5>
+        <ul class="collapsible popout courses-you-could-take" data-collapsible="accordion">
+          {% for course in site.data.courses %}
+          <li>
+            <div class="collapsible-header active"><i class="material-icons"><!--filter_drama--></i>{{ course.title }}</div>
+            <div class="collapsible-body"><p>{{ course.description }}</p></div>
+          </li>
+          {% endfor %}
+        </ul>
+        <p class="center">
+          <a href="http://bulletin.temple.edu" target="_blank">Course Bulletin</a>
+        </p>
+        {% endif %}
+      </div>
+      <div class="col s12 m6 l12">
+        <h5>Follow us on:</h5>
+        {% include components/social.html color='white' %}
+      </div>
+    </div>
+  </div>
+  
+  {% if site.data.feed %}
+  <h1>News &amp; Events</h1>
+  <div class="row">
+  {% for item in site.data.feed limit:28 %}
+    <div class="col s12 m4 l3">
+    {% assign item_title = item["no name"] %}
+    {% assign item_type = item["Type"] %}
+    
+    {% if item_type == "Event" %}
+      {% assign item_date = item["Event Date"] %}
+      {% if item_date == "" %}
+        {% assign item_date = "Event" %}
+      {% endif %}
+      {% include cards/card-event.html title=item_title meta=item_date color="red" icon="event" %}
+    {% endif %}
+    
+    {% if item_type == "Media Mentions" %}
+      {% include cards/card-event.html title=item_title meta="Media Mention" color="black" icon="grade" %}
+    {% endif %}
+
+    {% if item_type == "Article" %}
+      {% assign item_body = item["Body"] %}
+      {% assign item_date = item["Post date"] %}
+      {% include cards/card-basic.html title=item_title content=item_body meta=item_date %}
+    {% endif %}
+   </div>
+  {% endfor %}
+  </div>
+  {% endif %}
+
+  {% comment %}
+    <!-- Ideal implementation -->
+    {% include cards/card-image.html title="Something good happened!" image="https://unsplash.it/300/200" %}
+    {% include cards/card-event.html title="Featured event:<br>May 24, 2016<br>7-11pm" color="red" image="assets/img/placeholder/flower1.jpeg" icon="movie" %}
+    {% include cards/card-image.html title="Something good happened!" image="https://unsplash.it/300/200" %}
+    {% include cards/card-event.html title="Featured event:<br>May 24, 2016<br>7-11pm" color="black" image="assets/img/placeholder/flower3.jpeg" icon="event" %}
+  {% endcomment %}
+
+</div>
+</main>
+
+{% include footer.html %}
