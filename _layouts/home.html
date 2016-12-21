@@ -7,7 +7,7 @@ layout: doc
 <main>
 
 {% if page.headline %}
-<div class="page-feature {% if headline-fluid %}{% else %}container{% endif %}" style="background-image: url('{{ page.headline-image }}');">
+<div class="page-feature {% if page.headline-fluid %}{% else %}container{% endif %}" style="background-image: url('{{ page.headline-image }}');">
   <div class="container">
     {% if page.headline-title %}
     <div class="headline">
