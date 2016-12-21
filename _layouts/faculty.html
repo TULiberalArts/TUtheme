@@ -13,7 +13,7 @@ layout: page-blank
   <div class="person-photo"><img src="{{ person.photo }}" alt="{{ person.name }}"></div>
   <div class="person-bio">
     <h3>{{ person.name }} <small>{{ person.title }}</small></h3>
-    <p>{{ person.bio }}</p>
+    <p>{{ person.bio | mardownify }}</p>
     <ul class="person-links">
       {% if person.room %}<li>
         <i class="material-icons">location_city</i> {{ person.building }}{% if person.room %} {{ person.room }}{% endif %}
