@@ -6,7 +6,6 @@ Gemfile.lock
 .idea
 .idea/workspace.xml
 .DS_Store
-_config.yml
 test_content
 _data
 _posts
