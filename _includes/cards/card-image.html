@@ -7,7 +7,9 @@
     <p>{{ include.content }}</p>
   </div>
   {% endif %}
+  {% if include.button-text %}
   <div class="card-action">
-    <a href="#" class="waves-effect">This is a link</a>
+    <a href="{{ include.button-link }}" class="waves-effect">{{ include.button-text }}</a>
   </div>
+  {% endif %}
 </div>

@@ -4,7 +4,9 @@
     {% if include.title %}<h3 class="card-title">{{ include.title }}</h3>{% endif %}
     <p>{{ include.content }}</p>
   </div>
+  {% if include.button-text %}
   <div class="card2-action">
-    <a class="waves-effect waves-light btn-large"><i class="material-icons right">arrow_forward</i> Learn More</a>
+    <a href="{{ include.button-link }}" class="waves-effect waves-light btn-large">{{ include.button-text }} <i class="material-icons right">arrow_forward</i></a>
   </div>
+  {% endif %}
 </div>
