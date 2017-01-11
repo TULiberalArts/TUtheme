@@ -208,6 +208,10 @@ div.college-nav {
 nav.program-nav ul {
   overflow: hidden;
   font-weight: bold;
+  i, [class^="mdi-"], [class*="mdi-"], i.material-icons {
+    line-height: 64px;
+    height: 64px;
+  }
 }
 
 
