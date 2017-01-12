@@ -62,7 +62,7 @@ layout: doc
   {% if site.data.feed %}
   <h1>News &amp; Events</h1>
   <div class="row">
-  {% for item in site.data.feed limit:16 %}
+  {% for item in site.data.feed limit:15 %}
 
     {% assign loopindex = forloop.index | modulo: 3 %}
     {% if loopindex == 1 %}<div class="col s12 m6 l3">{% endif %}
