@@ -59,7 +59,9 @@
 <script type="text/javascript" src="{{ '/assets/js/temple.js' | prepend: site.baseurl }}"></script>
 
 {% if page.toc %}
-<div id="toc"></div>
+<div id="toc-outer">
+  <div id="toc"></div>
+</div>
 
 <script>
 $("#toc").append('<p>In this page:</p>')
