@@ -57,3 +57,19 @@
 <script type="text/javascript" src="{{ '/assets/js/init.js' | prepend: site.baseurl }}"></script>
 <script type="text/javascript" src="{{ '/assets/js/jquery.fluidbox.js' | prepend: site.baseurl }}"></script>
 <script type="text/javascript" src="{{ '/assets/js/temple.js' | prepend: site.baseurl }}"></script>
+
+{% if page.toc %}
+<div id="toc"></div>
+
+<script>
+$("#toc").append('<p>In this page:</p>')
+
+$("h1, h2, h3").each(function(i) {
+    var current = $(this);
+    current.attr("id", "title" + i);
+    $("body").append("<a id='link" + i + "' href='#title" +
+        i + "' title='" + current.attr("tagName") + "'>" + 
+        current.html() + "</a>");
+});
+</script>
+{% endif %}
