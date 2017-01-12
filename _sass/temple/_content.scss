@@ -87,11 +87,14 @@
 
 // Coursebox
 .course-box {
+  display: block;
   float: right;
   background: #fff4de;
   padding: 1rem;
   max-width: 420px;
   width: 40%;
+  font-size: .85rem;
+  line-height: 1.5rem;
   @media #{$medium-and-down} {
     width: 100%;
     float: none;
