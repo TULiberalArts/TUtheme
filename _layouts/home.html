@@ -64,7 +64,7 @@ layout: doc
 
     {% assign item_title = item["no name"] %}
     {% assign item_type = item["Type"] %}
-    
+
     {% if item_type == "Event" %}
       {% assign item_date = item["Event Date"] %}
       {% if item_date == "" %}
@@ -80,7 +80,12 @@ layout: doc
     {% if item_type == "Article" %}
       {% assign item_body = item["Body"] %}
       {% assign item_date = item["Post date"] %}
-      {% include cards/card-basic.html title=item_title content=item_body meta=item_date %}
+      {% if item["Featured Image"] %}
+        {% assign item_image = item["Featured Image"] %}
+        {% include cards/card-image.html title=item_title content=item_body meta=item_date embed=item_image %}
+      {% else %}
+        {% include cards/card-basic.html title=item_title content=item_body meta=item_date %}
+      {% endif %}
     {% endif %}
 
     {% if loopindex == 0 %}</div>{% endif %}

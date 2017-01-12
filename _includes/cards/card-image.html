@@ -1,6 +1,7 @@
 <div class="card {{ include.size }}">
   <div class="card-image">
-    <img src="{{ include.image }}">
+    {% if include.image %}<img src="{{ include.image }}">{% endif %}
+    {% if include.embed %}{{ include.embed}}{% endif %}
     {% if include.title %}<h3 class="card-title">{{ include.title }}</h3>{% endif %}
   </div>
   {% if include.content %}<div class="card-content">
