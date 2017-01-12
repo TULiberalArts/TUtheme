@@ -66,10 +66,10 @@
 <script>
 $("#toc").append('<p>In this page:</p>')
 
-$("h1, h2, h3").each(function(i) {
+$(".content h1, .content h2, .content h3").each(function(i) {
     var current = $(this);
     current.attr("id", "title" + i);
-    $("body").append("<a id='link" + i + "' href='#title" +
+    $("#toc").append("<a id='link" + i + "' href='#title" +
         i + "' title='" + current.attr("tagName") + "'>" + 
         current.html() + "</a>");
 });
