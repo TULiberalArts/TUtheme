@@ -84,3 +84,16 @@
     }
   }
 }
+
+// Coursebox
+.course-box {
+  float: right;
+  background: #fff4de;
+  padding: 1rem;
+  max-width: 420px;
+  width: 40%;
+  @media #{$medium-and-down} {
+    width: 100%;
+    float: none;
+  }
+}
