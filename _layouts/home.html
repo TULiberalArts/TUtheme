@@ -62,8 +62,9 @@ layout: doc
   {% if site.data.feed %}
   <h1>News &amp; Events</h1>
   <div class="row">
-  {% for item in site.data.feed limit:28 %}
-    <div class="col s12 m4 l3">
+  {% for item in site.data.feed limit:16 %}
+    {% assign loopindex = forloop.index | modulo: 4 %}
+    {% if loopindex == 1 %}<div class="col s12 m6 l3">{% endif %}
     {% assign item_title = item["no name"] %}
     {% assign item_type = item["Type"] %}
     
@@ -84,7 +85,7 @@ layout: doc
       {% assign item_date = item["Post date"] %}
       {% include cards/card-basic.html title=item_title content=item_body meta=item_date %}
     {% endif %}
-   </div>
+    {% if loopindex == 1 %}</div>{% endif %}
   {% endfor %}
   </div>
   {% endif %}
