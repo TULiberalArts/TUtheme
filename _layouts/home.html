@@ -24,7 +24,7 @@ layout: doc
 <div class="page-content container">
 
   <div class="row">
-    <div class="col m12 l8">
+    <div class="col m12 {% if page.sidebar %}l8{% endif %}">
 
       <!-- <div class="welcome-note">
         <h1>{{ site.title }}</h1>
@@ -35,18 +35,12 @@ layout: doc
       </div>
 
     </div>
+    {% if page.sidebar %}
     <div class="col m12 l4 page-sidebar">
       <div class="col s12 m6 l12">
         {% if site.data.courses %}
         <h5>Courses you could take:</h5>
-        <ul class="collapsible popout courses-you-could-take" data-collapsible="accordion">
-          {% for course in site.data.courses %}
-          <li>
-            <div class="collapsible-header active"><i class="material-icons"><!--filter_drama--></i>{{ course.title }}</div>
-            <div class="collapsible-body"><p>{{ course.description }}</p></div>
-          </li>
-          {% endfor %}
-        </ul>
+        {% include components/course-collapsible.html %}
         <p class="center">
           <a href="http://bulletin.temple.edu" target="_blank">Course Bulletin</a>
         </p>
@@ -57,7 +51,8 @@ layout: doc
         {% include components/social.html color='white' %}
       </div>
     </div>
-  </div>
+  </div> 
+  {% endif %}
   
   {% if site.data.feed %}
   <h1>News &amp; Events</h1>
