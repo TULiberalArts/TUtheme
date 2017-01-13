@@ -139,8 +139,13 @@ div.college-dropdown {
   }
 }
 
+
 // College Nav
 div.college-nav {
+  .container {
+    position: relative;
+  }
+
   .college-title {
     font-weight: bold;
     line-height: 2.5em;
@@ -154,6 +159,14 @@ div.college-nav {
     font-size: 1rem;
     margin-left: -1.25rem;
     letter-spacing: 0px;
+    @media #{$large-and-up} {
+      position: absolute;
+      top: -2.85em;
+      left: 250px;
+      border-radius: 50px !important;
+      background: none !important;
+      color: #a41e35 !important;
+    }
   }
 
   h1.program-title {
@@ -208,8 +221,11 @@ div.college-nav {
 nav.program-nav ul {
   overflow: hidden;
   font-weight: bold;
+  i, [class^="mdi-"], [class*="mdi-"], i.material-icons {
+    line-height: 64px;
+    height: 64px;
+  }
 }
-
 
 @media #{$large-and-up} {
   nav.program-nav ul {

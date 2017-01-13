@@ -6,5 +6,8 @@
   <div class="card-action">
     <span class="card-meta">{{ include.meta }}</span>
     <!-- <a href="#" class="waves-effect">This is a link</a> -->
+    {% if include.button-text %}
+    <a href="{{ include.button-link }}" class="waves-effect">{{ include.button-text }}</a>
+    {% endif %}
   </div>
 </div>

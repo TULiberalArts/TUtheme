@@ -24,7 +24,7 @@ layout: doc
 <div class="page-content container">
 
   <div class="row">
-    <div class="col m12 l8">
+    <div class="col m12 {% if page.sidebar %}l8{% endif %}">
 
       <!-- <div class="welcome-note">
         <h1>{{ site.title }}</h1>
@@ -35,18 +35,12 @@ layout: doc
       </div>
 
     </div>
+    {% if page.sidebar %}
     <div class="col m12 l4 page-sidebar">
       <div class="col s12 m6 l12">
         {% if site.data.courses %}
         <h5>Courses you could take:</h5>
-        <ul class="collapsible popout courses-you-could-take" data-collapsible="accordion">
-          {% for course in site.data.courses %}
-          <li>
-            <div class="collapsible-header active"><i class="material-icons"><!--filter_drama--></i>{{ course.title }}</div>
-            <div class="collapsible-body"><p>{{ course.description }}</p></div>
-          </li>
-          {% endfor %}
-        </ul>
+        {% include components/course-collapsible.html %}
         <p class="center">
           <a href="http://bulletin.temple.edu" target="_blank">Course Bulletin</a>
         </p>
@@ -57,16 +51,20 @@ layout: doc
         {% include components/social.html color='white' %}
       </div>
     </div>
-  </div>
+  </div> 
+  {% endif %}
   
   {% if site.data.feed %}
   <h1>News &amp; Events</h1>
   <div class="row">
-  {% for item in site.data.feed limit:28 %}
-    <div class="col s12 m4 l3">
+  {% for item in site.data.feed limit:16 %}
+
+    {% assign loopindex = forloop.index | modulo: 4 %}
+    {% if loopindex == 1 %}<div class="col s12 m6 l3">{% endif %}
+
     {% assign item_title = item["no name"] %}
     {% assign item_type = item["Type"] %}
-    
+
     {% if item_type == "Event" %}
       {% assign item_date = item["Event Date"] %}
       {% if item_date == "" %}
@@ -82,9 +80,15 @@ layout: doc
     {% if item_type == "Article" %}
       {% assign item_body = item["Body"] %}
       {% assign item_date = item["Post date"] %}
-      {% include cards/card-basic.html title=item_title content=item_body meta=item_date %}
+      {% if item["Featured Image"] %}
+        {% assign item_image = item["Featured Image"] %}
+        {% include cards/card-image.html title=item_title content=item_body meta=item_date embed=item_image %}
+      {% else %}
+        {% include cards/card-basic.html title=item_title content=item_body meta=item_date %}
+      {% endif %}
     {% endif %}
-   </div>
+
+    {% if loopindex == 0 %}</div>{% endif %}
   {% endfor %}
   </div>
   {% endif %}

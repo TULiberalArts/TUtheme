@@ -12,7 +12,8 @@ layout: page-blank
 <div class="person">
   <div class="person-photo"><img src="{{ person.photo }}" alt="{{ person.name }}"></div>
   <div class="person-bio">
-    <h3>{{ person.name }} <small>{{ person.title }}</small></h3>
+    <h3>{{ person.name }}</h3>
+    <h3><small>{{ person.title }}</small></h3>
     <p>{{ person.bio | markdownify }}</p>
     <ul class="person-links">
       {% if person.room %}<li>

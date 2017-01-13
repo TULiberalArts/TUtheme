@@ -1,10 +1,8 @@
 <script type="text/javascript">
-  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-  try {
-    var pageTracker = _gat._getTracker("{{ site.google_analytics }}");
-  pageTracker._trackPageview();
-  } catch(err) {}
+  (function(l,i,b,a,r,t,s){l['GoogleAnalyticsObject']=r;l[r]=l[r]||function(){
+  (l[r].q=l[r].q||[]).push(arguments)},l[r].l=1*new Date();t=i.createElement(b),
+  s=i.getElementsByTagName(b)[0];t.async=1;t.src=a;s.parentNode.insertBefore(t,s)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', '{{ site.google_analytics }}', 'auto');
+  ga('send', 'pageview');
 </script>
