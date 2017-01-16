@@ -6,9 +6,9 @@
           <li><a class="white-text" href="{{ site.university.url }}"><strong>{{ site.university }}</strong></a></li>
           <li><a class="white-text" href="{{ site.college.url }}">{{ site.college }}</a></li>
           <li><a class="white-text" href="{{ '/' | prepend: site.baseurl }}">{{ site.title }}</a></li>
-          <li>
+          {% if site.data.faculty %}<li>
             <a href="{{ '/faculty' | prepend: site.baseurl }}" class="white-text"><i class="material-icons">people</i>Faculty List</a>
-          </li>
+          </li>{% endif %}
         </ul>
       </div>
       <div class="col l3 m6 s12">
