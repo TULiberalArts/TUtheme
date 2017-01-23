@@ -19,8 +19,10 @@
 
 
   .card-title {
+    // font-size: 24px;
+    // font-weight: 300;
     font-size: 24px;
-    font-weight: 300;
+    font-weight: bold;
     &.activator {
       cursor: pointer;
     }
@@ -135,6 +137,8 @@
       // bottom: 0;
       // left: 0;
       padding: $card-padding;
+      font-size: 24px;
+      font-weight: bold;
     }
 
   }
@@ -148,7 +152,7 @@
       color: inherit;
     }
     .card-title {
-      line-height: 48px;
+      // line-height: 48px;
     }
   }
 
