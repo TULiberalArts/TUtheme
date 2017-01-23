@@ -24,16 +24,15 @@ layout: page-blank
       </li>{% endif %}
       {% if person.phone %}{% if person.phone != "" %}<li>
         <i class="material-icons">phone</i> <a href="tel:{{ person.phone }}">
-          {% capture len %}{{ person.phone }}{% endcapture %}
+          {% capture len %}{{ person.phone | size }}{% endcapture %}
           {% if len == 10 %}
-            +1 ({{ person.phone | slice: 0, 2 }}) {{ person.phone | slice: 3, 5 }}-{{ person.phone | slice: 6, 9 }}
+            +1 ({{ person.phone | slice: 0, 2 }}) {{ person.phone | slice: 3, 5 }}.{{ person.phone | slice: 6, 9 }}
           {% elsif len == 11 %}
-            +1 ({{ person.phone | slice: 1, 3 }}) {{ person.phone | slice: 4, 6 }}-{{ person.phone | slice: 7, 10 }}
+            +1 ({{ person.phone | slice: 1, 3 }}) {{ person.phone | slice: 4, 6 }}.{{ person.phone | slice: 7, 10 }}
           {% else %}
             {{ person.phone }}
           {% endif %}
         </a>
-        }
       </li>{% endif %}{% endif %}
       {% if person.website %}{% if person.website != "" %}<li>
         <i class="material-icons">link</i> <a href="{{ person.website }}" target="_blank">{{ person.website }}</a>
