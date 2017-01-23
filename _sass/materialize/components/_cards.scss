@@ -19,10 +19,8 @@
 
 
   .card-title {
-    // font-size: 24px;
-    // font-weight: 300;
+    font-weight: 300;
     font-size: 24px;
-    font-weight: bold;
     &.activator {
       cursor: pointer;
     }
@@ -152,7 +150,7 @@
       color: inherit;
     }
     .card-title {
-      // line-height: 48px;
+      line-height: 48px;
     }
   }
 
