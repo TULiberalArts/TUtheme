@@ -24,7 +24,7 @@ layout: doc
 <div class="page-content container">
 
   <div class="row">
-    <div class="col m12 {% if page.sidebar %}l8{% endif %}">
+    {% if page.sidebar %}<div class="col m12 l8">{% endif %}
 
       <!-- <div class="welcome-note">
         <h1>{{ site.title }}</h1>
@@ -34,7 +34,7 @@ layout: doc
         {{ content }}
       </div>
 
-    </div>
+    {% if page.sidebar %}</div>{% endif %}
     {% if page.sidebar %}
     <div class="col m12 l4 page-sidebar">
       <div class="col s12 m6 l12">
