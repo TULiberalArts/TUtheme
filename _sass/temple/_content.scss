@@ -1,6 +1,6 @@
 // Content only
 .content {
-  max-width: 1080px;
+  max-width: $content-max-width; // 1080px;
   margin: auto;
   ul {
     margin-left: 2em;
@@ -9,7 +9,6 @@
         content: "● ";
         color: $tu-cherry;
         margin-left: -1.5em;
-        margin-right: .5em;
       }
     }
   }

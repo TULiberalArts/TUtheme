@@ -1,7 +1,7 @@
  html {
   font-family: $body-font-family;
   color: $tu-black;
-  font-size: 19px;
+  font-size: 16px;
   line-height: 1.75em;
 }
 b, strong {
@@ -69,6 +69,10 @@ hr {
   display: block;
   opacity: .5;
   margin: 2em 0;
+}
+.container {
+  margin: 0 auto;
+  max-width: $content-max-width;
 }
 .container > .row {
   margin-left: (-1 * $gutter-width / 2);
