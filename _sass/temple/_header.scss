@@ -15,6 +15,29 @@ nav.university-nav {
     height: 50px;
   }
 
+
+  .college-title {
+    font-weight: bold;
+    // line-height: 2.5em;
+    background: #a41e35;
+    color: white;
+    // margin-left: -1.25rem;
+    // letter-spacing: 0px;
+    i.material-icons {
+      height: inherit;
+      line-height: 1rem;
+      vertical-align: middle;
+    }
+    @media #{$large-and-up} {
+      // position: absolute;
+      // top: -2.85em;
+      // left: 250px;
+      // border-radius: 50px !important;
+      // background: none !important;
+      // color: #a41e35 !important;
+    }
+  }
+
   form i.material-icons {
     // font-size: 24px;
     font-size: 1.25rem;
@@ -135,7 +158,7 @@ div.college-dropdown {
   &.is-open {
     height: auto;
     background: $tu-cherry;
-    margin-bottom: -1.35em;
+    // margin-bottom: -1.35em;
   }
   ul {
     margin-bottom: 0;
@@ -148,30 +171,33 @@ div.college-dropdown {
 div.college-nav {
   .container {
     position: relative;
-  }
-
-  .college-title {
-    font-weight: bold;
-    line-height: 2.5em;
-    background: #a41e35;
-    color: white;
-    font-style: normal;
-    padding: 0rem .75rem 0rem 1rem;
-    display: inline-block;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    font-size: 1rem;
-    margin-left: -1.25rem;
-    letter-spacing: 0px;
-    @media #{$large-and-up} {
-      position: absolute;
-      top: -2.85em;
-      left: 250px;
-      border-radius: 50px !important;
-      background: none !important;
-      color: #a41e35 !important;
+    .row {
+      margin-top: 20px;
     }
   }
+
+  // .college-title {
+  //   font-weight: bold;
+  //   line-height: 2.5em;
+  //   background: #a41e35;
+  //   color: white;
+  //   font-style: normal;
+  //   padding: 0rem .75rem 0rem 1rem;
+  //   display: inline-block;
+  //   border-bottom-left-radius: 10px;
+  //   border-bottom-right-radius: 10px;
+  //   font-size: 1rem;
+  //   margin-left: -1.25rem;
+  //   letter-spacing: 0px;
+  //   @media #{$large-and-up} {
+  //     position: absolute;
+  //     top: -2.85em;
+  //     left: 250px;
+  //     border-radius: 50px !important;
+  //     background: none !important;
+  //     color: #a41e35 !important;
+  //   }
+  // }
 
   h1.program-title {
     // margin: .25rem 0 .55rem 0;
@@ -195,7 +221,7 @@ div.college-nav {
 
   .college-link {
     text-align: center;
-    margin-top: 3rem;
+    margin-top: .5rem;
     display: inline-block;
     a {
       display: inline-block;

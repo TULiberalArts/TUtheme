@@ -25,6 +25,13 @@ p {
   font-size: 1.2rem;
   vertical-align: sub;
 }
+nav {
+  i,
+  [class^="mdi-"], [class*="mdi-"],
+  i.material-icons {
+    display: inline-block;
+  }
+}
 h1, h2, h3, h5 {
   line-height: 1.5em;
   margin: 0;

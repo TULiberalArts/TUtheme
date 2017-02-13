@@ -1,8 +1,15 @@
 <nav class="university-nav">
   <div class="container">
     <ul class="left">
-      <a class="university-title hide-on-small-and-down waves-effect" href="{{ site.baseurl }}/"><img src="{{ '/assets/img/logos/temple-university-logo.svg' | prepend: site.baseurl }}" alt="Temple University Logo"></a>
-      <a class="university-title show-on-small waves-effect" href="{{ site.baseurl }}/" style="display:none"><img src="{{ '/assets/img/logos/temple-university-icon.svg' | prepend: site.baseurl }}" alt="Temple University Logo"></a>
+      <li>
+        <a class="university-title hide-on-small-and-down waves-effect" href="{{ site.baseurl }}/"><img src="{{ '/assets/img/logos/temple-university-logo.svg' | prepend: site.baseurl }}" alt="Temple University Logo"></a>
+        <a class="university-title show-on-small hide-on-med-and-up waves-effect" href="{{ site.baseurl }}/"><img src="{{ '/assets/img/logos/temple-university-icon.svg' | prepend: site.baseurl }}" alt="Temple University Logo"></a>
+      </li>
+      <li>
+        <a class="college-title waves-effect show-on-large hide-on-med-and-down" college-dropdown-toggle="true">College of Liberal Arts <i class="material-icons">arrow_drop_down_circle</i></a>
+        <a class="college-title waves-effect show-on-medium hide-on-large-only hide-on-small-only" college-dropdown-toggle="true">CLA <i class="material-icons">arrow_drop_down_circle</i></a>
+        <a class="college-title waves-effect show-on-small hide-on-med-and-up" href="https://liberalarts.temple.edu/">CLA</a>
+      </li>
     </ul>
     <form class="right" action="https://search.temple.edu/search.php" id="templesearch" method="get" name="templesearch">
       <div class="input-field">
