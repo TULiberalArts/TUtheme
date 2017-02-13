@@ -15,7 +15,7 @@ $('[nav-toggle]').click(function(){
 });
 
 $('[college-dropdown-toggle]').click(function(){
-    $('.college-dropdown').toggleClass('is-open');
+    $('body').toggleClass('college-dropdown-is-open');
 });
 
 // Fluidbox

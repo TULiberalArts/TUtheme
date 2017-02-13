@@ -15,18 +15,29 @@ nav.university-nav {
     height: 50px;
   }
 
+  a {
+    @media #{$medium-and-down} {
+      font-size: .8rem!important;
+      padding-left: .5rem!important;
+      padding-right: .5rem!important;
+    }
+  }
 
   .college-title {
     font-weight: bold;
     // line-height: 2.5em;
-    background: #a41e35;
+    background: $tu-cherry;
     color: white;
     // margin-left: -1.25rem;
     // letter-spacing: 0px;
+    &:hover {
+      background: darken($tu-cherry, 5%);
+    }
     i.material-icons {
       height: inherit;
       line-height: 1rem;
       vertical-align: middle;
+      transition: transform 100ms linear;
     }
     @media #{$large-and-up} {
       // position: absolute;
@@ -139,30 +150,35 @@ nav.university-nav {
 div.college-dropdown {
   background: $tu-cherry;
   color: white;
-  padding: 1rem 0;
+  // padding: 1rem 0;
+  // margin-bottom: 2rem;
+  transition: padding 100ms ease, height 100ms ease-in, box-shadow 150ms ease;
+  height: 0px;
+  overflow: hidden;
+  background: none;
+  // margin-bottom: -2em;
   a {
     color: white;
-    display: block;
-  }
-  a {
     display: block;
     &:focus, &:active {
       outline: 2px dotted white;
     }
   }
-  transition: margin 100ms linear,height 100ms linear;
-  height: 0px;
-  overflow: hidden;
-  background: none;
-  margin-bottom: -2em;
-  &.is-open {
-    height: auto;
-    background: $tu-cherry;
-    // margin-bottom: -1.35em;
-  }
   ul {
     margin-bottom: 0;
     margin-top: 0;
+  }
+}
+body.college-dropdown-is-open {
+  div.college-dropdown {
+    padding: 1rem 0;
+    height: auto;
+    background: $tu-cherry;
+    @extend .z-depth-1;
+    // margin-bottom: -1.35em;
+  }
+  i.college-droptown-toggle-arrow {
+    transform: rotateX(180deg);
   }
 }
 
