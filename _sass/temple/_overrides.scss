@@ -88,7 +88,7 @@ hr {
 // Buttons
 .btn, .btn-large {
   background: $tu-cherry;
-  background: none;
+  // background: none;
   border: 2px solid;
   text-align: left;
   border-radius: 2px;
@@ -104,6 +104,9 @@ hr {
   }
   &:hover .material-icons.right {
     transform: translateX(6px);
+  }
+  &.btn-large {
+    line-height: 3rem;
   }
 }
 // Card

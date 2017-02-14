@@ -104,3 +104,19 @@ main {
 }
 
 // Page content
+
+// Feed content
+a.feed-item {
+  display: block;
+  border-bottom: 1px solid lightgray;
+  padding: 1em 0;
+  &:hover {
+    background: whitesmoke;
+  }
+  strong {
+    display: block;
+  }
+  .meta {
+    color: gray;
+  }
+}

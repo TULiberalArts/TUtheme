@@ -23,18 +23,14 @@ layout: doc
 
 <div class="page-content container">
 
-  <div class="row">
-    {% if page.sidebar %}<div class="col m12 l8">{% endif %}
-
-      <!-- <div class="welcome-note">
-        <h1>{{ site.title }}</h1>
-      </div> -->
+  {% if page.sidebar %}<div class="row">
+    <div class="col m12 l8">{% endif %}
 
       <div class="content content-homepage">
         {{ content }}
       </div>
 
-    {% if page.sidebar %}</div>{% endif %}
+    {% if page.sidebar %}</div><!-- /.col.l8 -->{% endif %}
     {% if page.sidebar %}
     <div class="col m12 l4 page-sidebar">
       <div class="col s12 m6 l12">
@@ -51,45 +47,35 @@ layout: doc
         {% include components/social.html color='white' %}
       </div>
     </div>
-  </div> 
   {% endif %}
-  
-  {% if site.data.feed %}
-  <h1>News &amp; Events</h1>
-  <div class="row">
-  {% for item in site.data.feed limit:16 %}
+  {% if page.sidebar %}</div><!-- /.row -->{% endif %}
 
-    {% assign loopindex = forloop.index | modulo: 4 %}
-    {% if loopindex == 1 %}<div class="col s12 m6 l3">{% endif %}
-
-    {% assign item_title = item["no name"] %}
-    {% assign item_type = item["Type"] %}
-
-    {% if item_type == "Event" %}
-      {% assign item_date = item["Event Date"] %}
-      {% if item_date == "" %}
-        {% assign item_date = "Event" %}
-      {% endif %}
-      {% include cards/card-event.html title=item_title meta=item_date color="red" icon="event" %}
-    {% endif %}
-    
-    {% if item_type == "Media Mentions" %}
-      {% include cards/card-event.html title=item_title meta="Media Mention" color="black" icon="grade" %}
-    {% endif %}
-
-    {% if item_type == "Article" %}
-      {% assign item_body = item["Body"] %}
-      {% assign item_date = item["Post date"] %}
-      {% if item["Featured Image"] %}
-        {% assign item_image = item["Featured Image"] %}
-        {% include cards/card-image.html title=item_title content=item_body meta=item_date embed=item_image %}
-      {% else %}
-        {% include cards/card-basic.html title=item_title content=item_body meta=item_date %}
-      {% endif %}
-    {% endif %}
-
-    {% if loopindex == 0 %}</div>{% endif %}
-  {% endfor %}
+  {% if site.data.news %}
+  <div class="content feeds">
+    <div class="row">
+      <div class="col s12 m6">
+        <h2>Recent News</h2>
+        {% for item in site.data.news limit:4 %}
+          <a href="{{ item['Path'] }}" target="_blank" class="feed-item">
+            <strong>{{ item['Title'] }}</strong>
+            <span class="meta">{{ item['Sort Date'] }}</span>
+          </a>
+        {% endfor %}
+        <br>
+        <a class="btn btn-large waves-effect white grey-text darken-text-2" href="http://liberalarts.temple.edu/about-us/newsroom">More News <i class="material-icons">navigate_next</i></a>
+      </div>
+      <div class="col s12 m6">
+        <h2>Upcoming Events</h2>
+        {% for item in site.data.events limit:4 %}
+          <a href="{{ item['Path'] }}" target="_blank" class="feed-item">
+            <strong>{{ item['Title'] }}</strong>
+            <span class="meta">{{ item['Sort Date'] }}</span>
+          </a>
+        {% endfor %}
+        <br>
+        <a class="btn btn-large waves-effect white grey-text darken-text-2" href="http://liberalarts.temple.edu/about-us/events">More Events <i class="material-icons">navigate_next</i></a>
+      </div>
+    </div>
   </div>
   {% endif %}
 
