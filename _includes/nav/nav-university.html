@@ -2,8 +2,8 @@
   <div class="container">
     <ul class="left">
       <li>
-        <a class="university-title hide-on-small-and-down waves-effect" href="{{ site.baseurl }}/"><img src="{{ '/assets/img/logos/temple-university-logo.svg' | prepend: site.baseurl }}" alt="Temple University Logo"></a>
-        <a class="university-title show-on-small hide-on-med-and-up waves-effect" href="{{ site.baseurl }}/"><img src="{{ '/assets/img/logos/temple-university-icon.svg' | prepend: site.baseurl }}" alt="Temple University Logo"></a>
+        <a class="university-title hide-on-small-and-down waves-effect" href="{{ site.university.url }}/"><img src="{{ '/assets/img/logos/temple-university-logo.svg' | prepend: site.university.url }}" alt="Temple University Logo"></a>
+        <a class="university-title show-on-small hide-on-med-and-up waves-effect" href="{{ site.university.url }}/"><img src="{{ '/assets/img/logos/temple-university-icon.svg' | prepend: site.university.url }}" alt="Temple University Logo"></a>
       </li>
       <li>
         <a class="college-title waves-effect show-on-large hide-on-med-and-down" college-dropdown-toggle="true">College of Liberal Arts <i class="material-icons college-droptown-toggle-arrow">arrow_drop_down_circle</i></a>
@@ -19,14 +19,14 @@
       </div>
     </form>
     <ul class="right">
-      <!-- Alert chip!
+      {% comment %}<!-- Alert chip example!
       <li>
         <a class="chip yellow alert" href="https://news.temple.edu/announcements/2016-10-28/possible-septa-strike" style="background-image:repeating-linear-gradient(-45deg, transparent, transparent 20px, rgba(255, 255, 255, 0.2) 0, rgba(255, 255, 255, 0.2) 40px)">
           <strong>
             <i class="material-icons">warning</i>SEPTA Strike Info &amp; Services
           </strong>
         </a>
-      </li> -->
+      </li> -->{% endcomment %}
       <li><a href="http://admissions.temple.edu/visit" class="tu-global-visit-link waves-effect">Visit</a></li>
       <li><a href="http://temple.edu/admissions" class="tu-global-apply-link waves-effect">Apply</a></li>
       <li><a href="http://www.alumni.temple.edu/s/705/alumni/16/home.aspx" class="tu-global-alumni-link waves-effect">Alumni</a></li>
