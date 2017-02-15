@@ -56,7 +56,7 @@ layout: doc
       <div class="col s12 m6">
         <h2>Recent News</h2>
         {% for item in site.data.news limit:4 %}
-          <a href="{{ item['Path'] }}" target="_blank" class="feed-item">
+          <a href="{{ item['Page Path'] }}" target="_blank" class="feed-item">
             <strong>{{ item['Title'] }}</strong>
             <span class="meta">{{ item['Sort Date'] }}</span>
           </a>
@@ -67,7 +67,7 @@ layout: doc
       <div class="col s12 m6">
         <h2>Upcoming Events</h2>
         {% for item in site.data.events limit:4 %}
-          <a href="{{ item['Path'] }}" target="_blank" class="feed-item">
+          <a href="{{ item['Page Path'] }}" target="_blank" class="feed-item">
             <strong>{{ item['Title'] }}</strong>
             <span class="meta">{{ item['Sort Date'] }}</span>
           </a>
