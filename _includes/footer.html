@@ -3,8 +3,8 @@
     <div class="row">
      <div class="col l3 m6 s12">
         <ul>
-          <li><a class="white-text" href="{{ site.university.url }}"><strong>{{ site.university }}</strong></a></li>
-          <li><a class="white-text" href="{{ site.college.url }}">{{ site.college }}</a></li>
+          <li><a class="white-text" href="{{ site.university.url }}"><strong>{{ site.university.name }}</strong></a></li>
+          <li><a class="white-text" href="{{ site.college.url }}">{{ site.college.name }}</a></li>
           <li><a class="white-text" href="{{ '/' | prepend: site.baseurl }}">{{ site.title }}</a></li>
           {% if site.data.faculty %}<li>
             <a href="{{ '/faculty' | prepend: site.baseurl }}" class="white-text"><i class="material-icons">people</i>Faculty List</a>
@@ -44,7 +44,7 @@
   </div>
   <div class="footer-copyright">
     <div class="container">
-    &copy; Copyright 1884-{{ site.time | date: '%Y' }} {{ site.university }}. All rights reserved.
+    &copy; Copyright 1884-{{ site.time | date: '%Y' }} {{ site.university.name }}. All rights reserved.
     <a href="#top" class="right"><i class="material-icons">arrow_upward</i>Back to Top</a>
     </div>
   </div>
