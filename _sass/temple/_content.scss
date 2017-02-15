@@ -24,13 +24,12 @@
       // margin-top: 60px;
       margin-top: .5rem;
       max-width: 120px;
-      height: auto;
-      max-height: 200px;
-      border-radius: 4px;
-      
-      background-color: whitesmoke;
       width: 120px;
-      height: 120px;
+      // height: 120px;
+      height: auto;
+      // max-height: 200px;
+      border-radius: 4px; 
+      background-color: whitesmoke;
       margin-left: -150px;
       // border-radius: 50%;
       background-size: cover;
@@ -71,6 +70,7 @@
   }
   @media #{$medium-and-down} {
     margin-left: 0;
+    padding-left: 0!important;
     &-photo {
       text-align: center;
       img {
