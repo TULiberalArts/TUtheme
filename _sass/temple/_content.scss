@@ -1,9 +1,29 @@
 // Content only
 .content {
-   & > * {
+  & > * {
     max-width: $content-max-width; // 1080px;
     margin-left: auto;
     margin-right: auto;
+  }
+  & > .row {
+    max-width: $content-max-width; // 1080px;
+    // max-width: calc($content-max-width + ($gutter-width / 2));
+    max-width: calc(960px + (1.25em));
+    margin-left: auto;
+    margin-right: auto;
+  }
+  & > .row-wide {
+    max-width: 1080px;
+    // max-width: calc(1080px + ($gutter-width / 2));
+    max-width: calc(1080px + (1.25em));
+  }
+  & > .row-wider {
+    max-width: 1280px;
+    // max-width: calc(1280px + ($gutter-width / 2));
+    max-width: calc(1280px + (1.25em));
+  }
+  & > .row-widest {
+    max-width: 100%;
   }
   ol, ul {
     margin-bottom: 1em;
