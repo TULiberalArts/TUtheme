@@ -1,14 +1,26 @@
 // Content only
 .content {
-  max-width: $content-max-width; // 1080px;
-  margin: auto;
-  ul {
-    margin-left: 2em;
+   & > * {
+    max-width: $content-max-width; // 1080px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  ol, ul {
+    margin-bottom: 1em;
     li {
+      margin-bottom: .25em;
+    }
+  }
+  ol {
+    padding-left: 3em;
+  }
+  ul {
+    li {
+      padding-left: 2em;
       &:before {
         content: "● ";
         color: $tu-cherry;
-        margin-left: -1.5em;
+        margin-left: 0;
       }
     }
   }
