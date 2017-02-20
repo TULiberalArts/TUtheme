@@ -39,8 +39,9 @@
       padding-left: 2em;
       &:before {
         content: "● ";
-        color: $tu-cherry;
-        margin-left: 0;
+        color: $tu-cherry;        
+        margin-left: -25px;
+        padding-right: 10px;
       }
     }
   }
