@@ -109,9 +109,8 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 The final element.
 ```
 
-<div class="row">
-<br />
-<div class="col m12 l4">{% include cards/card2-image.html title="Broaden Your Perspective" content="Global Studies students learn to see the world as a whole, combining foundational courses with specialized study in global security, economy, or culture." image="assets/img_gs_rome.png" button-link="undergraduate/#coursework" button-text="Learn More" %}</div>
-<div class="col m12 l4">{% include cards/card2-image.html title="Experience Temple Abroad" content="Our students can study and earn internship credit abroad at Temple’s campuses in Rome and Japan, as well as at dozens of other Temple-recognized programs." image="assets/img_gs_languages.png" button-link="next-stops/#study-around-the-world" button-text="Learn More" %}</div>
-<div class="col m12 l4">{% include cards/card2-image.html title="Design Your Future" content="Beyond the classroom, Global Studies students are encouraged to undertake internships, volunteer, be active in student organizations, and plan for a variety of global professions." image="assets/img_gs_globalecon.png" button-link="next-stops/" button-text="Learn More" %}</div>
+<div class="row row-wider">
+<div class="col m12 l4">{% include cards/card2-image.html title="Broaden Your Perspective" content="Global Studies students learn to see the world as a whole, combining foundational courses with specialized study in global security, economy, or culture." button-link="#" button-text="Learn More" %}</div>
+<div class="col m12 l4">{% include cards/card2-image.html title="Experience Temple Abroad" content="Our students can study and earn internship credit abroad at Temple’s campuses in Rome and Japan, as well as at dozens of other Temple-recognized programs." button-link="#" button-text="Learn More" %}</div>
+<div class="col m12 l4">{% include cards/card2-image.html title="Design Your Future" content="Beyond the classroom, Global Studies students are encouraged to undertake internships, volunteer, be active in student organizations, and plan for a variety of global professions." button-link="#" button-text="Learn More" %}</div>
 </div>
