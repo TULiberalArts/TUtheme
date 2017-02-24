@@ -27,6 +27,7 @@
     max-width: calc(1280px + (1.25em));
   }
   & > .row-widest {
+    width: 100%;
     max-width: 100%;
   }
   ol, ul {
