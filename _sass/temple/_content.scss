@@ -1,6 +1,7 @@
 // Content only
 .content {
   & > * {
+    width: 95%;
     max-width: $content-max-width; // 1080px;
     margin-left: auto;
     margin-right: auto;
@@ -13,11 +14,14 @@
     margin-right: auto;
   }
   & > .row-wide {
-    max-width: 1080px;
+    // max-width: 1080px;
     // max-width: calc(1080px + ($gutter-width / 2));
-    max-width: calc(1080px + (1.25em));
+    // max-width: calc(1080px + (1.25em));
+    width: 95%;
+    max-width: 1180px;
   }
   & > .row-wider {
+    width: 95%;
     max-width: 1280px;
     // max-width: calc(1280px + ($gutter-width / 2));
     max-width: calc(1280px + (1.25em));
