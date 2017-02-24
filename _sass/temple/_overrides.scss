@@ -200,6 +200,10 @@ hr {
     }
   }
 }
+// Header shadow fix
+header {
+  position: relative;
+}
 // Overlay units
 .overlay-unit {
   background-color: $tu-cherry;
