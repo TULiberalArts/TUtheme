@@ -8,6 +8,8 @@ layout: page-blank
 
 <!-- <p>Filters and quick search go here!</p>
  -->
+
+<div class="container">
 {% for person in site.data.profiles %}
 <div class="person">
   <div class="person-photo"><img src="{{ person['Headshot Path'] }}" alt="Photo of {{ person['First Name'] }}"></div>
@@ -39,5 +41,5 @@ layout: page-blank
     </ul>
   </div>
 </div>
-
 {% endfor %}
+</div>
