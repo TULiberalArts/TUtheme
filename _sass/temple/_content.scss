@@ -141,16 +141,16 @@
 // Coursebox
 .course-box {
   display: block;
-  float: right;
+  // float: right;
   background: #fff4de;
   padding: 1rem;
-  margin-left: 1rem;
+  // margin-left: 1rem;
   max-width: 420px;
-  width: 40%;
+  // width: 40%;
   font-size: .85rem;
   line-height: 1.5rem;
-  @media #{$medium-and-down} {
-    width: 100%;
-    float: none;
-  }
+  // @media #{$medium-and-down} {
+  //   width: 100%;
+  //   float: none;
+  // }
 }
