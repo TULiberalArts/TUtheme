@@ -20,7 +20,7 @@ $('[college-dropdown-toggle]').click(function(){
 
 // Fluidbox
 $(function () {
-    $('a').fluidbox();
+    // $('a').fluidbox();
 });
 
 });
