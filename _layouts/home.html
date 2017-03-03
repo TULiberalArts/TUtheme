@@ -6,17 +6,11 @@ layout: doc
 
 <main>
 
-{% if page.headline %}
-<div class="page-feature {% if page.headline-fluid %}{% else %}container{% endif %}" style="background-image: url('{{ page.headline-image }}');">
+{% if page.feature %}
+<div class="page-feature" style="background-image: url('{{ page.feature-image }}');">
   <div class="container">
-    {% if page.headline-title %}
-    <div class="headline">
-      <h2>{{ page.headline-title }}</h2>
-      {% if page.headline-link %}
-      <a class="waves-effect waves-light btn-large" href="{{ page.headline-link }}"><i class="material-icons right">arrow_forward</i> Read More</a>
-      {% endif %}
-    </div>
-    {% endif %}
+      <h1>{{ page.feature-title }}</h1>
+      <p>{{ page.feature-body }}</p>
   </div>
 </div>
 {% endif %}

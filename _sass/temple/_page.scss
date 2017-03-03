@@ -61,29 +61,14 @@ main {
 
 // Page feature
 .page-feature {
-  border-bottom: 4px solid #808C90;
-  .container {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-  }
+  margin-top: -2em;
+  margin-bottom: 2em;
+  padding: 4em 0;
+  background-color: $tu-cherry;
   background-size: cover;
-  background-position: center;
-  height: 50vh;
-  min-height: 350px;
-  max-height: 450px;
-  text-align: center;
-  color: white;
-  padding-top: 1rem;
-  
-  h1, h2, {
+  background-position: center right;
+  h1, h2, p {
     color: white;
-  }
-  .headline {
-    text-align: left;
-    max-width: 450px;
-    border: 4px solid white;
-    padding: 1rem;
-    background: rgba(0, 0, 0, 0.7);
   }
 }
 
