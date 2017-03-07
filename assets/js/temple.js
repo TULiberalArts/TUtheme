@@ -18,6 +18,19 @@ $('[college-dropdown-toggle]').click(function(){
     $('body').toggleClass('college-dropdown-is-open');
 });
 
+
+// support closing nav with escape key
+$(document).keydown(function(e){
+    if(e.keyCode == 27) {
+        if ($('body').hasClass('college-dropdown-is-open')) {
+            $('body').removeClass('college-dropdown-is-open');
+        }
+        if ($('body').hasClass('nav-is-open')) {
+            $('body').removeClass('nav-is-open');
+        }
+    }
+});
+
 // Fluidbox
 $(function () {
     // $('a').fluidbox();
