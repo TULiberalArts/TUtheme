@@ -55,7 +55,6 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="{{ '/assets/js/bin/materialize.js' | prepend: site.baseurl }}"></script>
 <script type="text/javascript" src="{{ '/assets/js/init.js' | prepend: site.baseurl }}"></script>
-<!-- <script type="text/javascript" src="{{ '/assets/js/jquery.fluidbox.js' | prepend: site.baseurl }}"></script> -->
 <script type="text/javascript" src="{{ '/assets/js/temple.js' | prepend: site.baseurl }}"></script>
 
 {% if page.toc %}
@@ -70,7 +69,7 @@ $(".content h1, .content h2, .content h3").each(function(i) {
     var current = $(this);
     current.attr("id", "title" + i);
     $("#toc").append("<a id='link" + i + "' href='#title" +
-        i + "' title='" + current.attr("tagName") + "'>" + 
+        i + "' title='" + current.attr("tagName") + "'>" +
         current.html() + "</a>");
 });
 </script>

@@ -1,6 +1,5 @@
 $( document ).ready(function() {
 
-
 // Smooth Scroll
 // $('a:not(.no-scroll)').click(function(){
 //     $('html, body').animate({
@@ -19,7 +18,7 @@ $('[college-dropdown-toggle]').click(function(){
 });
 
 
-// support closing nav with escape key
+// Support closing nav with escape key
 $(document).keydown(function(e){
     if(e.keyCode == 27) {
         if ($('body').hasClass('college-dropdown-is-open')) {
@@ -29,11 +28,6 @@ $(document).keydown(function(e){
             $('body').removeClass('nav-is-open');
         }
     }
-});
-
-// Fluidbox
-$(function () {
-    // $('a').fluidbox();
 });
 
 });
