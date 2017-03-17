@@ -3,7 +3,7 @@ layout: home
 feature: true
 feature-title: I'm a feature
 feature-body: Content goes here.
-feature-image: 
+feature-image:
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
