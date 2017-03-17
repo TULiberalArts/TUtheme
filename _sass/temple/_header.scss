@@ -7,7 +7,7 @@ nav.university-nav {
   border-bottom: 1px solid lightGray;
 
   a { color: $navbar-university-font-color; }
-  
+
   a.university-title {
     margin-left: -20px;
     padding-top: 5px;
@@ -82,7 +82,7 @@ nav.university-nav {
       padding: 0 15px;
       @media #{$medium-and-down} {
         padding: 0 12px;
-      }      
+      }
       &:hover {
         background-color: rgba(0,0,0,.1);
       }
@@ -271,6 +271,9 @@ nav.program-nav ul {
   i, [class^="mdi-"], [class*="mdi-"], i.material-icons {
     line-height: 64px;
     height: 64px;
+  }
+  li.active {
+    background: rgba(0, 0, 0, 0.2);
   }
 }
 
