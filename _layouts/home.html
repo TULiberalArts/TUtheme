@@ -44,44 +44,44 @@ layout: doc
   {% endif %}
   {% if page.sidebar %}</div><!-- /.row -->{% endif %}
 
-  {% if site.data.news %}
+  {% if site.events-feed %}
   <div class="content feeds">
     <div>
       <div class="row">
         <div class="col s12 m6">
-          <h2>Recent News</h2>
-          {% for item in site.data.news limit:4 %}
-            <a href="{{ item['Page Path'] }}" target="_blank" class="feed-item">
-              <strong>{{ item['Title'] }}</strong>
-              <span class="meta">{{ item['Sort Date'] }}</span>
-            </a>
-          {% endfor %}
-          <br>
-          <a class="btn btn-large waves-effect white grey-text darken-text-2" href="http://liberalarts.temple.edu/about-us/newsroom">More News <i class="material-icons">navigate_next</i></a>
+          {% if site.data.news == null %}
+            {% include cards/card2-basic.html color="black" title="News" content="We are daring, ambitious, creative thinkers. Simultaneously civic-minded and globally conscious, our students and faculty are engaged in the community and care about our world." button-link="http://liberalarts.temple.edu/about-us/newsroom" button-text="Read Our Stories" %}
+          {% else %}
+            <h2>Recent News</h2>
+            {% for item in site.data.news limit:4 %}
+              <a href="{{ item['Page Path'] }}" target="_blank" class="feed-item">
+                <strong>{{ item['Title'] }}</strong>
+                <span class="meta">{{ item['Sort Date'] }}</span>
+              </a>
+            {% endfor %}
+            <br>
+            <a class="btn btn-large waves-effect white grey-text darken-text-2" href="http://liberalarts.temple.edu/about-us/newsroom">More News <i class="material-icons">navigate_next</i></a>
+          {% endif %}
         </div>
         <div class="col s12 m6">
-          <h2>Upcoming Events</h2>
-          {% for item in site.data.events limit:4 %}
-            <a href="{{ item['Page Path'] }}" target="_blank" class="feed-item">
-              <strong>{{ item['Title'] }}</strong>
-              <span class="meta">{{ item['Sort Date'] }}</span>
-            </a>
-          {% endfor %}
-          <br>
-          <a class="btn btn-large waves-effect white grey-text darken-text-2" href="http://liberalarts.temple.edu/about-us/events">More Events <i class="material-icons">navigate_next</i></a>
+          {% if site.data.events == null %}
+            {% include cards/card2-basic.html color="black" title="Events" content="From lectures, to film screenings, to networking opportunities with some of the region's biggest employers, events at the College of Liberal Arts are designed to support your life's work." button-link="https://liberalarts.temple.edu/about-us/events" button-text="View Events" %}
+          {% else %}
+            <h2>Upcoming Events</h2>
+            {% for item in site.data.events limit:4 %}
+              <a href="{{ item['Page Path'] }}" target="_blank" class="feed-item">
+                <strong>{{ item['Title'] }}</strong>
+                <span class="meta">{{ item['Sort Date'] }}</span>
+              </a>
+            {% endfor %}
+            <br>
+            <a class="btn btn-large waves-effect white grey-text darken-text-2" href="http://liberalarts.temple.edu/about-us/events">More Events <i class="material-icons">navigate_next</i></a>
+          {% endif %}
         </div>
       </div>
     </div>
   </div>
   {% endif %}
-
-  {% comment %}
-    <!-- Ideal implementation -->
-    {% include cards/card-image.html title="Something good happened!" image="https://unsplash.it/300/200" %}
-    {% include cards/card-event.html title="Featured event:<br>May 24, 2016<br>7-11pm" color="red" image="assets/img/placeholder/flower1.jpeg" icon="movie" %}
-    {% include cards/card-image.html title="Something good happened!" image="https://unsplash.it/300/200" %}
-    {% include cards/card-event.html title="Featured event:<br>May 24, 2016<br>7-11pm" color="black" image="assets/img/placeholder/flower3.jpeg" icon="event" %}
-  {% endcomment %}
 
 </div>
 </main>
