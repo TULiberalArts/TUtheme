@@ -98,12 +98,15 @@ hr {
   &:hover {
     background: rgba(170,120,120,.25);
     border-color: $tu-gold;
-  } 
+  }
   .material-icons.right {
     transition: transform 300ms ease-in;
   }
   &:hover .material-icons.right {
     transform: translateX(6px);
+  }
+  &:active, &:focus {
+    background: rgba(150,90,90,.5);
   }
   &.btn-large {
     line-height: 3rem;
@@ -127,7 +130,7 @@ hr {
     font-size: 24px;
     font-weight: bold;
     line-height: 1.75rem;
-  } 
+  }
   .card-image {
     min-height: 120px;
     background: $tu-black;
