@@ -14,7 +14,11 @@
       <div class="col l3 m6 s12">
         <ul>
           {% for line in site.address %}
-            <li class="grey-text">{{ line[1] }}</li>
+            {% if line == site.address.email %}
+              <li class="grey-text"><a href="mailto:{{ line[1] }}" class="white-text"><i class="material-icons">email</i> {{ line[1] }}</a></li>
+            {% else %}
+              <li class="grey-text">{{ line[1] }}</li>
+            {% endif %}
           {% endfor %}
           <!-- <li>
             <a href="https://iseptaphilly.com/plan-your-trip?dest={{ site.address.street }}, {{ site.address.city }}" class="white-text"><i class="material-icons">train</i>Transit Directions</a>
