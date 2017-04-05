@@ -2,6 +2,18 @@
 layout: page-blank
 ---
 
-<div class="content">
-  {{ content }}
-</div>
+{% if page.sidebar %}<div class="row">
+  <div class="col m12 l8">{% endif %}
+
+    <div class="content">
+      {{ content }}
+    </div>
+
+  {% if page.sidebar %}</div><!-- /.col.l8 -->{% endif %}
+  {% if page.sidebar %}
+  <div class="col m12 l4 page-sidebar">
+    {{ page.sidebar-content }}
+  </div>
+{% endif %}
+
+{% if page.sidebar %}</div><!-- /.row -->{% endif %}
