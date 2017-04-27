@@ -15,6 +15,7 @@
         <ul>
           {% for line in site.address %}
             {% if line == site.address.email %}
+              <li>here</li>
               <li class="grey-text"><a href="{{ site.address.email | prepend: 'mailto:' }}" class="white-text"><i class="material-icons">email</i> {{ site.address.email }}</a></li>
             {% else %}
               <li class="grey-text">{{ line[1] }}</li>
