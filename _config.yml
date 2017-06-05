@@ -1,8 +1,0 @@
-title: TUtheme
-description: TUtheme is a Jekyll theme for Temple University.
-google_analytics:
-theme:
-
-# Testing feeds
-events-feed: https://liberalarts.temple.edu/events/global-studies/csv
-news-feed: https://liberalarts.temple.edu/news/global-studies/csv

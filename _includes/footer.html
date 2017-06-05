@@ -6,39 +6,25 @@
           <li><a class="white-text" href="{{ site.university.url }}"><strong>{{ site.university.name }}</strong></a></li>
           <li><a class="white-text" href="{{ site.college.url }}">{{ site.college.name }}</a></li>
           <li><a class="white-text" href="{{ '/' | prepend: site.baseurl }}">{{ site.title }}</a></li>
-          {% if site.data.profiles %}{% if site.data.profiles != "" %}<li>
-            <a href="{{ '/faculty' | prepend: site.baseurl }}" class="white-text"><i class="material-icons">people</i>Faculty List</a>
-          </li>{% endif %}{% endif %}
+          {% if site.data.profiles %}{% if site.data.profiles != "" %}
+            <li><a href="{{ '/faculty' | prepend: site.baseurl }}" class="white-text"><i class="material-icons">people</i>Faculty List</a></li>
+          {% endif %}{% endif %}
         </ul>
       </div>
       <div class="col l3 m6 s12">
         <ul>
-          {% for line in site.address %}
-            {% if line == site.address.email %}
-               <li class="grey-text"><a href="mailto:{{ line[1] }}" class="white-text"><i class="material-icons">email</i> {{ line[1] }}</a></li>
-            {% else %}
-              <li class="grey-text">{{ line[1] }}</li>
-            {% endif %}
-          {% endfor %}
-          <!-- <li>
-            <a href="https://iseptaphilly.com/plan-your-trip?dest={{ site.address.street }}, {{ site.address.city }}" class="white-text"><i class="material-icons">train</i>Transit Directions</a>
-          </li> -->
+          <li class="grey-text">{{ site.address.room }} {{ site.address.building }}</li>
+          <li class="grey-text">{{ site.address.street }}</li>
+          <li class="grey-text">{{ site.address.city }}</li>
+          <li class="grey-text"><a href="mailto:{{ site.address.email }}" class="white-text"><i class="material-icons">email</i> {{ site.address.email }}</a></li>
         </ul>
       </div>
       <div class="col l3 m6 s12">
         <ul>
-            <li>
-              <a href="https://directory.temple.edu/" class="white-text" target="_blank"><i class="material-icons">contacts</i>University Directory</a>
-            </li>
-            <li>
-              <a href="https://www.temple.edu/registrar/documents/calendars/" class="white-text" target="_blank"><i class="material-icons">event_note</i>Academic Calendars</a>
-            </li>
-            <li>
-              <a href="https://temple.edu/maps-and-directions" class="white-text" target="_blank"><i class="material-icons">place</i>Maps &amp; Directions</a>
-            </li>
-            <li>
-              <a href="https://temple.edu/contact" class="white-text" target="_blank"><i class="material-icons">email</i>Contact Temple</a>
-            </li>
+          <li><a href="https://directory.temple.edu/" class="white-text" target="_blank"><i class="material-icons">contacts</i>University Directory</a></li>
+          <li><a href="https://www.temple.edu/registrar/documents/calendars/" class="white-text" target="_blank"><i class="material-icons">event_note</i>Academic Calendars</a></li>
+          <li><a href="https://temple.edu/maps-and-directions" class="white-text" target="_blank"><i class="material-icons">place</i>Maps &amp; Directions</a></li>
+          <li><a href="https://temple.edu/contact" class="white-text" target="_blank"><i class="material-icons">email</i>Contact Temple</a></li>
         </ul>
       </div>
       <div class="col l3 m6 s12">
