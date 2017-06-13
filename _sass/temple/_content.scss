@@ -43,6 +43,7 @@
     li {
       padding-left: 2em;
       &:before {
+        position: absolute;
         content: "● ";
         color: $tu-cherry;
         margin-left: -25px;
