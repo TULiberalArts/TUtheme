@@ -74,12 +74,12 @@ main {
 
 // Sidebar
 .page-sidebar {
-  background: rgb(128, 140, 144);
+  background: $tu-cherry;
+  color: white;
   margin-top: -2rem;
-  padding-top: 2rem!important;
-  padding-bottom: 2rem!important;
-  margin-right: -1em;
-  padding-right: 1em;
+  padding: 2rem!important;
+  // margin-right: -1em;
+  // padding-right: 1em;
   color: white;
   border-bottom-left-radius: 8px;
   a {
