@@ -67,8 +67,11 @@ main {
   background-color: $tu-cherry;
   background-size: cover;
   background-position: center right;
-  h1, h2, p {
+  h1, h2, p, a {
     color: white;
+  }
+  a {
+    text-decoration: underline;
   }
 }
 
