@@ -14,18 +14,24 @@ layout: page-blank
   
   <div class="person row">
     <div class="person-title col s12 m4 push-m3">
-      <p><a href="{{ person['Path'] }}"> {{ person['First Name'] }} {{ person['Last Name'] }}</a></p>
+    <!-- <p><a href="{{ person['Path'] }}"> {{ person['First Name'] }} {{ person['Last Name'] }}</a></p>  -->
+      <p> {{ person['First Name'] }} {{ person['Last Name'] }}</</p>
       <p><small>{{ person['Faculty Title'] }}</small></p>
     </div>
 
     <div class="person-headshot col s12 m3 pull-m4">
-      <a href="{{ person['Path'] }}"><img src="{{ person['Headshot Path'] }}" alt="Photo of {{ person['First Name'] }}"></a>
+      <!-- <a href="{{ person['Path'] }}"><img src="{{ person['Headshot Path'] }}" alt="Photo of {{ person['First Name'] }}"></a>  -->
+      <img src="{{ person['Headshot Path'] }}" alt="Photo of {{ person['First Name'] }}">
     </div>
     <div class="person-office col s12 m3">
-    
+      <ul class="person-links">
+        {% if person['Office'] %}<li>
+          <i class="material-icons">location_city</i> {{ person['Building '] }}{% if person['Office'] %} {{ person['Office'] }}{% endif %}
+        </li>{% endif %}
+      </ul>
     </div>
-    <div>
-      <ul class="person-links col s12 m2">
+    <div col s12 m2>
+      <ul class="person-links">
         {% if person['Office'] %}<li>
           <i class="material-icons">location_city</i> {{ person['Building '] }}{% if person['Office'] %} {{ person['Office'] }}{% endif %}
         </li>{% endif %}
