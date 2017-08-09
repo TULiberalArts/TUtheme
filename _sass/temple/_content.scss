@@ -82,6 +82,11 @@
       // border-bottom-left-radius: 50%;
     }
   }
+  &-headshot {
+    img {
+      width: 90%;
+    }    
+  }
   &-bio {
     border-bottom: 2px solid lightGray;
     min-height: 210px;
