@@ -11,8 +11,53 @@ layout: page-blank
 
 <div class="container">
 {% for person in site.data.profiles %}
+<div class="person row">2
+  <div class="person-title col s12 m4 push-m3">
+  <!-- <p><a href="{{ person['Path'] }}"> {{ person['First Name'] }} {{ person['Last Name'] }}</a></p>  -->
+    <p> {{ person['First Name'] }} {{ person['Last Name'] }}</</p>
+    <p><small>{{ person['Faculty Title'] }}</small></p>
+  </div>
+
+  <div class="person-headshot col s12 m3 pull-m4">
+    <!-- <a href="{{ person['Path'] }}"><img src="{{ person['Headshot Path'] }}" alt="Photo of {{ person['First Name'] }}"></a>  -->
+    <img src="{{ person['Headshot Path'] }}" alt="Photo of {{ person['First Name'] }}">
+  </div>
+  <div class="person-office col s12 m3">
+    <ul class="person-links">
+      {% if person['Office'] %}<li>
+        <i class="material-icons">location_city</i> {{ person['Building '] }}{% if person['Office'] %} {{ person['Office'] }}{% endif %}
+      </li>{% endif %}
+    </ul>
+  </div>
+  <div col s12 m2>
+    <ul class="person-links">
+      {% if person['Office'] %}<li>
+        <i class="material-icons">location_city</i> {{ person['Building '] }}{% if person['Office'] %} {{ person['Office'] }}{% endif %}
+      </li>{% endif %}
+      {% if person['Web Email'] %}<li>
+        <i class="material-icons">email</i> <a href="mailto:{{ person['Web Email'] }}">{{ person['Web Email'] }}</a>
+      </li>{% endif %}
+      {% if person['Phone'] %}{% if person['Phone'] != "" %}<li>
+        <i class="material-icons">phone</i>
+        <a href="tel:{{ person['Phone'] }}">
+          {% if person['Phone'].size == 10 %}
+            +1 ({{ person['Phone'] | slice: 0, 3 }}) {{ person['Phone'] | slice: 3, 3 }}.{{ person['Phone'] | slice: 6, 4 }}
+            {% elsif person.phone.size == 11 %}
+            +1 ({{ person['Phone'] | slice: 1, 3 }}) {{ person['Phone'] | slice: 4, 3 }}.{{ person['Phone'] | slice: 7, 4 }}
+            {% else %}
+            {{ person['Phone'] }}
+          {% endif %}
+        </a>
+      </li>{% endif %}{% endif %}
+      {% if person['Website'] %}{% if person['Website'] != "Website" %}{% if person['Website'] != "" %}<li>
+        <i class="material-icons">link</i>
+        <a href="{{ person['Website'] }}" target="_blank">{{ person['Website'] }}</a>
+      </li>{% endif %}{% endif %}{% endif %}
+    </ul>
+  </div>
+</div>
   
-  <div class="person row">
+  <div class="person row">old
     <div class="person-title col s12 m4 push-m3">
     <!-- <p><a href="{{ person['Path'] }}"> {{ person['First Name'] }} {{ person['Last Name'] }}</a></p>  -->
       <p> {{ person['First Name'] }} {{ person['Last Name'] }}</</p>
