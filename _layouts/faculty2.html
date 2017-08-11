@@ -11,7 +11,7 @@ layout: page-blank
 
 <div class="container">
 {% for person in site.data.profiles %}
-<div class="profile card row">3
+<div class="profile card row">
   <div class="col s12 m4 push-m2">
     <!-- <p><a class="flow-text" href="{{ person['Path'] }}"> {{ person['First Name'] }} {{ person['Last Name'] }}</a></p> -->
     <p class="flow-text"> {{ person['First Name'] }} {{ person['Last Name'] }}</p>
@@ -25,7 +25,7 @@ layout: page-blank
   </div>
   <div class="col s12 m3">
       {% if person['Office'] %}
-        <i class="material-icons">location_city</i> {{ person['Building '] }}{% if person['Office'] %} {{ person['Office'] }}{% endif %}
+        <i class="material-icons">location_city</i> {{ person['Building '] }}{% if person['Office'] %} {{ person['Office'] }}{% endif %}<br>
         <span> {{ person['Street Address'] }}</span><br>
         <span> {{ person['City'] }} {{ person['State'] }} {{ person['Zip Code'] }}</span><br>
       {% endif %}
@@ -40,10 +40,10 @@ layout: page-blank
         {% else %}
           {{ person['Phone'] }}
         {% endif %}
-      </a>
+      </a><br>
     {% endif %}{% endif %}
     {% if person['Web Email'] %}
-      <i class="material-icons">email</i> <a href="mailto:{{ person['Web Email'] }}">{{ person['Web Email'] }}</a>
+      <i class="material-icons">email</i> <a href="mailto:{{ person['Web Email'] }}">{{ person['Web Email'] }}</a><br>
     {% endif %}
   </div>
 </div>
