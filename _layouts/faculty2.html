@@ -11,33 +11,28 @@ layout: page-blank
 
 <div class="container">
 {% for person in site.data.profiles %}
-<div class="person row">2
-  <div class="person-title col s12 m4 push-m3">
-  <!-- <p><a href="{{ person['Path'] }}"> {{ person['First Name'] }} {{ person['Last Name'] }}</a></p>  -->
-    <p> {{ person['First Name'] }} {{ person['Last Name'] }}</</p>
+<div class="profile row">2
+  <div class="col s12 m4 push-m3">
+    <!-- <p><a class="flow-text" href="{{ person['Path'] }}"> {{ person['First Name'] }} {{ person['Last Name'] }}</a></p> -->
+    <p class="flow-text"> {{ person['First Name'] }} {{ person['Last Name'] }}</</p>
     <p><small>{{ person['Faculty Title'] }}</small></p>
+    <p><a href="/religion">Religion</a></p>
   </div>
 
   <div class="person-headshot col s12 m3 pull-m4">
     <!-- <a href="{{ person['Path'] }}"><img src="{{ person['Headshot Path'] }}" alt="Photo of {{ person['First Name'] }}"></a>  -->
     <img src="{{ person['Headshot Path'] }}" alt="Photo of {{ person['First Name'] }}">
   </div>
-  <div class="person-office col s12 m3">
-    <ul class="person-links">
-      {% if person['Office'] %}<li>
+  <div class="profile-office col s12 m3">
+      {% if person['Office'] %}
         <i class="material-icons">location_city</i> {{ person['Building '] }}{% if person['Office'] %} {{ person['Office'] }}{% endif %}
-      </li>{% endif %}
-    </ul>
+      {% endif %}
   </div>
   <div col s12 m2>
-    <ul class="person-links">
-      {% if person['Office'] %}<li>
-        <i class="material-icons">location_city</i> {{ person['Building '] }}{% if person['Office'] %} {{ person['Office'] }}{% endif %}
-      </li>{% endif %}
-      {% if person['Web Email'] %}<li>
+      {% if person['Web Email'] %}
         <i class="material-icons">email</i> <a href="mailto:{{ person['Web Email'] }}">{{ person['Web Email'] }}</a>
-      </li>{% endif %}
-      {% if person['Phone'] %}{% if person['Phone'] != "" %}<li>
+      {% endif %}
+      {% if person['Phone'] %}{% if person['Phone'] != "" %}
         <i class="material-icons">phone</i>
         <a href="tel:{{ person['Phone'] }}">
           {% if person['Phone'].size == 10 %}
@@ -48,12 +43,12 @@ layout: page-blank
             {{ person['Phone'] }}
           {% endif %}
         </a>
-      </li>{% endif %}{% endif %}
-      {% if person['Website'] %}{% if person['Website'] != "Website" %}{% if person['Website'] != "" %}<li>
+      % endif %}{% endif %}
+      {% if person['Website'] %}{% if person['Website'] != "Website" %}{% if person['Website'] != "" %}
         <i class="material-icons">link</i>
         <a href="{{ person['Website'] }}" target="_blank">{{ person['Website'] }}</a>
-      </li>{% endif %}{% endif %}{% endif %}
-    </ul>
+      {% endif %}{% endif %}{% endif %}
+
   </div>
 </div>
   
