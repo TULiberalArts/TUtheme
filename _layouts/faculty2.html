@@ -11,7 +11,7 @@ layout: page-blank
 
 <div class="container">
 {% for person in site.data.profiles %}
-<div class="profile row">2
+<div class="profile row">3
   <div class="col s12 m4 push-m3">
     <!-- <p><a class="flow-text" href="{{ person['Path'] }}"> {{ person['First Name'] }} {{ person['Last Name'] }}</a></p> -->
     <p class="flow-text"> {{ person['First Name'] }} {{ person['Last Name'] }}</</p>
@@ -23,7 +23,7 @@ layout: page-blank
     <!-- <a href="{{ person['Path'] }}"><img src="{{ person['Headshot Path'] }}" alt="Photo of {{ person['First Name'] }}"></a>  -->
     <img src="{{ person['Headshot Path'] }}" alt="Photo of {{ person['First Name'] }}">
   </div>
-  <div class="profile-office col s12 m3">
+  <div class="col s12 m3">
       {% if person['Office'] %}
         <i class="material-icons">location_city</i> {{ person['Building '] }}{% if person['Office'] %} {{ person['Office'] }}{% endif %}
       {% endif %}
