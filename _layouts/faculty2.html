@@ -28,7 +28,7 @@ layout: page-blank
         <i class="material-icons">location_city</i> {{ person['Building '] }}{% if person['Office'] %} {{ person['Office'] }}{% endif %}
       {% endif %}
   </div>
-  <div col s12 m2>
+  <div class="col s12 m2">
       {% if person['Web Email'] %}
         <i class="material-icons">email</i> <a href="mailto:{{ person['Web Email'] }}">{{ person['Web Email'] }}</a>
       {% endif %}
