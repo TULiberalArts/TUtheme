@@ -22,7 +22,7 @@ layout: page-blank
     </div>
     <div class="col s12 m3">
         {% if person['Office'] %}
-          <i class="material-icons">location_city</i> {{ person['Building '] }}{% if person['Office'] %} {{ person['Office'] }}{% endif %}
+          <i class="material-icons">location_city</i> {{ person['Office'] }} {{ person['Building '] }}<br>
           <span> {{ person['Street Address'] }}</span><br>
           <span> {{ person['City'] }} {{ person['State'] }} {{ person['Zip Code'] }}</span><br>
         {% endif %}
