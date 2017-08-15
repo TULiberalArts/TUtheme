@@ -10,12 +10,12 @@ layout: page-blank
  -->
 <div class="container">
   {% for person in site.data.profiles %}
-  <div class="profile card row">3
+  <div class="profile card row">
     <div class="col s12 m4 push-m2">
-      <!-- <p><a class="flow-text" href="{{ person['Path'] }}"> {{ person['First Name'] }} {{ person['Last Name'] }}</a></p> -->
+      <p><a class="flow-text" href="{{ person['Path'] }}"> {{ person['First Name'] }} {{ person['Last Name'] }}</a></p>
       <p class="flow-text"> {{ person['First Name'] }} {{ person['Last Name'] }}</p>
       <p class='flow-text"'><em>{{ person['Faculty Title'] }}</em></p>
-      <p class="flow-text"> {{ person['Program'] }}</p>
+      <p class=""> {{ person['Program'] }}</p>
     </div>
 
     <div class="person-headshot col s12 m2 pull-m4">
