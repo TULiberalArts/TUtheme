@@ -13,14 +13,12 @@ layout: page-blank
   <div class="profile card row">
     <div class="col s12 m4 push-m2">
       <p><a class="flow-text" href="{{ person['Path'] }}"> {{ person['First Name'] }} {{ person['Last Name'] }}</a></p>
-      <p class="flow-text"> {{ person['First Name'] }} {{ person['Last Name'] }}</p>
       <p class='flow-text"'><em>{{ person['Faculty Title'] }}</em></p>
       <p class=""> {{ person['Program'] }}</p>
     </div>
 
     <div class="person-headshot col s12 m2 pull-m4">
-      <!-- <a href="{{ person['Path'] }}"><img src="{{ person['Headshot Path'] }}" alt="Photo of {{ person['First Name'] }}"></a>  -->
-      <img src="{{ person['Headshot Path'] }}" alt="Photo of {{ person['First Name'] }}">
+      <a href="{{ person['Path'] }}"><img src="{{ person['Headshot Path'] }}" alt="Photo of {{ person['First Name'] }}"></a>
     </div>
     <div class="col s12 m3">
         {% if person['Office'] %}
