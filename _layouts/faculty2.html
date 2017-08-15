@@ -10,6 +10,7 @@ layout: page-blank
  -->
 <div class="container">
 {% for person in site.data.profiles %}
+<<<<<<< HEAD
 
   <div class="person row">
     <div class="person-title col s12 m4 push-m3">
@@ -55,6 +56,42 @@ layout: page-blank
         </li>{% endif %}{% endif %}{% endif %}
       </ul>
     </div>
+=======
+<div class="profile card row">3
+  <div class="col s12 m4 push-m2">
+    <!-- <p><a class="flow-text" href="{{ person['Path'] }}"> {{ person['First Name'] }} {{ person['Last Name'] }}</a></p> -->
+    <p class="flow-text"> {{ person['First Name'] }} {{ person['Last Name'] }}</p>
+    <p class='flow-text"'><em>{{ person['Faculty Title'] }}</em></p>
+    <p class="flow-text"> {{ person['Program'] }}</p>
+  </div>
+
+  <div class="person-headshot col s12 m2 pull-m4">
+    <!-- <a href="{{ person['Path'] }}"><img src="{{ person['Headshot Path'] }}" alt="Photo of {{ person['First Name'] }}"></a>  -->
+    <img src="{{ person['Headshot Path'] }}" alt="Photo of {{ person['First Name'] }}">
+  </div>
+  <div class="col s12 m3">
+      {% if person['Office'] %}
+        <i class="material-icons">location_city</i> {{ person['Building '] }}{% if person['Office'] %} {{ person['Office'] }}{% endif %}
+        <span> {{ person['Street Address'] }}</span><br>
+        <span> {{ person['City'] }} {{ person['State'] }} {{ person['Zip Code'] }}</span><br>
+      {% endif %}
+  </div>
+  <div class="col s12 m3">
+    {% if person['Phone'] %}{% if person['Phone'] != "" %}
+      <i class="material-icons">phone</i> <a href="tel:{{ person['Phone'] }}">
+        {% if person['Phone'].size == 10 %}
+          +1 ({{ person['Phone'] | slice: 0, 3 }}) {{ person['Phone'] | slice: 3, 3 }}.{{ person['Phone'] | slice: 6, 4 }}
+        {% elsif person.phone.size == 11 %}
+          +1 ({{ person['Phone'] | slice: 1, 3 }}) {{ person['Phone'] | slice: 4, 3 }}.{{ person['Phone'] | slice: 7, 4 }}
+        {% else %}
+          {{ person['Phone'] }}
+        {% endif %}
+      </a>
+    {% endif %}{% endif %}
+    {% if person['Web Email'] %}
+      <i class="material-icons">email</i> <a href="mailto:{{ person['Web Email'] }}">{{ person['Web Email'] }}</a>
+    {% endif %}
+>>>>>>> parent of f9690c2... br and clean up
   </div>
 {% endfor %}
 </div>
