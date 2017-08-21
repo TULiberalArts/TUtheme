@@ -22,7 +22,7 @@ layout: page-blank
         <i class="material-icons">location_city</i> {{ person['Building '] }}{% if person['Office'] %} {{ person['Office'] }}{% endif %}
       </li>{% endif %}
       {% if person['Web Email'] %}<li>
-        <i class="material-icons">email</i> <a href="mailto:{{ person['Web Email'] }}">{{ person['Web Email'] }}</a>
+        <i class="material-icons">email</i> <a href="mailto:{{ person['Web Email'] }} ">{{ person['Web Email'] }}</a>
       </li>{% endif %}
       {% if person['Phone'] %}{% if person['Phone'] != "" %}<li>
         <i class="material-icons">phone</i> <a href="tel:{{ person['Phone'] }}">
@@ -36,7 +36,7 @@ layout: page-blank
         </a>
       </li>{% endif %}{% endif %}
       {% if person['Website'] %}{% if person['Website'] != "Website" %}{% if person['Website'] != "" %}<li>
-        <i class="material-icons">link</i> <a href="{{ person['Website'] }}" target="_blank">{{ person['Website'] }}</a>
+        <i class="material-icons">link</i> <a href="{{ person['Website'] }}" title="Personal Web Page for {{ person['First Name'] }}" target="_blank">{{ person['Website'] }}</a>
       </li>{% endif %}{% endif %}{% endif %}
     </ul>
   </div>
