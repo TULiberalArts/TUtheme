@@ -52,6 +52,9 @@
     }
   }
 }
+.profile{
+  padding-top: .75em;
+}
 // People bios
 .person {
   padding-left: 150px;
@@ -85,7 +88,7 @@
   &-headshot {
     img {
       width: 90%;
-    }    
+    }
   }
   &-bio {
     border-bottom: 2px solid lightGray;
