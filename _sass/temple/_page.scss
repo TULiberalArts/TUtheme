@@ -108,3 +108,15 @@ a.feed-item {
     color: gray;
   }
 }
+.img-left{
+  float: left;
+  padding: 0 1em 0 0;
+}
+.img-right{
+  float: right;
+  padding: 0 0 0 1em;
+}
+.img-full{
+  width: 100%;
+  height: auto;
+}
