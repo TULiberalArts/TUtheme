@@ -48,7 +48,7 @@ layout: doc
     <div>
       <div class="row">
         <div class="col s12 m6">
-          {% if site.data.news != null or site.data.news[0] != null %}
+          {% if site.data.news != null or site.data.news[1] != null %}
           <h2>Recent News</h2>
           {% for item in site.data.news limit:4 %}
             <a href="{{ item['Page Path'] }}" target="_blank" class="feed-item">
