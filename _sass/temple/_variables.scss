@@ -44,14 +44,14 @@ $content-font-family: "Merriweather", "Open Sans", Arial, sans-serif;
 /* 1. Colors
    ========================================================================== */
 
-$primary-color: $tu-cherry;
-$primary-color-light: $tu-bright-cherry;
-$primary-color-dark: $tu-slate;
+$primary-color: $tu-cherry!default;
+$primary-color-light: $tu-bright-cherry!default;
+$primary-color-dark: $tu-slate!default;!default
 
-$secondary-color: $tu-charcoal;
-$success-color: $tu-olive;
-$error-color: $tu-alert;
-$link-color: $tu-cherry;
+$secondary-color: $tu-charcoal!default;
+$success-color: $tu-olive!default;
+$error-color: $tu-alert!default;
+$link-color: $tu-cherry!default;
 
 
 /* 13a. University Navigation Bar
