@@ -41,7 +41,7 @@ h1, h2, h3, h5 {
 h1 {
   font-size: 42px;
   font-weight: bold;
-  color: $tu-cherry;
+  color: $primary-color;
   &.title {
     border-bottom: 2px solid;
     margin-bottom: 2rem;
@@ -87,7 +87,7 @@ hr {
 }
 // Buttons
 .btn, .btn-large {
-  background: $tu-cherry;
+  background: $primary-color;
   // background: none;
   border: 2px solid;
   text-align: left;
@@ -147,7 +147,7 @@ hr {
       font-weight: bold;
     }
     a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):not(.white-text) {
-      color: $tu-cherry;
+      color: $primary-color;
       font-weight: bold;
       &:last-of-type {
         margin-right: 0;
@@ -162,7 +162,7 @@ hr {
 .card2 {
   position: relative;
   overflow: hidden;
-  background-color: $tu-cherry;
+  background-color: $primary-color;
   background-size: cover;
   background-position: center;
   padding: 1.5em;
@@ -209,7 +209,7 @@ header {
 }
 // Overlay units
 .overlay-unit {
-  background-color: $tu-cherry;
+  background-color: $primary-color;
   position: absolute;
   top: 0;
   left: 0;
