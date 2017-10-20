@@ -12,6 +12,9 @@
 @import "temple/colors";
 @import "temple/variables";
 
+// Variable overrides
+@import "variables";
+
 // Materialize Reset
 @import "materialize/components/normalize";
 
