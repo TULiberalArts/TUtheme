@@ -6,9 +6,15 @@
         <div class="nav-toggle-link">
           <a nav-toggle="true"><i class="material-icons">menu</i><br>Menu</a>
         </div>
-        <h1 class="program-title" id="menu">
-          <a href="{{ site.baseurl }}/">{{ site.title }}</a>
-        </h1>
+        {% if site.logo %}
+          <a href="{{ site.baseurl }}/" class="program-logo">
+              <img src="{{ site.logo }}" alt="{{ site.title }}">
+          </a>
+        {% else %}
+          <h1 class="program-title" id="menu">
+            <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+          </h1>
+        {% endif %}
       </div>
       <div class="col l1 m1 s4 college-link">
         <a href="https://liberalarts.temple.edu/about-us/newsroom" target="_blank">
