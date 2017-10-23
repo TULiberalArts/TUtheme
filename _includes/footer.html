@@ -16,7 +16,7 @@
           <li class="grey-text">{{ site.address.room }} {{ site.address.building }}</li>
           <li class="grey-text">{{ site.address.street }}</li>
           <li class="grey-text">{{ site.address.city }}</li>
-          <li class="grey-text"><a href="mailto:{{ site.address.email }}" class="white-text"><i class="material-icons">email</i> {{ site.address.email }}</a></li>
+          {% if site.address.email %}<li class="grey-text"><a href="mailto:{{ site.address.email }}" class="white-text"><i class="material-icons">email</i> {{ site.address.email }}</a></li>{% endif %}
         </ul>
       </div>
       <div class="col l3 m6 s12">
