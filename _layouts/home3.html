@@ -50,6 +50,9 @@ layout: doc
       <div class="row">
         <div class="col s12 m6">
           {% if site.data.news == null or site.data.news[0] == null %}
+          {% capture news-link %}
+          {{ site.program-news }}
+          {% endcapture %}
             {% include cards/card2-basic.html color="black" title="News" content="We are daring, ambitious, creative thinkers. Simultaneously civic-minded and globally conscious, our students and faculty are engaged in the community and care about our world." button-link="google.com" button-text="Read Our Stories" %}
           {% else %}
             <h2>Recent News</h2>
@@ -60,7 +63,7 @@ layout: doc
               </a>
             {% endfor %}
             <br>
-            <a class="btn btn-large waves-effect white grey-text darken-text-2" href="google.com">More News <i class="material-icons">navigate_next</i></a>
+            <a class="btn btn-large waves-effect white grey-text darken-text-2" href="{{ site.program-news }}">More News <i class="material-icons">navigate_next</i></a>
           {% endif %}
         </div>
         <div class="col s12 m6">
@@ -78,7 +81,7 @@ layout: doc
               </a>
             {% endfor %}
             <br>
-            <a class="btn btn-large waves-effect white grey-text darken-text-2" href=" {{ events-link }} ">More Events <i class="material-icons">navigate_next</i></a>
+            <a class="btn btn-large waves-effect white grey-text darken-text-2" href=" {{ site.program-events }} ">More Events <i class="material-icons">navigate_next</i></a>
           {% endif %}
         </div>
       </div>
