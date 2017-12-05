@@ -50,8 +50,8 @@ layout: doc
       <div class="row">
         <div class="col s12 m6">
           {% if site.data.news == null or site.data.news[0] == null %}
-          {% capture news-link %}
-          {{ site.program-news }}
+          {% capture news_link %}
+          {{ site.program_news }}
           {% endcapture %}
             {% include cards/card2-basic.html color="black" title="News" content="We are daring, ambitious, creative thinkers. Simultaneously civic-minded and globally conscious, our students and faculty are engaged in the community and care about our world." button-link="google.com" button-text="Read Our Stories" %}
           {% else %}
@@ -63,13 +63,13 @@ layout: doc
               </a>
             {% endfor %}
             <br>
-            <a class="btn btn-large waves-effect white grey-text darken-text-2" href="{{ site.program-news }}">More News <i class="material-icons">navigate_next</i></a>
+            <a class="btn btn-large waves-effect white grey-text darken-text-2" href="{{ site.program_news }}">More News <i class="material-icons">navigate_next</i></a>
           {% endif %}
         </div>
         <div class="col s12 m6">
           {% if site.data.events == null or site.data.events[0] == null %}
-          {% capture events-link %}
-          {{ site.program-events }}
+          {% capture events_link %}
+          {{ site.program_events }}
           {% endcapture %}
             {% include cards/card2-basic.html color="black" title="Events" content="From lectures, to film screenings, to networking opportunities with some of the region's biggest employers, events at the College of Liberal Arts are designed to support your life's work." button-link=events-link button-text="View Events" %}
           {% else %}
@@ -81,7 +81,7 @@ layout: doc
               </a>
             {% endfor %}
             <br>
-            <a class="btn btn-large waves-effect white grey-text darken-text-2" href=" {{ site.program-events }} ">More Events <i class="material-icons">navigate_next</i></a>
+            <a class="btn btn-large waves-effect white grey-text darken-text-2" href=" {{ site.program_events }} ">More Events <i class="material-icons">navigate_next</i></a>
           {% endif %}
         </div>
       </div>
