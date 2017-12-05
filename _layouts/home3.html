@@ -71,7 +71,7 @@ layout: doc
           {% capture events_link %}
           {{ site.program_events }}
           {% endcapture %}
-            {% include cards/card2-basic.html color="black" title="Events" content="From lectures, to film screenings, to networking opportunities with some of the region's biggest employers, events at the College of Liberal Arts are designed to support your life's work." button-link=events-link button-text="View Events" %}
+            {% include cards/card2-basic.html color="black" title="Events" content="From lectures, to film screenings, to networking opportunities with some of the region's biggest employers, events at the College of Liberal Arts are designed to support your life's work." button-link=events_link button-text="View Events" %}
           {% else %}
             <h2>Upcoming Events</h2>
             {% for item in site.data.events limit:4 %}
