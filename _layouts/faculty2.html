@@ -15,6 +15,9 @@ published: true
     <div class="col s12 m4 push-m2">
       <p><a class="flow-text" href="{{ person['Path'] }}" target="_blank"> {{ person['First Name'] }} {{ person['Last Name'] }}</a></p>
       <p class='flow-text"'><em>{{ person['Faculty Title'] }}</em></p>
+      {% if person['Secondary Title'] %}
+        <p class='flow-text"'><em>{{ person['Secondary Title'] }}</em></p>
+      {% endif %}
       <p class=""> {{ person['Program'] }}</p>
     </div>
 
