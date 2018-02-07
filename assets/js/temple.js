@@ -7,6 +7,8 @@ $( document ).ready(function() {
 //     }, 500);
 //     return false;
 // });
+// initialization of collapsible elements
+ $('.collapsible').collapsible();
 
 // Nav Toggle
 $('[nav-toggle]').click(function(){
