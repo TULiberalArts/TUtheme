@@ -17,16 +17,36 @@
         {% endif %}
       </div>
       <div class="col l1 m1 s4 college-link">
-        <a href="https://liberalarts.temple.edu/about-us/newsroom" target="_blank">
-          <i class="material-icons">description</i><br>
-          News
-        </a>
+        {% if site.data.news == null or site.data.news[0] == null %}
+          {% capture news_link %}
+          {{ site.program_news }}
+          {% endcapture %}
+          <a href="{{ site.program_news }}" target="_blank">
+            <i class="material-icons">description</i><br>
+            News
+          </a>
+        {% else %}
+          <a href="https://liberalarts.temple.edu/news" target="_blank">
+            <i class="material-icons">description</i><br>
+            News
+          </a>
+        {% endif %}
       </div>
       <div class="col l1 m1 s4 college-link">
-        <a href="https://events.temple.edu/department/college-of-liberal-arts" target="_blank">
-          <i class="material-icons">event</i><br>
-          Events
-        </a>
+        {% if site.data.events == null or site.data.events[0] == null %}
+          {% capture events_link %}
+            {{ site.program_events }}
+          {% endcapture %}
+          <a href="{{ site.program_events }}" target="_blank">
+            <i class="material-icons">event</i><br>
+            Events
+          </a>
+        {% else %}
+          <a href="https://events.temple.edu/department/college-of-liberal-arts" target="_blank">
+            <i class="material-icons">event</i><br>
+            Events
+          </a>
+          {% endif %}
       </div>
       <div class="col l1 m1 s4 college-link">
         <a href="http://www.giving.temple.edu/givetocla" target="_blank">
