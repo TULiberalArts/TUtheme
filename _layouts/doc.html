@@ -1,20 +1,20 @@
-<!DOCTYPE html>
+t<!DOCTYPE html>
 <html>
 
 {% include head.html %}
 
   <body>
-
-    {{ content }}
-
     {% if site.google_tag_manager %}
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.google_tag_manager }}"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    {% elsif site.google_analytics %}
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- should need this but just in case -->
+    {% elseif site.google_analytics %}
       {% include google_analytics.html %}
     {% endif %}
-
+    <!-- end the just in case -->
+{{ content }}
   </body>
 
 </html>
