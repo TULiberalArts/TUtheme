@@ -332,3 +332,79 @@ nav.program-nav ul {
     }
   }
 }
+//replacing old with new.
+#tla-header {
+  min-width: 300px;
+  background-color: black;
+  color: #fff;
+  
+  .col.image {
+    padding-left: 0px;
+    height: 60px;
+ 
+    img {
+      height: 60px;
+      }
+    }
+
+  .university {
+    font-family: "Crimson Text", serif;
+    color: #fff;
+   }
+  
+  .college {
+    font-family: "Roboto", serif;
+    background-color: black;
+    border: 0;
+    padding: 0;
+
+   p {
+      font-size: 1.4em;
+      margin: 0;
+    }
+  
+  .collapsible {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .page-title {
+    color: #ffffff;
+    background-color: #a41e35;
+    font-family: "Roboto", serif;
+    line-height: 3;
+  }
+  
+  ul.collection {
+    -webkit-columns: 4 200px;
+    -moz-columns: 4 200px;
+    columns: 4 200px;
+    -webkit-column-gap: 4em;
+    -moz-column-gap: 4em;
+    column-gap: 4em;
+    -webkit-column-rule: 1px dotted #222;
+    -moz-column-rule: 1px dotted #222;
+   column-rule: 1px dotted #222;
+  }
+}
+
+#tla-headerul.collection li.collection-header,
+#tla-header ul.collection li.collection-header a{
+  color:#FFF;
+}
+#tla-header ul.collection li.collection-item {
+  background-color: #000;
+  border-bottom: 1px solid #222;
+}
+#tla-header ul.collection li.collection-item:hover {
+  background-color: #222;
+  border-bottom:#a41e35;
+}
+#tla-header ul.collection li.collection-item:active {
+  background-color: #333;
+  border-bottom:#a41e35;
+}
+#tla-header ul.collection li.collection-item a{
+  color:#FFF;
+}
