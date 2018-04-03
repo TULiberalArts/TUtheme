@@ -337,46 +337,38 @@ nav.program-nav ul {
   min-width: 300px;
   background-color: black;
   color: #fff;
-  
   .col.image {
     padding-left: 0px;
     height: 60px;
- 
-    img {
-      height: 60px;
-      }
-    }
-
+  }
+  img {
+    height: 60px;
+  }
   .university {
     font-family: "Crimson Text", serif;
     color: #fff;
-   }
-  
+  }
   .college {
     font-family: "Roboto", serif;
     background-color: black;
     border: 0;
     padding: 0;
-
-   p {
+    p {
       font-size: 1.4em;
       margin: 0;
     }
   }
-  
   .collapsible {
     border: 0;
     margin: 0;
     padding: 0;
   }
-  
   .page-title {
     color: #ffffff;
     background-color: #a41e35;
     font-family: "Roboto", serif;
     line-height: 3;
   }
-  
   ul.collection {
     -webkit-columns: 4 200px;
     -moz-columns: 4 200px;
@@ -386,6 +378,24 @@ nav.program-nav ul {
     column-gap: 4em;
     -webkit-column-rule: 1px dotted #222;
     -moz-column-rule: 1px dotted #222;
-   column-rule: 1px dotted #222;
+    column-rule: 1px dotted #222;
+  }
+  li.collection-header {
+    color: #fff;
+  }
+  a {
+    color: #fff;
+  }
+  li.collection-item {
+    background-color: #000;
+    border-bottom: 1px solid #222;
+  }
+  li.collection-item:hover {
+    background-color: #222;
+    border-bottom: #a41e35;
+  }
+  li.collection-item:active {
+    background-color: #333;
+    border-bottom: #a41e35;
   }
 }
