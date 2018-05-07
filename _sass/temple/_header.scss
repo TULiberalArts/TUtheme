@@ -405,3 +405,79 @@ nav.program-nav ul {
   }
 }
 */
+h1 {
+  color: #fff;
+  font-family: serif;
+}
+header {
+  background-color: #000;
+  font-family: "Roboto";
+  .university {
+    background: #000;
+    color: #fff;
+    margin: 0 0 0.5em 0;
+    font-size: 1.1em;
+    line-height: 1.4em;
+    //border: thin solid orange;
+    border-bottom: thin solid #222;
+    div a {
+      margin: 0 0.6em 0 0;
+      color: #eee;
+      font-size: 0.7em;
+    }
+    div span {
+      margin: 0 0.2em;
+      color: #eee;
+      font-size: 0.7em;
+    }
+  }
+  .program {
+    // border: thin solid blue;
+
+    .small-image-box {
+      //border: thin solid orange;
+      width: 80px;
+      height: 80px;
+      margin: 0 0 0 0.6em;
+      img {
+        height: 80px;
+      }
+    }
+
+    .program-title-small {
+      //border: thin solid orange;
+
+      h1 {
+        padding: 0.8em;
+      }
+    }
+    .big-image-box {
+      //border: thin solid lime;
+      width: 120px;
+      height: 120px;
+      margin: 0 0 0.5em;
+    }
+    .program-title-big {
+      //border: 1px solid lime;
+      //padding: 30px;
+      h1 {
+        font-size: 2em;
+        padding: 0.8em;
+      }
+    }
+  }
+  nav {
+    background-color: #000;
+  }
+  .nav-extended {
+    background-color: #000;
+    ul {
+      li {
+        a {
+          background: #000;
+          padding: 0 1em;
+        }
+      }
+    }
+  }
+}
