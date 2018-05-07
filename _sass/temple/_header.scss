@@ -1,6 +1,5 @@
 header.tla-header{
   background-color: #000;
-  font-family: "Roboto";
   .container{
     .university {
       background: #000;
@@ -40,7 +39,7 @@ header.tla-header{
         h1 {
           padding: 0.8em;
           color: #fff;
-          font-family: serif
+          font-family: "Merriweather", serif;
         }
       }
       .big-image-box {
@@ -56,7 +55,7 @@ header.tla-header{
           font-size: 2em;
           padding: 0.8em;
           color: #fff;
-          font-family: serif
+          font-family: "Merriweather", serif;
         }
       }
     }
