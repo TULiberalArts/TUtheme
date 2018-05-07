@@ -1,3 +1,83 @@
+header.tla-header{
+  background-color: #000;
+  font-family: "Roboto";
+  .container{
+    .university {
+      background: #000;
+      color: #fff;
+      margin: 0 0 0.5em 0;
+      font-size: 1.1em;
+      line-height: 1.4em;
+      //border: thin solid orange;
+      border-bottom: thin solid #222;
+      div a {
+        margin: 0 0.6em 0 0;
+        color: #eee;
+        font-size: 0.7em;
+      }
+      div span {
+        margin: 0 0.2em;
+        color: #eee;
+        font-size: 0.7em;
+      }
+    }
+    .program {
+      // border: thin solid blue;
+
+      .small-image-box {
+        //border: thin solid orange;
+        width: 80px;
+        height: 80px;
+        margin: 0 0 0 0.6em;
+        img {
+          height: 80px;
+        }
+      }
+
+      .program-title-small {
+        //border: thin solid orange;
+
+        h1 {
+          padding: 0.8em;
+          color: #fff;
+          font-family: serif
+        }
+      }
+      .big-image-box {
+        //border: thin solid lime;
+        width: 120px;
+        height: 120px;
+        margin: 0 0 0.5em;
+      }
+      .program-title-big {
+        //border: 1px solid lime;
+        //padding: 30px;
+        h1 {
+          font-size: 2em;
+          padding: 0.8em;
+          color: #fff;
+          font-family: serif
+        }
+      }
+    }
+    nav {
+      background-color: #000;
+    }
+    .nav-extended {
+      background-color: #000;
+      ul {
+        li {
+          a {
+            background: #000;
+            padding: 0 1em;
+          }
+        }
+      }
+    }
+  }
+}
+
+
 nav.university-nav {
   color: $navbar-university-font-color;
   background-color: $navbar-university-backgroud-color;
@@ -329,155 +409,6 @@ nav.program-nav ul {
   body.nav-is-open {
     div.college-nav .college-link, nav.program-nav {
       display: block;
-    }
-  }
-}
-//replacing old with new.
-/* #tla-header {
-  min-width: 300px;
-  background-color: black;
-  color: #fff;
-  .col.image {
-    padding-left: 0px;
-    height: 60px;
-  }
-  img {
-    height: 60px;
-  }
-  .university {
-    font-family: "Crimson Text", serif;
-    color: #fff;
-  }
-  .college {
-    font-family: "Roboto", serif;
-    background-color: black;
-    border: 0;
-    padding: 0;
-    p {
-      font-size: 1.4em;
-      margin: 0;
-    }
-  }
-  .collapsible {
-    border: 0;
-    margin: 0;
-    padding: 0;
-  }
-  .page-title {
-    color: #ffffff;
-    background-color: #a41e35;
-    font-family: "Roboto", serif;
-    line-height: 3;
-  }
-  ul.collection {
-    -webkit-columns: 4 200px;
-    -moz-columns: 4 200px;
-    columns: 4 200px;
-    -webkit-column-gap: 4em;
-    -moz-column-gap: 4em;
-    column-gap: 4em;
-    -webkit-column-rule: 1px dotted #222;
-    -moz-column-rule: 1px dotted #222;
-    column-rule: 1px dotted #222;
-  }
-  li.collection-header {
-    color: #fff;
-  }
-  a {
-    color: #fff;
-  }
-  li.collection-item {
-    background-color: #000;
-    border-bottom: 1px solid #222;
-  }
-  li.collection-item:hover {
-    background-color: #222;
-    border-bottom: #a41e35;
-  }
-  li.collection-item:active {
-    background-color: #333;
-    border-bottom: #a41e35;
-  }
-  h1.program-title{
-    width:66%;
-    margin:0;
-    font-size:1.5em;
-  }
-}
-*/
-h1 {
-  color: #fff;
-  font-family: serif;
-}
-header {
-  background-color: #000;
-  font-family: "Roboto";
-  .university {
-    background: #000;
-    color: #fff;
-    margin: 0 0 0.5em 0;
-    font-size: 1.1em;
-    line-height: 1.4em;
-    //border: thin solid orange;
-    border-bottom: thin solid #222;
-    div a {
-      margin: 0 0.6em 0 0;
-      color: #eee;
-      font-size: 0.7em;
-    }
-    div span {
-      margin: 0 0.2em;
-      color: #eee;
-      font-size: 0.7em;
-    }
-  }
-  .program {
-    // border: thin solid blue;
-
-    .small-image-box {
-      //border: thin solid orange;
-      width: 80px;
-      height: 80px;
-      margin: 0 0 0 0.6em;
-      img {
-        height: 80px;
-      }
-    }
-
-    .program-title-small {
-      //border: thin solid orange;
-
-      h1 {
-        padding: 0.8em;
-      }
-    }
-    .big-image-box {
-      //border: thin solid lime;
-      width: 120px;
-      height: 120px;
-      margin: 0 0 0.5em;
-    }
-    .program-title-big {
-      //border: 1px solid lime;
-      //padding: 30px;
-      h1 {
-        font-size: 2em;
-        padding: 0.8em;
-      }
-    }
-  }
-  nav {
-    background-color: #000;
-  }
-  .nav-extended {
-    background-color: #000;
-    ul {
-      li {
-        a {
-          background: #000;
-          padding: 0 1em;
-        }
-      }
     }
   }
 }
