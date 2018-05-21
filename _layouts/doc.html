@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 {% include head.html %}
-  <body>
+  <body class="cherry">
+    {% if site.palette %}
+      <h1>{{ site.palette }}</h1>
+    {% endif %}
     {% if site.google_tag_manager %}
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.google_tag_manager }}"
