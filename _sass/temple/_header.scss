@@ -39,7 +39,7 @@ header.tla-header{
         h1 {
           padding: 0.8em;
           color: #fff;
-          font-family: "Merriweather", serif;
+          //font-family: "Merriweather", serif;
         }
       }
       .big-image-box {
@@ -55,7 +55,7 @@ header.tla-header{
           font-size: 2em;
           padding: 0.8em;
           color: #fff;
-          font-family: "Merriweather", serif;
+          //font-family: "Merriweather", serif;
         }
       }
     }
@@ -298,7 +298,9 @@ div.college-nav {
     // margin: .25rem 0 .55rem 0;
     font-size: 3rem;
     font-weight: bold;
-    font-family: $title-font-family;
+    font-family:
+    
+    *8;
     display: inline-block;
     @media #{$small-and-down} {
       font-size: 2rem;
