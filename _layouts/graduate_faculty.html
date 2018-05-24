@@ -1,0 +1,19 @@
+---
+layout: page-blank
+---
+
+{% if page.sidebar %}<div class="container"><div class="row">
+  <div class="col m12 l8">{% endif %}
+
+    <div class="content">
+      {{ content }}
+    </div>
+
+  {% if page.sidebar %}</div><!-- /.col.l8 -->{% endif %}
+  {% if page.sidebar %}
+  <div class="col m12 l4 page-sidebar">
+    {{ page.sidebar-content | markdownify }}
+  </div>
+{% endif %}
+
+{% if page.sidebar %}</div><!-- /.container --></div><!-- /.row -->{% endif %}
