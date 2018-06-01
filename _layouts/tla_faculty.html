@@ -17,6 +17,14 @@ layout: doc
     <div class="container">
       {{ content }}
       {% include components/faculty-list.html %}
+      <!-- if there are affiliated -->
+      {% if page.affiliated %}
+        {% include {{ page.affiliated_content }} %}
+      {% endif %}
+      <!-- if there are emeritus -->
+      {% if page.emeritus %}
+        {% include {{ page.emeritus_content }} %}
+      {% endif %}
     </div>
   </div>
 </main>
