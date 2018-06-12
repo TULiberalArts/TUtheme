@@ -25,16 +25,18 @@ main {
     }
   }
   .page-content {
-    background: transparent;
-    ul {
-      li {
-        padding-left: 2em;
-        &:before {
-          position: absolute;
-          content: "● ";
-          color: $primary-color;
-          margin-left: -25px;
-          padding-right: 10px;
+    &.container{
+      background: transparent;
+      ul {
+        li {
+          padding-left: 2em;
+          &:before {
+            position: absolute;
+            content: "● ";
+            color: $primary-color;
+            margin-left: -25px;
+            padding-right: 10px;
+          }
         }
       }
     }
