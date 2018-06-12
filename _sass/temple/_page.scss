@@ -26,6 +26,18 @@ main {
   }
   .page-content {
     background: transparent;
+    ul {
+      li {
+        padding-left: 2em;
+        &:before {
+          position: absolute;
+          content: "● ";
+          color: $primary-color;
+          margin-left: -25px;
+          padding-right: 10px;
+        }
+      }
+    }
   }
   .page-header .container, .page-content {
     padding: 2rem 0;
@@ -73,7 +85,6 @@ main {
     text-decoration: underline;
   }
 }
-
 // Sidebar
 .page-sidebar {
   background: #ffffff;
