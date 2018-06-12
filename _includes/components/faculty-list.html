@@ -2,11 +2,16 @@
 <div class="profile card row">
   <div class="col s12 m4 push-m2">
     <p><a class="flow-text" href="{{ person['Path'] }}" target="_blank"> {{ person['First Name'] }} {{ person['Last Name'] }}</a></p>
-    <p class='flow-text"'><em>{{ person['Faculty Title'] }}</em></p>
+    <ul>
+      <li class='flow-text"'><em>{{ person['Faculty Title'] }}</em></li>
     {% if person['Secondary Title'] %}
-      <p class='flow-text"'><em>{{ person['Secondary Title'] }}</em></p>
+      <li class='flow-text"'><em>{{ person['Second Title'] }}</em></li>
     {% endif %}
-    <p class=""> {{ person['Program'] }}</p>
+    {% if person['Third Title'] %}
+      <li class='flow-text"'><em>{{ person['Third Title'] }}</em></li>
+    {% endif %}
+      <li class=""> {{ person['Program'] }}</li>
+    </ul>
   </div>
 
   <div class="person-headshot col s12 m2 pull-m4">
