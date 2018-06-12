@@ -25,17 +25,19 @@ main {
     }
   }
   .page-content {
-    &.container{
+    &.container {
       background: transparent;
       ul {
-        li {
-          padding-left: 2em;
-          &:before {
-            position: absolute;
-            content: "● ";
-            color: $primary-color;
-            margin-left: -25px;
-            padding-right: 10px;
+        &:not(.browser-default) {
+          & > li {
+            padding-left: 2em;
+            &:before {
+              position: absolute;
+              content: "● ";
+              color: $primary-color;
+              margin-left: -25px;
+              padding-right: 10px;
+            }
           }
         }
       }
