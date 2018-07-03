@@ -9,7 +9,6 @@
     {% if person['Third Title'] %}
       <p class='flow-text"'><em>{{ person['Third Title'] }}</em></p>
     {% endif %}
-      <p class=""> {{ person['Program'] }}</p>
   </div>
 
   <div class="person-headshot col s12 m2 pull-m4">
@@ -23,6 +22,7 @@
       {% endif %}
   </div>
   <div class="col s12 m3">
+    <p class=""> {{ person['Program'] }}</p>
     <!-- office phone -->
     {% if person['Phone'] %}{% if person['Phone'] != "" %}
       <i class="material-icons">phone</i> <a href="tel:{{ person['Phone'] }}"><br>
