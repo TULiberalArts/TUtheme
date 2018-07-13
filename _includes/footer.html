@@ -17,7 +17,7 @@
           <li class="grey-text">{{ site.address.street }}</li>
           <li class="grey-text">{{ site.address.city }}</li>
           {% if site.address.email %}<li class="grey-text"><a href="mailto:{{ site.address.email }}" class="white-text"><i class="material-icons">email</i> {{ site.address.email }}</a></li>{% endif %}
-          <!-- {% if site.address.phone %}<li class="grey-text"><a href="tel:{{ site.address.email }}" class="white-text"><i class="material-icons">phone</i> {{ site.address.phone }}</a></li>{% endif %} -->
+          {% if site.address.phone %}<li class="grey-text"><a href="tel:{{ site.address.email }}" class="white-text"><i class="material-icons">phone</i> {{ site.address.phone }}</a></li>{% endif %}
         </ul>
       </div>
       <div class="col l3 m6 s12">
