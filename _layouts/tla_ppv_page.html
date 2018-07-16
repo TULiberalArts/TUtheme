@@ -13,6 +13,21 @@ layout: doc
     </div>
   </div>
   {% endif %}
+  
+  <div class="page-hero">
+    <div class="container">
+      <div class="row">
+        {% if page.hero %}
+         <div class="col s12 m4 l3"> {% include {{ page.hero_content }} %}
+        {% endif %}
+        {% if page.ppv_form %}
+         <div class="col s12 m4 l3"> {% include {{ page.ppv_form_content }} %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  
+  
   <div class="page-content">
     <div class="container">
       <div class="row">
