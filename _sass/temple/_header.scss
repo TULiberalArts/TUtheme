@@ -76,46 +76,52 @@ header.tla-header{
   }
 }
 // pay per view landing page header
-header.ppv-header {
-  div.row {
-    background-color: black;
-    font-family: "open sans", Arial, sans-serif;
-    margin-bottom:0;
-    div.container {
-      background-color: inherit;
-      div.logo {
-        float: left;
-        width: 120px;
-        margin-right:10px;
-        background-color: #a41e35;
-      }
-      div.mast {
-        
-        div.breadcrumbs {
-          border-bottom: thin solid #333;
-          width:100%;
-          padding-top:.2em;
-          padding-bottom:.2em;
-          margin-bottom:.2em;
-          a {
-            color: #ddd;
-          }
-          span{
-            color:#ddd;
-          }
+div.dark {
+  background-color: black;
+
+  header.ppv-header {
+    div.row {
+      background-color: black;
+      font-family: "open sans", Arial, sans-serif;
+      margin-bottom: 0;
+      div.container {
+        background-color: inherit;
+        div.logo {
+          float: left;
+          width: 120px;
+          margin-right: 10px;
+          background-color: #a41e35;
         }
-        h1 {
-          font-size:300%;
-          font-family: "crimson text";
-          font-weight: 100;
-          color: white;
-          margin-bottom:0;
+        div.mast {
+          div.breadcrumbs {
+            font-size: 0.8em;
+            border-bottom: thin solid #333;
+            width: 100%;
+            padding-top: 0.8em;
+            padding-bottom: 0.2em;
+            margin-bottom: 0.2em;
+            a {
+              color: #ddd;
+            }
+            span {
+              color: #ddd;
+            }
+          }
+          h1 {
+            font-size: 300%;
+            font-family: "crimson text";
+            font-weight: 100;
+            color: white;
+            margin-bottom: 0;
+          }
         }
       }
     }
   }
+  main {
+    background-color: white;
+  }
 }
-
 
 nav.university-nav {
   color: $navbar-university-font-color;
