@@ -76,53 +76,41 @@ header.tla-header{
   }
 }
 // pay per view landing page header
-div.dark {
-  background-color: black;
-
-  header.ppv-header {
-    div.row {
-      background-color: black;
-      font-family: "open sans", Arial, sans-serif;
-      margin-bottom: 0;
-      div.container {
-        background-color: inherit;
-        div.logo {
-          float: left;
-          width: 120px;
-          margin-right: 10px;
-          background-color: #a41e35;
-        }
-        div.mast {
-          div.breadcrumbs {
-            font-size: 0.8em;
-            border-bottom: thin solid #333;
-            width: 100%;
-            padding-top: 0.8em;
-            padding-bottom: 0.2em;
-            margin-bottom: 0.2em;
-            a {
-              color: #ddd;
+header.ppv-header {
+   .row {
+     background-color: black;
+     font-family: "open sans", Arial, sans-serif;
+     margin-bottom: 0;
+     display: flex;
+     .container {
+       background-color: inherit;
+       .logo {
+         background-color: #a41e35;
+         margin-right: 200px;
+       }
+       .mast {
+         .breadcrumbs {
+           font-size: 0.8em;
+           border-bottom: thin solid #333;
+           a {
+             color: #ddd;
             }
-            span {
+           span {
               color: #ddd;
             }
           }
-          h1 {
-            font-size: 300%;
-            font-family: "crimson text";
-            font-weight: 100;
-            color: white;
-            margin-bottom: 0;
-          }
-        }
-      }
-    }
-  }
-  main {
-    background-color: white;
-  }
-}
-
+         h1 {
+           font-family: "crimson text";
+           font-weight: 100;
+           color: white;
+           margin-bottom: 0;
+           line-height: 1.5;
+         }
+       }
+     }
+   }
+ }
+ //end ppv-header
 nav.university-nav {
   color: $navbar-university-font-color;
   background-color: $navbar-university-backgroud-color;
