@@ -2,16 +2,18 @@
 layout: doc
 ---
 <div class="dark">
+    <!-- add new header this one is in TUTheme and using page variable from frontmatter in ppv-psm-gis.md -->
   <header class="ppv-header">
-  {% include ppv-header.html %} <!-- add new header -->
+  {% include ppv-header.html %}
   </header>
-  <!-- tla_ppv_page-page -->
+   <!-- hero is not smart yet. It lives in the site program repo-->
   <main>
     <div class="page-hero">
           {% if page.hero %}
            <div class="col s12 m12 l12"> {% include {{ page.hero_content }} %}
           {% endif %}
     </div>
+     <!-- content comes fromt the page in the programs repo-->
     <div class="page-content">
           {% if page.sidebar %}
            <div class="col s12 m8 l9">{{ content }}</div>
