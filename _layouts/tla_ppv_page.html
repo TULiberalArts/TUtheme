@@ -8,22 +8,16 @@ layout: doc
   <!-- tla_ppv_page-page -->
   <main>
     <div class="page-hero">
-      <div class="container">
-        <div class="row">
+
           {% if page.hero %}
            <div class="col s12 m12 l12"> {% include {{ page.hero_content }} %}
           {% endif %}
           {% if page.ppv_form %}
            <div class="col s12 m12 l12"> {% include {{ page.ppv_form_content }} %}
           {% endif %}
-        </div>
-      </div>
+
     </div>
-    
-    
     <div class="page-content">
-      <div class="container">
-        <div class="row">
           {% if page.sidebar %}
            <div class="col s12 m8 l9">{{ content }}</div>
            <div class="col s12 m4 l3"> {% include {{ page.sidebar_content }} %} </div>
@@ -31,8 +25,6 @@ layout: doc
           <div class="col s12 m8 l9">{{ content }}</div>
         {% endif %}
         </div>
-      </div>
-    </div>
   </main>
   {% include footer.html %}
 </div>
