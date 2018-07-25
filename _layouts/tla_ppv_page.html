@@ -8,14 +8,9 @@ layout: doc
   <!-- tla_ppv_page-page -->
   <main>
     <div class="page-hero">
-
           {% if page.hero %}
            <div class="col s12 m12 l12"> {% include {{ page.hero_content }} %}
           {% endif %}
-          {% if page.ppv_form %}
-           <div class="col s12 m12 l12"> {% include {{ page.ppv_form_content }} %}
-          {% endif %}
-
     </div>
     <div class="page-content">
           {% if page.sidebar %}
@@ -26,5 +21,7 @@ layout: doc
         {% endif %}
         </div>
   </main>
+  <footer class="ppv-footer">
   {% include footer.html %}
+</footer>
 </div>
