@@ -159,10 +159,10 @@
 // hero
 .hero {
   min-height: 402px;
-  border-bottom: 1em solid red;
+  border-bottom: 1em solid #a41e35;
   position: relative;
   padding: 7% 0 0;
-  background-image: url("https://raw.githubusercontent.com/TULiberalArts/Public-Policy/master/media/hero_mpp-min.png");
+  background-image: url("media/hero_mpp-min.png");
   background-size: cover;
   background-color:#999;
   .col {
@@ -177,7 +177,7 @@
       position: absolute;
       min-height: 95%;
       margin-right: 1em;
-      border-top: 1em solid yellow;
+      border-top: 1em solid #fcb426;
       padding: 2em;
       background-color: #fff;
       .form-title {
