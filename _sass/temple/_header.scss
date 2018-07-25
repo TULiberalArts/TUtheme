@@ -81,12 +81,14 @@ header.ppv-header {
      background-color: black;
      font-family: "open sans", Arial, sans-serif;
      margin-bottom: 0;
-     display: flex;
+    
      .container {
        background-color: inherit;
        .logo {
+         float: left;
+         width: 120px;
+         margin-right: 10px;
          background-color: #a41e35;
-         margin-right: 200px;
        }
        .mast {
          .breadcrumbs {
