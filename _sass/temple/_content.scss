@@ -158,15 +158,14 @@
 }
 // hero @todo may not want to use image as background since it will be alot of work to pass a variable all the way back to t
 .hero {
-  min-height: 502px;
+  min-height: 402px;
   border-bottom: 1em solid #a41e35;
   position: relative;
   padding: 7% 0 0;
-  background-image: url("https://raw.githubusercontent.com/TULiberalArts/Public-Policy/master");
+  background-image: url("https://raw.githubusercontent.com/TULiberalArts/Public-Policy/master/media/hero_mpp-min.png");
   background-size: cover;
   background-color:#999;
   background-position: bottom;
-  .col {
     .hero-text {
       position: absolute;
       top:22%;
@@ -185,6 +184,5 @@
         font-size: 1.5em;
         line-height: 1.5;
       }
-    }
   }
 }
