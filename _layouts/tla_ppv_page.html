@@ -1,19 +1,22 @@
 ---
 layout: doc
 ---
+<!--@todo the dark class is hardcoded into this layout. it needs to be set in repo's _config or as a page frontmatter overrtide. default can be hardcoded here. -->
 <div class="dark">
     <!-- add new header this one is in TUTheme and using page variable from frontmatter in ppv-psm-gis.md -->
   <header class="ppv-header">
   {% include ppv-header.html %}
   </header>
-   <!-- hero is not smart yet. It lives in the site program repo-->
-  <main>
+   <!-- hero is not smart yet. It lives in the site program repo  @todo make it a smart hero -->
+  <main class="ppv-main">
     <div class="page-hero">
           {% if page.hero %}
            <div class="col s12 m12 l12"> {% include {{ page.hero_content }} %}
           {% endif %}
     </div>
-     <!-- content comes fromt the page in the programs repo-->
+     <!-- content comes fromt the page's markdown in the programs repo-->
+     <div class="row">
+       <div class="container">
     <div class="page-content">
           {% if page.sidebar %}
            <div class="col s12 m8 l9">{{ content }}</div>
@@ -22,8 +25,12 @@ layout: doc
           <div class="col s12 m8 l9">{{ content }}</div>
         {% endif %}
         </div>
+      </div></div>
   </main>
   <footer class="ppv-footer">
+    <!-- @todo create a ppv-footer include. -->
   {% include footer.html %}
 </footer>
 </div>
+<!-- @note that we can taget elements by using the selectors .dark, .ppv-header, .ppv-main, and ppv-footer
+     this file is part of the TUTheme theme https://github.com/TULiberalArts/TUtheme -->

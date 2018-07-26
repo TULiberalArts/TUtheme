@@ -75,7 +75,7 @@ header.tla-header{
     }
   }
 }
-// pay per view landing page header
+// pay per view landing page header summer of 2018 @todo scale of h1 text
 header.ppv-header {
    .row {
      background-color: black;
@@ -107,6 +107,9 @@ header.ppv-header {
            color: white;
            margin-bottom: 0;
            line-height: 1.5;
+           @media #{$medium-and-down}{
+             font-size: 70%; //try
+           }
          }
        }
      }
