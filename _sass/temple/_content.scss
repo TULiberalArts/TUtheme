@@ -158,16 +158,18 @@
 }
 // hero @todo may not want to use image as background since it will be alot of work to pass a variable all the way back to t
 .hero {
-  min-height: 402px;
+  min-height: 502px;
   border-bottom: 1em solid #a41e35;
   position: relative;
   padding: 7% 0 0;
   background-image: url("https://raw.githubusercontent.com/TULiberalArts/Public-Policy/master");
   background-size: cover;
   background-color:#999;
+  background-position: bottom;
   .col {
     .hero-text {
-      max-width:300px;
+      position: absolute;
+      top:22%;
       font-family: "Open Sans", Arial, sans-serif;
       line-height: 1.4;
       font-size: 3rem;
@@ -175,8 +177,7 @@
     }
     .hero-form {
       position: absolute;
-      min-height: 95%;
-      margin-right: 1em;
+      margin-right: 2em;
       border-top: 1em solid #fcb426;
       padding: 2em;
       background-color: #fff;
