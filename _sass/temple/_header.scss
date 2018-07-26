@@ -81,18 +81,16 @@ header.ppv-header {
      background-color: black;
      font-family: "open sans", Arial, sans-serif;
      margin-bottom: 0;
-    
      .container {
        background-color: inherit;
        .logo {
          float: left;
-         width: 120px;
-         margin-right: 10px;
-         background-color: #a41e35;
+         min-width: 120px;
+         margin-right: 1.3em;
        }
        .mast {
          .breadcrumbs {
-           font-size: 0.8em;
+           font-size: 0.9em;
            border-bottom: thin solid #333;
            a {
              color: #ddd;
@@ -104,11 +102,11 @@ header.ppv-header {
          h1 {
            font-family: "crimson text";
            font-weight: 100;
-           color: white;
+           color: #fff;
            margin-bottom: 0;
-           line-height: 1.5;
-             @media #{$small-and-down} {
-             line-height: 1.4;
+           line-height: 1;
+             @media #{$medium-and-down) {
+             line-height: 1;
              font-size: 2.2em;
            }
          }
