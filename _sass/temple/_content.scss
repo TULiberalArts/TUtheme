@@ -156,33 +156,47 @@
   //   float: none;
   // }
 }
+.dark{
+ main.ppv-main{
+   div.page-content{
+     background-color: #fff;
 // hero @todo may not want to use image as background since it will be alot of work to pass a variable all the way back to t
-.hero {
-  min-height: 402px;
-  border-bottom: 1em solid #a41e35;
-  position: relative;
-  padding: 7% 0 0;
-  background-image: url("https://raw.githubusercontent.com/TULiberalArts/Public-Policy/master/media/hero_mpp-min.png");
-  background-size: cover;
-  background-color:#999;
-  background-position: bottom;
-    .hero-text {
-      position: absolute;
-      top:22%;
-      font-family: "Open Sans", Arial, sans-serif;
-      line-height: 1.4;
-      font-size: 3rem;
-      font-weight: 800;
-    }
-    .hero-form {
-      position: absolute;
-      margin-right: 2em;
-      border-top: 1em solid #fcb426;
-      padding: 2em;
-      background-color: #fff;
-      .form-title {
-        font-size: 1.5em;
-        line-height: 1.5;
+      .hero {
+        min-height: 402px;
+        border-bottom: 1em solid #a41e35;
+        position: relative;
+        padding: 7% 0 0;
+        background-image: url("https://raw.githubusercontent.com/TULiberalArts/Public-Policy/master/media/hero_mpp-min.png");
+        background-size: cover;
+        background-color:#999;
+        background-position: bottom;
+          .hero-text {
+            position: absolute;
+            top:22%;
+            font-family: "Open Sans", Arial, sans-serif;
+            line-height: 1.4;
+            font-size: 3rem;
+            font-weight: 800;
+          }
+          .hero-form {
+            position: absolute;
+            bottom: -1em;
+            margin-right: 2em;
+            border-top: 1em solid #fcb426;
+            padding: 2em 3em;
+            background-color: #fff;
+            .form-title {
+              font-size: 1.5em;
+              line-height: 1.5;
+            }
+        }
       }
+      .sidebar{
+        padding:2em 3em;
+        background-color: #a41e35;
+        color: #fff;
+      }
+    }
+    
   }
 }

@@ -15,9 +15,10 @@ layout: doc
           {% endif %}
     </div>
      <!-- content comes fromt the page's markdown in the programs repo-->
-     <div class="row">
-       <div class="container">
-    <div class="page-content">
+
+    <div class="page-content content">
+      <div class="container">
+        <div class="row">
           {% if page.sidebar %}
            <div class="col s12 m8 l8">{{ content }}</div>
            <div class="col s12 m4 l4"> {% include {{ page.sidebar_content }} %} </div>
@@ -25,7 +26,9 @@ layout: doc
           <div class="col s12 m8 l9">{{ content }}</div>
         {% endif %}
         </div>
-      </div></div>
+      </div>
+    </div>
+  </div>
   </main>
   <footer class="ppv-footer">
     <!-- @todo create a ppv-footer include. -->
@@ -34,3 +37,15 @@ layout: doc
 </div>
 <!-- @note that we can taget elements by using the selectors .dark, .ppv-header, .ppv-main, and ppv-footer
      this file is part of the TUTheme theme https://github.com/TULiberalArts/TUtheme -->
+     <div class="container hero">
+       <div class="row">
+         <div class="col s11 offset-s1 m5 offset-m1 l6 offset-l1">
+           <div class="hero-text">Big Hero Text 2nd line</div>
+         </div>
+         <div class="col s11 offset-s1 m6 l5">
+           {% if page.ppv_form %}
+             {% include {{ page.ppv_form_content }} %}
+           {% endif %}
+         </div>
+       </div>
+     </div>
