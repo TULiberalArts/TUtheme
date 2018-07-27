@@ -161,7 +161,7 @@
    div.page-hero{
 // hero @todo may not want to use image as background since it will be alot of work to pass a variable all the way back to t
       .hero{
-        min-height: 402px;
+        min-height: 494px;
         border-bottom: 1em solid #a41e35;
         position: relative;
         padding: 7% 0 0;
@@ -178,7 +178,7 @@
           .hero-form {
             position: absolute;
             bottom: -1em;
-            margin-right: 2em;
+            margin-right: 25px;
             border-top: 1em solid #fcb426;
             padding: 2em 3em;
             background-color: #fff;
@@ -200,6 +200,7 @@
         padding:2em 3em;
         background-color: #a41e35;
         color: #fff;
+        margin-right: 14px;
       }
     }
    }
