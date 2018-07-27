@@ -158,7 +158,7 @@
 }
 .dark{
  main.ppv-main{
-   div.page-content{
+   div.page-hero{
      background-color: #fff;
 // hero @todo may not want to use image as background since it will be alot of work to pass a variable all the way back to t
       .hero {
@@ -191,12 +191,13 @@
             }
         }
       }
+    }
+      div.page-content{
       .sidebar{
         padding:2em 3em;
         background-color: #a41e35;
         color: #fff;
       }
     }
-    
+   }
   }
-}
