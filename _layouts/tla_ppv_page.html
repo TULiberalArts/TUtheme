@@ -9,22 +9,24 @@ layout: doc
   </header>
    <!-- hero is not smart yet. It lives in the site program repo  @todo make it a smart hero -->
   <main class="ppv-main">
+    {% if page.hero %}
     <div class="page-hero">
-          {% if page.hero %}
-           <div class="col s12 m12 l12"> {% include {{ page.hero_content }} %}
-          {% endif %}
-    </div>
+      <div class="container">
+        <div class="row">
+            {% include {{ page.hero_content }} %}
+   
   </div>
+  {% endif %}
      <!-- content comes fromt the page's markdown in the programs repo-->
 
-    <div class="page-content content">
+    <div class="page-content">
       <div class="container">
         <div class="row">
           {% if page.sidebar %}
-           <div class="col s12 m8 l8">{{ content }}</div>
-           <div class="col s12 m4 l4"> {% include {{ page.sidebar_content }} %} </div>
+           <div class="col s11 offset-s1 m5 offset-m1 l6 offset-l1">{{ content }}</div>
+           <div class="col s11 offset-s1 m6 l5"> {% include {{ page.sidebar_content }} %} </div>
           {% else %}
-          <div class="col s12 m8 l9">{{ content }}</div>
+          <div class="col s11 offset-s1">{{ content }}</div>
         {% endif %}
         </div>
       </div>

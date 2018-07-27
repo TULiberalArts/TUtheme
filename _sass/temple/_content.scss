@@ -159,9 +159,8 @@
 .dark{
  main.ppv-main{
    div.page-hero{
-     background-color: #fff;
 // hero @todo may not want to use image as background since it will be alot of work to pass a variable all the way back to t
-      .hero {
+      .container{
         min-height: 402px;
         border-bottom: 1em solid #a41e35;
         position: relative;
@@ -171,8 +170,6 @@
         background-color:#999;
         background-position: bottom;
           .hero-text {
-            position: absolute;
-            top:22%;
             font-family: "Open Sans", Arial, sans-serif;
             line-height: 1.4;
             font-size: 3rem;
@@ -193,6 +190,12 @@
       }
     }
       div.page-content{
+        padding:0;
+        .row{
+          background-color: #fff;
+          margin-left: 0;
+          margin-right:0;
+        }
       .sidebar{
         padding:2em 3em;
         background-color: #a41e35;
