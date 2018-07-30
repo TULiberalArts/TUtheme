@@ -33,7 +33,7 @@ $(document).keydown(function(e){
 });
 
 });
-// A Validity State Polyfill
+// A Validity State Polyfill https://codepen.io/cferdinandi/pen/pwNMMK and https://css-tricks.com/form-validation-part-4-validating-mailchimp-subscribe-form/
 ;(function (window, document, undefined) {
 
 	'use strict';
