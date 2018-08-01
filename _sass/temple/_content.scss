@@ -177,7 +177,7 @@
             left: 0;
             background: linear-gradient(90deg, #B30838 0%, rgba(216,216,216,0) 100%);
             background-blend-mode: multiply;
-            opacity: .6;
+            opacity: .2;
             }
           .hero-text {
             position:relative;
@@ -217,5 +217,9 @@
         margin-right: 3em;
       }
     }
+   }
+   .cherry-overlay{
+     background: linear-gradient(90deg, #B30838 0%, rgba(216,216,216,0) 100%);
+     background-blend-mode: multiply;
    }
   }
