@@ -203,8 +203,13 @@
               font-size: 1.5em;
               line-height: 1.5;
             }
-            .form.note{
-              
+            .form.note{ {
+              font-size: .8em;
+              font-style: italic;
+            }
+            label{
+              font-family: "open-sans" sans-serif;
+              color:#9e9e9e;
             }
             input[type="submit"] {
               width: 100%;
@@ -213,6 +218,7 @@
               padding: 8px 0;
               font-size: 1.4em;
               line-height:3.5em;
+              margin-top: 1em;
               margin-bottom: 2em;
             }
         }
