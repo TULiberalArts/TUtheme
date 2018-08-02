@@ -161,6 +161,7 @@
    div.page-hero{
 // hero @todo may not want to use image as background since it will be alot of work to pass a variable all the way back to t
       .hero{
+        font-family: "open-sans" sans-serif;
         min-height: 494px;
         border-bottom: 1em solid #a41e35;
         position: relative;
@@ -182,13 +183,15 @@
           .hero-text {
             position:relative;
             color: #fff;
-            font-family: "open-sans", Arial, sans-serif;
+            font-family: "open-sans" sans-serif;
             line-height: 1.4;
-            font-size: 3rem;
+            font-size: 4rem;
             font-weight: 800;
             padding-left: .2em;
+            padding-top:.04em;
           }
           .hero-form {
+            font-family: "open-sans" sans-serif;
             position:relative;
             bottom: -3em;
             margin-right: 4em;
@@ -196,8 +199,14 @@
             padding: 2em 3em;
             background-color: #fff;
             .form-title {
+              font-family: "open-sans" sans-serif;
               font-size: 1.5em;
               line-height: 1.5;
+            }
+            input[type="submit"] {
+              width: 100%;
+              background-color:#4a90e2;
+              color: #fff;
             }
         }
       }
