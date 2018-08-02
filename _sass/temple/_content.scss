@@ -161,7 +161,7 @@
    div.page-hero{
 // hero @todo may not want to use image as background since it will be alot of work to pass a variable all the way back to t
       .hero{
-        font-family: "open-sans" sans-serif;
+        font-family: "open-sans", sans-serif;
         min-height: 494px;
         border-bottom: 1em solid #a41e35;
         position: relative;
@@ -183,7 +183,7 @@
           .hero-text {
             position:relative;
             color: #fff;
-            font-family: "open-sans" sans-serif;
+            font-family: "open-sans", sans-serif;
             line-height: 1.4;
             font-size: 4rem;
             font-weight: 800;
@@ -194,7 +194,7 @@
               }
           }
           .hero-form {
-            font-family: "open-sans" sans-serif;
+            font-family: "open-sans", sans-serif;
             position:relative;
             bottom: -3em;
             margin-right: 4em;
@@ -202,16 +202,16 @@
             padding: 2em 3em;
             background-color: #fff;
             .form-title {
-              font-family: "open-sans" sans-serif;
+              font-family: "open-sans", sans-serif;
               font-size: 1.5em;
               line-height: 1.5;
             }
-            .form.note{
+            .form-note{
               font-size: .8em;
               font-style: italic;
             }
             label{
-              font-family: "open-sans" sans-serif;
+              font-family: "open-sans", sans-serif;
               color:#9e9e9e;
             }
             input[type="submit"] {
@@ -220,9 +220,7 @@
               color: #fff;
               padding: 8px 0;
               font-size: 1.4em;
-              line-height:3.5em;
-              margin-top: 1em;
-              margin-bottom: 2em;
+              line-height:3em;
             }
         }
       }
@@ -247,7 +245,7 @@
           
        
         span{
-          font-family:"open-sans",sans-serif;
+          font-family:"open-sans", sans-serif;
           font-weight: 300;
           }
         }
