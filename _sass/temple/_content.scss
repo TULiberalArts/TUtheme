@@ -188,7 +188,7 @@
             font-size: 4rem;
             font-weight: 800;
             padding-left: .2em;
-            padding-top:.04em;
+            padding-top:1em;
           }
           .hero-form {
             font-family: "open-sans" sans-serif;
@@ -203,13 +203,17 @@
               font-size: 1.5em;
               line-height: 1.5;
             }
+            .form.note{
+              
+            }
             input[type="submit"] {
               width: 100%;
               background-color:#4a90e2;
               color: #fff;
               padding: 8px 0;
               font-size: 1.4em;
-              line-height:1.4em;
+              line-height:3.5em;
+              margin-bottom: 2em;
             }
         }
       }

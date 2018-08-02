@@ -91,13 +91,14 @@ header.ppv-header {
        }
        .mast {
          .breadcrumbs {
-           font-size: 1em;
            margin-bottom: .3em;
            a.breadcrumb {
              color: #eceff1;
-            }
-           span {
-              color: #eceff1;
+             font-size: 1em;
+             &:before {
+             font-size:1.5em;
+             margin: 0;
+             }
             }
           }
          h1 {
