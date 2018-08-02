@@ -189,6 +189,9 @@
             font-weight: 800;
             padding-left: .2em;
             padding-top:1em;
+              @media #{$medium-and-down} {
+                padding-top:0;
+              }
           }
           .hero-form {
             font-family: "open-sans" sans-serif;
@@ -203,7 +206,7 @@
               font-size: 1.5em;
               line-height: 1.5;
             }
-            .form.note{ {
+            .form.note{
               font-size: .8em;
               font-style: italic;
             }
@@ -234,10 +237,20 @@
           padding-bottom: 3em;
         }
       .sidebar{
-        padding:2em 3em;
+        padding:4em 4em 3em;
         background-color: #a41e35;
         color: #fff;
         margin-right: 3em;
+        
+        p{
+          font-weight: 700;
+          
+       
+        span{
+          font-family:"open-sans",sans-serif;
+          font-weight: 300;
+          }
+        }
       }
     }
    }
