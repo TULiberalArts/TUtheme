@@ -12,9 +12,9 @@
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="icon" href="{{ '/assets/favicon.ico' | prepend: site.baseurl }}">
-    {% if page.layout == "home" %}
+    {% if page.layout == "tla_home" %}
     <title>{{ site.title}} | {{ site.university.name }}</title>
-    {% else %} 
+    {% else %}
      <title>{{ page.title}} | {{ site.title}}</title>
     {% endif %}
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
