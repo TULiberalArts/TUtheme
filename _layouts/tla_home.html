@@ -9,8 +9,8 @@ layout: doc
 {% if page.feature %}
 <div class="page-feature" style="background-image: url('{{ page.feature-image }}');">
   <div class="container">
-      <h1>{{ page.feature-title }}</h1>
-      <p>{{ page.feature-body }}</p>
+      {% if page.feature-title %}<h1>{{ page.feature-title }}</h1>{% endif %}
+      {% if page.feature-title %}<p>{{ page.feature-body }}</p>{% endif %}
   </div>
 </div>
 {% endif %}
