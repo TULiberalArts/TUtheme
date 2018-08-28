@@ -22,5 +22,7 @@ layout: doc
   </div>
 </div>
 </main>
-{% include components/feeds.html %}
+{% if page.promotion-table %}
+  {% include components/feeds.html %}
+{% endif %}
 {% include footer.html %}
