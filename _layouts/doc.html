@@ -10,7 +10,42 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-58ZL5B"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-    <!-- end the just in case -->
+
     {{ content }}
+    
+    <!--Import jQuery before materialize.js-->
+ <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ <script type="text/javascript" src="{{ '/assets/js/bin/materialize.js' | prepend: site.baseurl }}"></script>
+ <script type="text/javascript" src="{{ '/assets/js/temple.js' | prepend: site.baseurl }}"></script>
+
+    {% if page.toc %}
+    <div id="toc-outer">
+      <div id="toc"></div>
+    </div>
+
+    <script>
+    $("#toc").append('<p>In this page:</p>')
+
+    $(".content h1, .content h2, .content h3").each(function(i) {
+        var current = $(this);
+        current.attr("id", "title" + i);
+        $("#toc").append("<a id='link" + i + "' href='#title" +
+            i + "' title='" + current.attr("tagName") + "'>" +
+            current.html() + "</a>");
+    });
+    </script>
+    {% endif %}
+    
+ <!-- First script from dude. placed at bottom of CLA footer right above closing body.-->
+    <script>
+    document.querySelector('[type="submit"]').addEventListener('click', function(){
+    var seet_int = setInterval(function(){
+    if(document.querySelector('.success-message').innerHTML == "Thank you for subscribing!"){
+      gtag('event', 'conversion', {'send_to': 'AW-961589169/9yyiCK_93oYBELHfwsoD'});
+    clearInterval(seet_int);
+    }
+    }, 700);
+    });
+    </script>
   </body>
 </html>

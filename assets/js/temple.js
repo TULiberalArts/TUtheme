@@ -552,7 +552,7 @@ window.displayMailChimpStatus = function (data) {
 	// Make sure the data is in the right format and that there's a status container
 	if (!data.result || !data.msg || !mcStatus ) return;
 
-	// Update our status message
+	// Update our status message//here is where i can hack it@TODO
 	mcStatus.innerHTML = data.msg;
 
 	// If error, add error class
