@@ -64,3 +64,13 @@ $(".content h1, .content h2, .content h3").each(function(i) {
 });
 </script>
 {% endif %}
+<script>
+document.querySelector('[type="submit"]').addEventListener('click', function(){
+var seet_int = setInterval(function(){
+if(document.querySelector('.success-message').innerHTML == "Thank you for subscribing!"){
+  gtag('event', 'conversion', {'send_to': 'AW-961589169/9yyiCK_93oYBELHfwsoD'});
+clearInterval(seet_int);
+}
+}, 700);
+});
+</script>
