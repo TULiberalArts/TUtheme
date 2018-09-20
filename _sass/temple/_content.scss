@@ -255,17 +255,17 @@
              * Errors
              */
             .error {
-            	border-color: red;
+            	border-color: $tu-cherry;
             }
 
             .error-message {
-            	color: red;
+            	color: $tu-cherry;
             	font-style: italic;
             	margin-bottom: 1em;
             }
 
             .success-message {
-              color: green;
+              color: $tu-olive;
               font-style: italic;
               margin-bottom: 1em;
             }
