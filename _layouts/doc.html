@@ -37,15 +37,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     {% endif %}
     
  <!-- First script from dude. placed at bottom of CLA footer right above closing body.-->
-    <script>
-    document.querySelector('[type="submit"]').addEventListener('click', function(){
-    var seet_int = setInterval(function(){
-    if(document.querySelector('.success-message').innerHTML == "Thank you for subscribing!"){
-      gtag('event', 'conversion', {'send_to': 'AW-961589169/9yyiCK_93oYBELHfwsoD'});
-    clearInterval(seet_int);
-    }
-    }, 700);
-    });
-    </script>
+ <script>
+document.querySelector('[type="submit"]').addEventListener('click', function(){
+var seet_int = setInterval(function(){
+if(document.querySelector('.success-message').innerHTML == "Thank you! Our department will reach out to you via email with more information"){
+gtag('event', 'conversion', {'send_to': 'AW-961589169/9yyiCK_93oYBELHfwsoD'});
+clearInterval(seet_int);
+}
+}, 700);
+});
+</script>
+
   </body>
 </html>
