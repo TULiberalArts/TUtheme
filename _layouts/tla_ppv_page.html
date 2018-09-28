@@ -10,7 +10,7 @@ layout: doc
    <!-- hero is not smart yet. It lives in the site program repo  @todo make it a smart hero -->
   <main class="ppv-main">
     {% if page.hero %}
-       {% include {{ page.hero_content }} %}
+       {% include {{ page.hero }} %}
     {% endif %}
      <!-- content comes fromt the page's markdown in the programs repo-->
 
@@ -19,7 +19,7 @@ layout: doc
         <div class="row">
           {% if page.sidebar %}
            <div class="col s11 offset-s1 m11 offset-m1 l6 offset-l1">{{ content }}</div>
-           <div class="col s11 offset-s1 m11 offset-m1 l5"> {% include {{ page.sidebar_content }} %} </div>
+           <div class="col s11 offset-s1 m11 offset-m1 l5"> {% include {{ page.sidebar }} %} </div>
           {% else %}
           <div class="col s11 offset-s1">{{ content }}</div>
         {% endif %}
