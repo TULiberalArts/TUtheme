@@ -20,11 +20,11 @@ layout: doc
       {% include faculty-list.html %}
       <!-- if there are affiliated -->
       {% if page.affiliated %}
-        {% include {{ page.affiliated_content }} %}
+        {% include {{ page.affiliated }} %}
       {% endif %}
       <!-- if there are emeritus -->
       {% if page.emeritus %}
-        {% include {{ page.emeritus_content }} %}
+        {% include {{ page.emeritus }} %}
       {% endif %}
     </div>
   </div>
