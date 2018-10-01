@@ -1,79 +1,5 @@
 header.tla-header{
-  background-color: #000;
-  .container{
-    .university {
-      background: #000;
-      color: #fff;
-      margin: 0 0 0.5em 0;
-      font-size: 1.1em;
-      line-height: 1.4em;
-      //border: thin solid orange;
-      border-bottom: thin solid #222;
-      div a {
-        margin: 0 0.6em 0 0;
-        color: #eee;
-        font-size: 0.7em;
-      }
-      div span {
-        margin: 0 0.2em;
-        color: #eee;
-        font-size: 0.7em;
-      }
-    }
-    .program {
-      // border: thin solid blue;
-
-      .small-image-box {
-        //border: thin solid orange;
-        width: 80px;
-        height: 80px;
-        margin: 0 0 0 0.6em;
-        img {
-          height: 80px;
-        }
-      }
-
-      .program-title-small {
-        //border: thin solid orange;
-
-        h1 {
-          padding: 0.8em;
-          color: #fff;
-
-        }
-      }
-      .big-image-box {
-        //border: thin solid lime;
-        width: 120px;
-        height: 120px;
-        margin: 0 0 0.5em;
-      }
-      .program-title-big {
-        //border: 1px solid lime;
-        //padding: 30px;
-        h1 {
-          font-size: 2em;
-          padding: 0.8em;
-          color: #fff;
-
-        }
-      }
-    }
-    nav {
-      background-color: #000;
-    }
-    .nav-extended {
-      background-color: #000;
-      ul {
-        li {
-          a {
-            background: #000;
-            padding: 0 1em;
-          }
-        }
-      }
-    }
-  }
+  
 }
 // pay per view landing page header summer of 2018 @todo scale of h1 text
 header.ppv-header {
@@ -309,29 +235,6 @@ div.college-nav {
       margin-top: 20px;
     }
   }
-
-  // .college-title {
-  //   font-weight: bold;
-  //   line-height: 2.5em;
-  //   background: #a41e35;
-  //   color: white;
-  //   font-style: normal;
-  //   padding: 0rem .75rem 0rem 1rem;
-  //   display: inline-block;
-  //   border-bottom-left-radius: 10px;
-  //   border-bottom-right-radius: 10px;
-  //   font-size: 1rem;
-  //   margin-left: -1.25rem;
-  //   letter-spacing: 0px;
-  //   @media #{$large-and-up} {
-  //     position: absolute;
-  //     top: -2.85em;
-  //     left: 250px;
-  //     border-radius: 50px !important;
-  //     background: none !important;
-  //     color: #a41e35 !important;
-  //   }
-  // }
 
   h1.program-title {
     // margin: .25rem 0 .55rem 0;
