@@ -9,6 +9,7 @@ $( document ).ready(function() {
 // });
 // initialization of collapsible elements
  $('.collapsible').collapsible();
+ $(".sidenav").sidenav();
 
 // Nav Toggle
 $('[nav-toggle]').click(function(){
