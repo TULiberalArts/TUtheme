@@ -26,6 +26,10 @@ layout: doc
       {% if page.emeritus %}
         {% include {{ page.emeritus }} %}
       {% endif %}
+      <!-- if there are postdoctoral -->
+      {% if page.postdoctoral_fellows %}
+        {% include {{ page.postdoctoral_fellows }} %}
+      {% endif %}
     </div>
   </div>
 </main>
