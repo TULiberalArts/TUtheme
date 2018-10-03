@@ -24,6 +24,9 @@ layout: doc
       {% endif %}
       </div>
     </div>
+    {% if page.research %}
+      {% include {{ page.research }} %}
+    {% endif %}
   </div>
 </main>
 {% include footer.html %}
