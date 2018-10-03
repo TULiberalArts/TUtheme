@@ -22,6 +22,10 @@ layout: doc
         {% else %}
         <div class="col s12">{{ content }}</div>
       {% endif %}
+      <!-- if there are research -->
+      {% if page.research %}
+        {% include {{ page.research.html }} %}
+      {% endif %}   
       </div>
     </div>
   </div>
