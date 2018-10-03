@@ -1,49 +1,259 @@
-header.tla-header{
-  
-  
-  
-}
-// pay per view landing page header summer of 2018 @todo scale of h1 text
-header.ppv-header {
-   .row {
-     background-color: #222;
-     font-family: "open-sans", Arial, sans-serif;
-     margin-bottom: 0;
-     .container {
-       background-color: inherit;
-       .logo {
-         float: left;
-         min-width: 120px;
-         margin-right: 1em;
-         line-height: 0;
-       }
-       .mast {
-         .breadcrumbs {
-           margin-bottom: .3em;
-           a.breadcrumb {
-             color: #eceff1;
-             font-size: .8em;
-             &:before {
-             font-size:1.5em;
-             margin: 0;
-             }
+header.tla-header {
+  overflow: visible;
+
+  nav.program-nav {
+    ul {
+      li {
+        &:first-of-type {
+          a {
+            border-left-width: 0;
+          }
+        }
+
+        a {
+          border-right-width: 0;
+
+          &:hover {
+            background-color: #222;
+            border-bottom: 10px solid #a41e35;
+          }
+        }
+      }
+
+      li.active {
+        height: 64px;
+        background-color: #222;
+        border-bottom: 10px solid #a41e35;
+      }
+    }
+  }
+
+  .program-nav {
+    a {
+      height: 64px;
+      font-size: 0.75em;
+    }
+    background-color: #222;
+  }
+
+  .material-icons {
+    color: #fff;
+    font-size: 2em;
+  }
+
+  .sidenav-trigger {
+    i {
+      color: #fff;
+      font-size: 2.2em;
+    }
+  }
+
+  .grid-column {
+    background-color: #888;
+  }
+
+  .sidenav {
+    background-color: #a41e35;
+  }
+
+  ul.sidenav {
+    li {
+      a {
+        color: #fff;
+      }
+    }
+  }
+
+  li {
+    a.home-link {
+      i.material-icons {
+        color: #fff;
+      }
+    }
+  }
+
+  .row {
+    background-color: #222;
+    font-family: "open-sans", Arial, sans-serif;
+    margin-bottom: 0;
+
+    .divider {
+      background-color: #222;
+    }
+
+    div.inner-row {
+      width: 1044px;
+    }
+
+    .container {
+      background-color: inherit;
+
+      .logo {
+        float: left;
+        min-width: 120px;
+        margin-right: 1em;
+        line-height: 0;
+      }
+
+      .mast-container {
+        height: 100%;
+        white-space: nowrap;
+      }
+
+      .mast {
+        display: block;
+        white-space: nowrap;
+
+        .breadcrumbs {
+          margin-bottom: 0.3em;
+
+          a.breadcrumb {
+            color: #eceff1;
+            font-size: 0.8em;
+
+            &:before {
+              font-size: 1.5em;
+              margin: 0;
             }
           }
-         h1 {
-           font-family: "crimson text";
-           font-weight: 100;
-           color: #fff;
-           margin: .2em 0;
-           line-height: 1.3;
-             @media #{$medium-and-down} {
-             font-size: 2.2em;
-           }
-         }
-       }
-     }
-   }
- }
- //end ppv-header
+        }
+
+        h1 {
+          font-family: "crimson text";
+          font-weight: 100;
+          color: #fff;
+          margin: 0.2em 0;
+          line-height: 1.3;
+          @media #{$medium-and-down} {
+            font-size: 2.2em;
+          }
+        }
+      }
+
+      .college-link-set {
+        display: block;
+        white-space: nowrap;
+        padding-top: 2em;
+        padding-right: 2em;
+        float: right;
+      }
+
+      .college-link {
+        display: inline-block;
+        width: 3.2em;
+        padding-left: 0.5em;
+
+        a {
+          color: #fff;
+          font-size: 0.8em;
+          font-weight: bold;
+        }
+      }
+
+      div.college-link-set-mobile {
+        width: 100%;
+
+        div.container {
+          width: 90%;
+        }
+      }
+
+      .college-link-set-mobile {
+        display: block;
+        white-space: wrap;
+        padding-top: 1em;
+        padding-right: 1em;
+      }
+
+      .college-link-mobile {
+        display: inline-block;
+        width: 3.2em;
+        padding-left: 0.5em;
+
+        a {
+          color: #fff;
+          font-size: 0.8em;
+          font-weight: bold;
+        }
+      }
+
+      .menu-link-mobile-text {
+        line-height: -3px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  header.tla-header {
+    div.valign-wrapper {
+      width: 100%;
+    }
+
+    .breadcrumbs {
+      font-size: 0.85em;
+    }
+  }
+}
+@media only screen and (min-width: 602px) {
+  header.tla-header {
+    div.valign-wrapper {
+      width: 100%;
+    }
+
+    .breadcrumbs {
+      font-size: 1em;
+    }
+  }
+}
+//end ppv-header
+// pay per view landing page header summer of 2018 @todo scale of h1 text
+header.ppv-header {
+  .row {
+    background-color: #222;
+    font-family: "open-sans", Arial, sans-serif;
+    margin-bottom: 0;
+
+    .container {
+      background-color: inherit;
+
+      .logo {
+        float: left;
+        min-width: 120px;
+        margin-right: 1em;
+        line-height: 0;
+      }
+
+      .mast {
+        .breadcrumbs {
+          margin-bottom: 0.3em;
+
+          a.breadcrumb {
+            color: #eceff1;
+            font-size: 0.8em;
+
+            &:before {
+              font-size: 1.5em;
+              margin: 0;
+            }
+          }
+        }
+
+        h1 {
+          font-family: "crimson text";
+          font-weight: 100;
+          color: #fff;
+          margin: 0.2em 0;
+          line-height: 1.3;
+          @media #{$medium-and-down} {
+            font-size: 2.2em;
+          }
+        }
+      }
+    }
+  }
+}
+//end ppv-header
+
 nav.university-nav {
   color: $navbar-university-font-color;
   background-color: $navbar-university-backgroud-color;
@@ -52,7 +262,9 @@ nav.university-nav {
   box-shadow: none;
   border-bottom: 1px solid lightGray;
 
-  a { color: $navbar-university-font-color; }
+  a {
+    color: $navbar-university-font-color;
+  }
 
   a.university-title {
     margin-left: -20px;
@@ -63,9 +275,9 @@ nav.university-nav {
 
   a {
     @media #{$medium-and-down} {
-      font-size: .8rem!important;
-      padding-left: .5rem!important;
-      padding-right: .5rem!important;
+      font-size: 0.8rem!important;
+      padding-left: 0.5rem!important;
+      padding-right: 0.5rem!important;
     }
   }
 
@@ -79,6 +291,7 @@ nav.university-nav {
     &:hover {
       background: darken($tu-cherry, 5%);
     }
+
     i.material-icons {
       height: inherit;
       line-height: 1rem;
@@ -101,7 +314,6 @@ nav.university-nav {
     height: $navbar-university-height;
     line-height: $navbar-university-height;
   }
-
   // Collapse button
   .button-collapse {
     height: $navbar-university-height;
@@ -112,16 +324,14 @@ nav.university-nav {
       line-height: $navbar-university-height;
     }
   }
-
   // Navbar Links
   ul {
-
     li {
-
       &.active {
         background-color: rgba(0,0,0,.1);
       }
     }
+
     a {
       font-size: $navbar-university-font-size;
       color: $navbar-university-font-color;
@@ -129,18 +339,20 @@ nav.university-nav {
       @media #{$medium-and-down} {
         padding: 0 12px;
       }
+
       &:hover {
         background-color: rgba(0,0,0,.1);
       }
     }
+
     &.left {
       float: left;
     }
   }
-
   // Navbar Search Form
   .input-field {
     overflow: hidden;
+
     input {
       transition: width 250ms ease;
       font-size: 1rem;
@@ -151,28 +363,36 @@ nav.university-nav {
       padding-right: 0;
       line-height: $navbar-university-height - 1px;
       height: $navbar-university-height - 1px;
-      width: 0px;
+      width: 0;
       cursor: pointer;
-      &:valid, &:focus, &:active {
+
+      &:active,
+      &:focus,
+      &:valid {
         width: 130px;
         cursor: text;
         padding-right: 40px;
       }
     }
-    &:focus input, &:active input {
+
+    &:active input,
+    &:focus input {
       width: 130px;
       cursor: text;
       padding-right: 40px;
     }
+
     label[for="search"] {
       pointer-events: none;
       -webkit-pointer-events: none;
     }
+
     label[for="submit"] {
       // float: right;
       // float: right;
       margin-left: 170px;
       border-radius: 60px;
+
       i.material-icons {
         border-radius: 50%;
         background: $tu-cherry;
@@ -186,35 +406,42 @@ nav.university-nav {
         cursor: pointer;
       }
     }
+
     label {
-      &.active i { color: $navbar-university-font-color; }
+      &.active i {
+        color: $navbar-university-font-color;
+      }
     }
   }
 }
-
 // College Dropdown
+
 div.college-dropdown {
   background: $tu-cherry;
   color: white;
   // padding: 1rem 0;
   // margin-bottom: 2rem;
   transition: padding 100ms ease, height 100ms ease-in, box-shadow 150ms ease;
-  height: 0px;
+  height: 0;
   overflow: hidden;
   background: none;
   // margin-bottom: -2em;
   a {
     color: white;
     display: block;
-    &:focus, &:active {
+
+    &:active,
+    &:focus {
       outline: 2px dotted white;
     }
   }
+
   ul {
     margin-bottom: 0;
     margin-top: 0;
   }
 }
+
 body.college-dropdown-is-open {
   div.college-dropdown {
     padding: 1rem 0;
@@ -223,16 +450,17 @@ body.college-dropdown-is-open {
     @extend .z-depth-1;
     // margin-bottom: -1.35em;
   }
+
   i.college-droptown-toggle-arrow {
     transform: rotateX(180deg);
   }
 }
-
-
 // College Nav
+
 div.college-nav {
   .container {
     position: relative;
+
     .row {
       margin-top: 20px;
     }
@@ -248,6 +476,7 @@ div.college-nav {
       margin-top: 1.5rem;
     }
   }
+
   .program-logo {
     img {
       height: auto;
@@ -257,9 +486,8 @@ div.college-nav {
     }
   }
 
-
   .college-nav h1 {
-    margin: .25rem 0 .55rem 0;
+    margin: 0.25rem 0 0.55rem;
     @media #{$medium-and-down} {
       text-align: center;
     }
@@ -267,21 +495,24 @@ div.college-nav {
 
   .college-link {
     text-align: center;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     display: inline-block;
+
     a {
       display: inline-block;
-      padding-top: .5em;
+      padding-top: 0.5em;
+
       i.material-icons {
         font-size: 24px;
         margin-right: 0;
       }
     }
   }
+
   .nav-toggle-link {
     cursor: pointer;
     text-align: center;
-    margin-top: .75rem;
+    margin-top: 0.75rem;
     margin-right: 1.5rem;
     padding-right: 1.5rem;
     display: inline-block;
@@ -292,47 +523,54 @@ div.college-nav {
       display: none;
     }
   }
-
 }
-
 // Program Nav
+
 nav.program-nav ul {
   overflow: hidden;
   font-weight: bold;
-  i, [class^="mdi-"], [class*="mdi-"], i.material-icons {
+
+  [class^="mdi-"],
+  [class*="mdi-"],
+  i.material-icons,
+  i {
     line-height: 64px;
     height: 64px;
   }
+
   li.active {
     background: rgba(0, 0, 0, 0.2);
   }
 }
-
 @media #{$large-and-up} {
   nav.program-nav ul {
     // width: 100%;
     display: flex;
     width: calc(100% + 40px);
     margin: 0 -20px;
+
     li {
       flex-grow: 1;
       text-align: center;
+
       a {
         border-right: 1px solid transparentize(white, .5);
       }
+
       &:first-of-type a {
         border-left: 1px solid transparentize(white, .5);
       }
     }
   }
 }
-
 @media #{$small-and-down} {
   nav.program-nav {
     height: auto;
+
     ul {
       overflow: hidden;
       height: auto;
+
       li {
         display: block;
         font-weight: bold;
@@ -341,14 +579,16 @@ nav.program-nav ul {
     }
   }
 }
-
 // Nav Toggle
 @media #{$small-and-down} {
-  div.college-nav .college-link, nav.program-nav {
+  div.college-nav .college-link,
+  nav.program-nav {
     display: none;
   }
+
   body.nav-is-open {
-    div.college-nav .college-link, nav.program-nav {
+    div.college-nav .college-link,
+    nav.program-nav {
       display: block;
     }
   }
