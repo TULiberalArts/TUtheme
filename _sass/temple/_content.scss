@@ -1,4 +1,5 @@
 // Content only
+
 .content {
   & > * {
     width: 95%;
@@ -6,6 +7,7 @@
     margin-left: auto;
     margin-right: auto;
   }
+
   & > .row {
     max-width: $content-max-width; // 1080px;
     // max-width: calc($content-max-width + ($gutter-width / 2));
@@ -13,6 +15,7 @@
     margin-left: auto;
     margin-right: auto;
   }
+
   & > .row-wide {
     // max-width: 1080px;
     // max-width: calc(1080px + ($gutter-width / 2));
@@ -20,28 +23,36 @@
     width: 95%;
     max-width: 1180px;
   }
+
   & > .row-wider {
     width: 95%;
     max-width: 1280px;
     // max-width: calc(1280px + ($gutter-width / 2));
     max-width: calc(1280px + (1.25em));
   }
+
   & > .row-widest {
     width: 100%;
     max-width: 100%;
   }
-  ol, ul {
+
+  ol,
+  ul {
     margin-bottom: 1em;
+
     li {
-      margin-bottom: .25em;
+      margin-bottom: 0.25em;
     }
   }
+
   ol {
     padding-left: 3em;
   }
+
   ul {
     li {
       padding-left: 2em;
+
       &:before {
         position: absolute;
         content: "● ";
@@ -52,18 +63,22 @@
     }
   }
 }
+
 .profile {
-  padding-top: .75em;
+  padding-top: 0.75em;
 }
 // People bios
+
 .person {
   padding-left: 150px;
   margin-bottom: 1rem;
+
   &-photo {
     text-align: right;
+
     img {
       float: left;
-      margin-top: .5rem;
+      margin-top: 0.5rem;
       max-width: 120px;
       width: 120px;
       height: auto;
@@ -77,30 +92,36 @@
       float: left;
     }
   }
+
   &-headshot {
     img {
       width: 90%;
     }
   }
+
   &-bio {
     border-bottom: 2px solid lightGray;
     min-height: 210px;
   }
+
   h3 {
     font-weight: bold;
     margin-bottom: 0;
+
     small {
       opacity: 0.5;
     }
   }
+
   p {
     margin-top: 0;
   }
+
   &-links {
     background: lightGray;
-    padding: .5rem;
-    padding-left: .5rem!important;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem!important !important;
     border-radius: 4px;
+
     li {
       display: inline-block;
       list-style-type: none;
@@ -110,8 +131,10 @@
   @media #{$medium-and-down} {
     margin-left: 0;
     padding-left: 0!important;
+
     &-photo {
       text-align: center;
+
       img {
         display: block;
         float: none;
@@ -121,24 +144,25 @@
     }
   }
 }
-
 // Courses you could take
 .courses-you-could-take {
   color: black;
+
   li.active {
     border-radius: 4px;
     overflow: hidden;
   }
+
   .collapsible-body {
     background: rgb(232, 232, 232);
+
     p {
       padding: 1em;
-      font-size: .8rem;
+      font-size: 0.8rem;
       line-height: 1.5em;
     }
   }
 }
-
 // Coursebox
 .course-box {
   display: block;
@@ -149,162 +173,343 @@
   // margin-left: 1rem;
   max-width: 420px;
   // width: 40%;
-  font-size: .85rem;
+  font-size: 0.85rem;
   line-height: 1.5rem;
   // @media #{$medium-and-down} {
   //   width: 100%;
   //   float: none;
   // }
 }
-.dark{
- main.ppv-main{
-   div.page-hero{
-// hero @todo may not want to use image as background since it will be alot of work to pass a variable all the way back to t
-      .hero{
+//
+
+.tla-dark {
+  main.tla-main {
+    div.page-hero {
+      // hero @todo may not want to use image as background since it will be alot of work to pass a variable all the way back to t
+
+      .hero {
         font-family: "open-sans", sans-serif;
         min-height: 494px;
         border-bottom: 1em solid #a41e35;
         position: relative;
         padding: 7% 0 0;
         background-size: cover;
-        background-color:#999;
+        background-color: #999;
         background-position: bottom;
-          &:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background: linear-gradient(90deg, #B30838 0%, rgba(216,216,216,0) 100%);
-            background-blend-mode: multiply;
-            opacity: .2;
-            }
-          .hero-text {
-            position:relative;
-            color: #fff;
-            font-family: "open-sans", sans-serif;
-            line-height: 1.4;
-            font-size: 4rem;
-            font-weight: 800;
-            padding-left: .2em;
-            padding-top:.4em;
-              @media #{$medium-and-down} {
-                padding-top:0;
-              }
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background: linear-gradient(90deg, #B30838 0%, rgba(216,216,216,0) 100%);
+          background-blend-mode: multiply;
+          opacity: 0.2;
+        }
+
+        .hero-text {
+          position: relative;
+          color: #fff;
+          font-family: "open-sans", sans-serif;
+          line-height: 1.4;
+          font-size: 4rem;
+          font-weight: 800;
+          padding-left: 0.2em;
+          padding-top: 0.4em;
+          @media #{$medium-and-down} {
+            padding-top: 0;
           }
-          .hero-form {
+        }
+
+        .hero-form {
+          font-family: "open-sans", sans-serif;
+          position: relative;
+          bottom: -3em;
+          margin-right: 4em;
+          border-top: 1em solid #fcb426;
+          padding: 2em 3em;
+          background-color: #fff;
+
+          .form-title {
             font-family: "open-sans", sans-serif;
-            position:relative;
-            bottom: -3em;
-            margin-right: 4em;
-            border-top: 1em solid #fcb426;
-            padding: 2em 3em;
-            background-color: #fff;
-            .form-title {
-              font-family: "open-sans", sans-serif;
-              font-size: 1.5em;
-              line-height: 1.5;
-            }
-            .form-note{
-              font-size: .8em;
-              font-style: italic;
-            }
-            label{
-              font-family: "open-sans", sans-serif;
-              color:#9e9e9e;
-            }
-            input[type="submit"] {
-              width: 100%;
-              background-color:#4a90e2;
-              color: #fff;
-              padding: 8px 0;
-              font-size: 1.4em;
-              line-height:2em;
-              margin-top: 1em;
-            }
-            .button {
-            	background-color: #0088cc;
-            	border: 1px solid #0088cc;
-            	border-radius: 1px;
-            	color: #ffffff;
-            	display: inline-block;
-            	font-size: 0.9375em;
-            	font-weight: normal;
-            	line-height: 1.2;
-            	margin-right: 0.3125em;
-            	margin-bottom: 0.3125em;
-            	padding: 0.5em 0.6875em;
-            	width: auto;
-            }
+            font-size: 1.5em;
+            line-height: 1.5;
+          }
 
-            .button:active,
-            .button:focus,
-            .button:hover {
-            	background-color: #005580;
-            	border-color: #005580;
-            	color: #ffffff;
-            	text-decoration: none;
-            }
+          .form-note {
+            font-size: 0.8em;
+            font-style: italic;
+          }
 
-            .button:active {
-            	box-shadow: inset 0 0.15625em 0.25em rgba(0, 0, 0, 0.15), 0 1px 0.15625em rgba(0, 0, 0, 0.05);
-            }
+          label {
+            font-family: "open-sans", sans-serif;
+            color: #9e9e9e;
+          }
 
-            /**
+          input[type="submit"] {
+            width: 100%;
+            background-color: #4a90e2;
+            color: #fff;
+            padding: 8px 0;
+            font-size: 1.4em;
+            line-height: 2em;
+            margin-top: 1em;
+          }
+
+          .button {
+            background-color: #0088cc;
+            border: 1px solid #0088cc;
+            border-radius: 1px;
+            color: #ffffff;
+            display: inline-block;
+            font-size: 0.9375em;
+            font-weight: normal;
+            line-height: 1.2;
+            margin-right: 0.3125em;
+            margin-bottom: 0.3125em;
+            padding: 0.5em 0.6875em;
+            width: auto;
+          }
+
+          .button:active,
+          .button:focus,
+          .button:hover {
+            background-color: #005580;
+            border-color: #005580;
+            color: #ffffff;
+            text-decoration: none;
+          }
+
+          .button:active {
+            box-shadow: inset 0 0.15625em 0.25em rgba(0, 0, 0, 0.15), 0 1px 0.15625em rgba(0, 0, 0, 0.05);
+          }
+          /**
              * Errors
              */
-            .error {
-            	border-color: $tu-cherry;
-            }
+          .error {
+            border-color: $tu-cherry;
+          }
 
-            .error-message {
-            	color: $tu-cherry;
-            	font-style: italic;
-            	margin-bottom: 1em;
-            }
+          .error-message {
+            color: $tu-cherry;
+            font-style: italic;
+            margin-bottom: 1em;
+          }
 
-            .success-message {
-              color: $tu-olive;
-              font-style: italic;
-              margin-bottom: 1em;
-            }
+          .success-message {
+            color: $tu-olive;
+            font-style: italic;
+            margin-bottom: 1em;
+          }
 
-            .mc-status:focus {
-                outline: none;
-            }
+          .mc-status:focus {
+            outline: none;
+          }
         }
       }
     }
-      div.page-content{
-        padding:0;
-        .row{
-          background-color: #fff;
-          padding-top: 3em;
-          margin-left: 0;
-          margin-right:0;
-          padding-bottom: 3em;
-        }
-      .sidebar{
-        padding:4em 4em 3em;
+
+    div.page-content {
+      padding: 0;
+
+      .row {
+        background-color: #fff;
+        padding-top: 3em;
+        margin-left: 0;
+        margin-right: 0;
+        padding-bottom: 3em;
+      }
+
+      .sidebar {
+        padding: 4em 4em 3em;
         background-color: #a41e35;
         color: #fff;
         margin-right: 3em;
-        
-        p{
+
+        p {
           font-weight: 700;
           font-size: 1.3em;
           line-height: 1.5;
-        span{
-          font-family:"open-sans", sans-serif;
-          font-weight: 300;
+
+          span {
+            font-family: "open-sans", sans-serif;
+            font-weight: 300;
           }
         }
       }
     }
-   }
-   .cherry-overlay{
-     background: linear-gradient(90deg, #B30838 0%, rgba(216,216,216,0) 100%);
-     background-blend-mode: multiply;
-   }
   }
+
+  .cherry-overlay {
+    background: linear-gradient(90deg, #B30838 0%, rgba(216,216,216,0) 100%);
+    background-blend-mode: multiply;
+  }
+}
+//
+.dark {
+  main.ppv-main {
+    div.page-hero {
+      // hero @todo may not want to use image as background since it will be alot of work to pass a variable all the way back to t
+
+      .hero {
+        font-family: "open-sans", sans-serif;
+        min-height: 494px;
+        border-bottom: 1em solid #a41e35;
+        position: relative;
+        padding: 7% 0 0;
+        background-size: cover;
+        background-color: #999;
+        background-position: bottom;
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background: linear-gradient(90deg, #B30838 0%, rgba(216,216,216,0) 100%);
+          background-blend-mode: multiply;
+          opacity: 0.2;
+        }
+
+        .hero-text {
+          position: relative;
+          color: #fff;
+          font-family: "open-sans", sans-serif;
+          line-height: 1.4;
+          font-size: 4rem;
+          font-weight: 800;
+          padding-left: 0.2em;
+          padding-top: 0.4em;
+          @media #{$medium-and-down} {
+            padding-top: 0;
+          }
+        }
+
+        .hero-form {
+          font-family: "open-sans", sans-serif;
+          position: relative;
+          bottom: -3em;
+          margin-right: 4em;
+          border-top: 1em solid #fcb426;
+          padding: 2em 3em;
+          background-color: #fff;
+
+          .form-title {
+            font-family: "open-sans", sans-serif;
+            font-size: 1.5em;
+            line-height: 1.5;
+          }
+
+          .form-note {
+            font-size: 0.8em;
+            font-style: italic;
+          }
+
+          label {
+            font-family: "open-sans", sans-serif;
+            color: #9e9e9e;
+          }
+
+          input[type="submit"] {
+            width: 100%;
+            background-color: #4a90e2;
+            color: #fff;
+            padding: 8px 0;
+            font-size: 1.4em;
+            line-height: 2em;
+            margin-top: 1em;
+          }
+
+          .button {
+            background-color: #0088cc;
+            border: 1px solid #0088cc;
+            border-radius: 1px;
+            color: #ffffff;
+            display: inline-block;
+            font-size: 0.9375em;
+            font-weight: normal;
+            line-height: 1.2;
+            margin-right: 0.3125em;
+            margin-bottom: 0.3125em;
+            padding: 0.5em 0.6875em;
+            width: auto;
+          }
+
+          .button:active,
+          .button:focus,
+          .button:hover {
+            background-color: #005580;
+            border-color: #005580;
+            color: #ffffff;
+            text-decoration: none;
+          }
+
+          .button:active {
+            box-shadow: inset 0 0.15625em 0.25em rgba(0, 0, 0, 0.15), 0 1px 0.15625em rgba(0, 0, 0, 0.05);
+          }
+          /**
+             * Errors
+             */
+          .error {
+            border-color: $tu-cherry;
+          }
+
+          .error-message {
+            color: $tu-cherry;
+            font-style: italic;
+            margin-bottom: 1em;
+          }
+
+          .success-message {
+            color: $tu-olive;
+            font-style: italic;
+            margin-bottom: 1em;
+          }
+
+          .mc-status:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+
+    div.page-content {
+      padding: 0;
+
+      .row {
+        background-color: #fff;
+        padding-top: 3em;
+        margin-left: 0;
+        margin-right: 0;
+        padding-bottom: 3em;
+      }
+
+      .sidebar {
+        padding: 4em 4em 3em;
+        background-color: #a41e35;
+        color: #fff;
+        margin-right: 3em;
+
+        p {
+          font-weight: 700;
+          font-size: 1.3em;
+          line-height: 1.5;
+
+          span {
+            font-family: "open-sans", sans-serif;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+
+  .cherry-overlay {
+    background: linear-gradient(90deg, #B30838 0%, rgba(216,216,216,0) 100%);
+    background-blend-mode: multiply;
+  }
+}
