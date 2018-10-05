@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: tla_page
 ---
 
 ## Welcome to another page

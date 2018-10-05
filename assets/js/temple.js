@@ -8,7 +8,7 @@ $( document ).ready(function() {
 //     return false;
 // });
 // initialization of collapsible elements
- $('.collapsible').collapsible();
+ //$('.collapsible').collapsible();
  //$(".sidenav").sidenav();
 
 // Nav Toggle
