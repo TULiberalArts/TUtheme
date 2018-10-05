@@ -9,7 +9,7 @@ $( document ).ready(function() {
 // });
 // initialization of collapsible elements
  //$('.collapsible').collapsible();
- //$(".sidenav").sidenav();
+ $(".sidenav").sidenav();
 
 // Nav Toggle
 $('[nav-toggle]').click(function(){
@@ -433,7 +433,7 @@ var showError = function (field, error) {
 
 	// Add error class to field
 	field.classList.add('error');
-  
+
 	// If the field is a radio button and part of a group, error all and get the last item in the group
 	if (field.type === 'radio' && field.name) {
 		var group = field.form.querySelectorAll('[name="' + field.name + '"]');
@@ -456,7 +456,7 @@ var showError = function (field, error) {
 		message = document.createElement('div');
 		message.className = 'error-message';
 		message.id = 'error-for-' + id;
-		
+
 		// If the field is a radio button or checkbox, insert error after the label
 		var label;
 		if (field.type === 'radio' || field.type ==='checkbox') {
@@ -472,7 +472,7 @@ var showError = function (field, error) {
 		}
 
 	}
-	
+
 	// Add ARIA role to the field
 	field.setAttribute('aria-describedby', 'error-for-' + id);
 
@@ -491,7 +491,7 @@ var removeError = function (field) {
 
 	// Remove error class to field
 	field.classList.remove('error');
-	
+
 	// Remove ARIA role from the field
 	field.removeAttribute('aria-describedby');
 
@@ -509,7 +509,7 @@ var removeError = function (field) {
 	// Get field id or name
 	var id = field.id || field.name;
 	if (!id) return;
-	
+
 
 	// Check if an error message is in the DOM
 	var message = field.form.querySelector('.error-message#error-for-' + id + '');
@@ -525,10 +525,10 @@ var removeError = function (field) {
 // Serialize the form data into a query string
 // Forked and modified from https://stackoverflow.com/a/30153391/1293256
 var serialize = function (form) {
-	
+
 	// Setup our serialized data
 	var serialized = '';
-	
+
 	// Loop through each field in the form
 	for (i = 0; i < form.elements.length; i++) {
 
@@ -602,7 +602,7 @@ document.addEventListener('blur', function (event) {
 
 	// Validate the field
 	var error = hasError(event.target);
-  
+
 	// If there's an error, show it
 	if (error) {
 		showError(event.target, error);
