@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+  $('.modal').modal();
 // initialization of stuff
  //$('.collapsible').collapsible();
  //$(".sidenav").sidenav();
