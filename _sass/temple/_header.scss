@@ -1,6 +1,6 @@
 header.tla-header {
-  .modal-overlay:focus {
-    outline:none;
+  cla-modal:focus {
+    border: transparent;
   }
   overflow: visible;
   padding-left: 0px;
