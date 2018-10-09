@@ -1,4 +1,7 @@
 header.tla-header {
+  .modal-overlay:focus {
+    outline:none;
+  }
   overflow: visible;
   padding-left: 0px;
   nav.program-nav {
