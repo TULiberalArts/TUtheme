@@ -1,6 +1,32 @@
 header.tla-header {
   overflow: visible;
-  padding-left: 0px;
+  padding-left: 0;
+
+  .modal {
+    white-space: normal;
+    font-size: 1em;
+  }
+
+  header.tla-header {
+    .modal-row {
+      background-color: #a41e35;
+    }
+
+    .header-row {
+      background-color: #222;
+      font-family: "open-sans", Arial, sans-serif;
+      margin-bottom: 0;
+    }
+  }
+
+  .cla-modal-ul {
+    li {
+      a {
+        color: #fff;
+      }
+    }
+  }
+
   nav.program-nav {
     ul {
       li {
@@ -205,8 +231,9 @@ header.tla-header {
     }
   }
 }
-//end ppv-header
+//end tla-header
 // pay per view landing page header summer of 2018 @todo scale of h1 text
+
 header.ppv-header {
   .row {
     background-color: #222;
