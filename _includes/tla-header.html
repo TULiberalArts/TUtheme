@@ -40,24 +40,42 @@
 
                   </div>
                   <div class="college-link center-align">
-                    <a href="https://liberalarts.temple.edu/news/jewish-studies" target="_blank">
-            <i class="material-icons">description</i><br>
-            News
-          </a>
-
+                    {% if site.data.news == null or site.data.news[0] == null %}
+                      <a href="https://liberalarts.temple.edu/news" target="_blank">
+                        <i class="material-icons">description</i><br>
+                        News
+                      </a>
+                    {% else %}
+                      {% capture news_link %}
+                      {{ site.program_news }}
+                      {% endcapture %}
+                      <a href="{{ site.program_news }}" target="_blank">
+                        <i class="material-icons">description</i><br>
+                        News
+                      </a>
+                    {% endif %}
                   </div>
 
                   <div class="college-link center-align">
 
-                    <a href="https://events.temple.edu/department/college-of-liberal-arts" target="_blank">
-            <i class="material-icons">event</i><br>
-            Events
-          </a>
-
+                    {% if site.data.events == null or site.data.events[0] == null %}
+                      <a href="https://events.temple.edu/department/college-of-liberal-arts" target="_blank">
+                        <i class="material-icons">event</i><br>
+                        Events
+                      </a>
+                    {% else %}
+                      {% capture events_link %}
+                        {{ site.program_events }}
+                      {% endcapture %}
+                      <a href="{{ site.program_events }}" target="_blank">
+                        <i class="material-icons">event</i><br>
+                        Events
+                      </a>
+                    {% endif %}
                   </div>
 
                   <div class="college-link center-align">
-                    <a href="#" target="_blank">
+                    <a href="www.temple.edu/admissions" target="_blank">
                       <!-- <img src="/psychology/assets/img/icons/heart-red.svg" alt="Heart" height="20" width="20"><br> -->
                       <i class="material-icons">school</i><br> Apply
                     </a>
@@ -87,22 +105,10 @@
 
           <div class="container">
             <ul>
-              <li class="active"><a href="/jewish-studies/" title="Program Homepage" class="home-link waves-effect"><i class="material-icons">home</i></a></li>
-
-              <li><a href="/jewish-studies/undergraduate/" class="waves-effect current">Undergraduate</a></li>
-
-              <li><a href="/jewish-studies/graduate/" class="waves-effect current">Graduate</a></li>
-
-              <li><a href="/jewish-studies/faculty/" class="waves-effect current">Faculty</a></li>
-
-              <li><a href="/jewish-studies/student-life/" class="waves-effect current">Student Life</a></li>
-
-              <li><a href="/jewish-studies/research/" class="waves-effect current">Research</a></li>
-
-              <li><a href="/jewish-studies/clinical-services/" class="waves-effect current">Clinical Services</a></li>
-
-              <li><a href="/jewish-studies/next-stops/" class="waves-effect current">Next Stops</a></li>
-
+              <li{% if page.url == '/' %} class="active"{% endif %}><a href="{{ '/' | prepend: site.baseurl }}" title="Program Homepage" class="home-link hide-on-med-and-down waves-effect"><i class="material-icons">home</i></a></li>
+              {% for item in site.data.navigation %}
+              <li{% if page.url == item.url %} class="active"{% endif %}><a href="{{ item.url | prepend: site.baseurl }}" class="waves-effect {% if current[1] == {{ item.url | prepend: site.baseurl }} %}current{% endif %}">{{ item.text }}</a></li>
+              {% endfor %}
             </ul>
           </div>
         </nav>
@@ -126,25 +132,45 @@
 
               <div class="col s3 m3">
                 <div class="college-link-mobile center-align">
-                  <a href="https://liberalarts.temple.edu/news/jewish-studies" target="_blank">
-            <i class="material-icons">description</i><br>
-            News
-          </a>
+                  {% if site.data.news == null or site.data.news[0] == null %}
+                    <a href="https://liberalarts.temple.edu/news" target="_blank">
+                      <i class="material-icons">description</i><br>
+                      News
+                    </a>
+                  {% else %}
+                    {% capture news_link %}
+                    {{ site.program_news }}
+                    {% endcapture %}
+                    <a href="{{ site.program_news }}" target="_blank">
+                      <i class="material-icons">description</i><br>
+                      News
+                    </a>
+                  {% endif %}
                 </div>
               </div>
               <div class="col s3 m3">
                 <div class="college-link-mobile center-align">
 
-                  <a href="https://events.temple.edu/department/college-of-liberal-arts" target="_blank">
-            <i class="material-icons">event</i><br>
-            Events
-          </a>
+                  {% if site.data.events == null or site.data.events[0] == null %}
+                    <a href="https://events.temple.edu/department/college-of-liberal-arts" target="_blank">
+                      <i class="material-icons">event</i><br>
+                      Events
+                    </a>
+                  {% else %}
+                    {% capture events_link %}
+                      {{ site.program_events }}
+                    {% endcapture %}
+                    <a href="{{ site.program_events }}" target="_blank">
+                      <i class="material-icons">event</i><br>
+                      Events
+                    </a>
+                  {% endif %}
 
                 </div>
               </div>
               <div class="col s3 m3">
                 <div class="college-link-mobile center-align">
-                  <a href="#" target="_blank">
+                  <a href="www.temple.edu/admissions" target="_blank">
 
                         <i class="material-icons">school</i><br> Apply
                       </a>
