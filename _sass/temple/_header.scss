@@ -6,11 +6,11 @@ header.tla-header {
     white-space: normal;
     font-size: 1em;
     max-height: 85%;
-    background-color: #a41e35;
+    background-color: $tu-cherry;
   }
 
   .modal-row.row {
-    background-color: #a41e35;
+    background-color: $tu-cherry;
   }
 
   .header-row {
@@ -41,7 +41,7 @@ header.tla-header {
 
           &:hover {
             background-color: #222;
-            border-bottom: 10px solid #a41e35;
+            border-bottom: 10px solid $tu-cherry;
           }
         }
       }
@@ -49,7 +49,7 @@ header.tla-header {
       li.active {
         height: 64px;
         background-color: #222;
-        border-bottom: 10px solid #a41e35;
+        border-bottom: 10px solid $tu-cherry;
       }
     }
   }
@@ -79,7 +79,7 @@ header.tla-header {
   }
 
   .sidenav {
-    background-color: #a41e35;
+    background-color: $tu-cherry;
   }
 
   ul.sidenav {
