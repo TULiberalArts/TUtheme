@@ -7,6 +7,9 @@ header.tla-header {
     font-size: 1em;
     max-height: 85%;
     background-color: #222;
+    :focus{
+      border-color: #222;
+    }
   }
 
   .modal-row.row {
