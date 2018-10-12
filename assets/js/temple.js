@@ -1,6 +1,6 @@
 $(document).ready(function() {
       $('.sidenav').sidenav();
-      $('.modal').modal();
+      //$('.modal').modal();
       // initialization of stuff
       //$('.collapsible').collapsible();
       //Smooth scroll
