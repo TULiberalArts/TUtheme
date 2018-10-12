@@ -1,5 +1,5 @@
 $(document).ready(function() {
-      $(".sidenav").sidenav();
+      $('.sidenav').sidenav();
       $(".modal").modal();
       // initialization of stuff
       //$('.collapsible').collapsible();
@@ -41,7 +41,7 @@ $(document).ready(function() {
         });
 
       // Nav Toggle
-      //COMMENTED OUT FOR TESTING SIDENAV 
+      //COMMENTED OUT FOR TESTING SIDENAV
       // $('[nav-toggle]').click(function(){
       //     $('body').toggleClass('nav-is-open');
       // });
