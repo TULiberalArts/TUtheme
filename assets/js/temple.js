@@ -1,5 +1,5 @@
 $(document).ready(function() {
-      //$('.sidenav').sidenav();
+      $(".sidenav").sidenav();
       $(".modal").modal();
       // initialization of stuff
       //$('.collapsible').collapsible();
@@ -41,28 +41,29 @@ $(document).ready(function() {
         });
 
       // Nav Toggle
-      $('[nav-toggle]').click(function(){
-          $('body').toggleClass('nav-is-open');
-      });
-
-      $('[college-dropdown-toggle]').click(function(){
-          $('body').toggleClass('college-dropdown-is-open');
-      });
-
-
-      // Support closing nav with escape key
-      $(document).keydown(function(e){
-          if(e.keyCode == 27) {
-              if ($('body').hasClass('college-dropdown-is-open')) {
-                  $('body').removeClass('college-dropdown-is-open');
-              }
-              if ($('body').hasClass('nav-is-open')) {
-                  $('body').removeClass('nav-is-open');
-              }
-          }
-      });
-
-      });
+      //COMMENTED OUT FOR TESTING SIDENAV 
+      // $('[nav-toggle]').click(function(){
+      //     $('body').toggleClass('nav-is-open');
+      // });
+      //
+      // $('[college-dropdown-toggle]').click(function(){
+      //     $('body').toggleClass('college-dropdown-is-open');
+      // });
+      //
+      //
+      // // Support closing nav with escape key
+      // $(document).keydown(function(e){
+      //     if(e.keyCode == 27) {
+      //         if ($('body').hasClass('college-dropdown-is-open')) {
+      //             $('body').removeClass('college-dropdown-is-open');
+      //         }
+      //         if ($('body').hasClass('nav-is-open')) {
+      //             $('body').removeClass('nav-is-open');
+      //         }
+      //     }
+      // });
+      //
+      // });
 
       // sttream lining our marketing pay per view form validation without the bloat of mailchimp js
       //https://css-tricks.com/form-validation-part-4-validating-mailchimp-subscribe-form/
