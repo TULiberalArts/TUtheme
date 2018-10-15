@@ -53,16 +53,16 @@ $(document).ready(function() {
 
 
   // Support closing nav with escape key
-  $(document).keydown(function(e) {
-    if (e.keyCode == 27) {
-      if ($('body').hasClass('college-dropdown-is-open')) {
-        $('body').removeClass('college-dropdown-is-open');
-      }
-      if ($('body').hasClass('nav-is-open')) {
-        $('body').removeClass('nav-is-open');
-      }
-    }
-  });
+  // $(document).keydown(function(e) {
+  //   if (e.keyCode == 27) {
+  //     if ($('body').hasClass('college-dropdown-is-open')) {
+  //       $('body').removeClass('college-dropdown-is-open');
+  //     }
+  //     if ($('body').hasClass('nav-is-open')) {
+  //       $('body').removeClass('nav-is-open');
+  //     }
+  //   }
+  // });
   $('.sidenav').sidenav();
   //sidenav init island
   // (function($){
