@@ -63,15 +63,8 @@ $(document).ready(function() {
   //     }
   //   }
   // });
-  $('.sidenav').sidenav();
-  //sidenav init island
-  // (function($){
-  //   $(function(){
-  //     $('.sidenav').sidenav();
-  //   });
-  // })
-  // end sidenav init island
-
+  $(".button-collapse").sideNav();
+  
 });
 //END (document).ready
 
