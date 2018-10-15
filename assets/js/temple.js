@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  $(".modal").modal();
+  //$(".modal").modal();
 
   //
   // initialization of stuff
@@ -63,7 +63,7 @@ $(document).ready(function() {
   //     }
   //   }
   // });
-  $(".button-collapse").sideNav();
+  //$(".button-collapse").sideNav();
   
 });
 //END (document).ready
@@ -71,7 +71,7 @@ $(document).ready(function() {
 // sttream lining our marketing pay per view form validation without the bloat of mailchimp js
 //https://css-tricks.com/form-validation-part-4-validating-mailchimp-subscribe-form/
 // A Validity State Polyfill classList.js polyfill from Eli Grey. https://github.com/eligrey/classList.js/
-;
+
 (function(window, document, undefined) {
 
   'use strict';
