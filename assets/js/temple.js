@@ -1,6 +1,7 @@
 $(document).ready(function() {
-  //$('.sidenav').sidenav();
+
   $(".modal").modal();
+
   //
   // initialization of stuff
   //$('.collapsible').collapsible();
@@ -62,8 +63,15 @@ $(document).ready(function() {
       }
     }
   });
+  (function($){
+    $(function(){
 
+      $('.sidenav').sidenav();
+
+    });
+  })// end sidenav initialization
 });
+//END (document).ready
 
 // sttream lining our marketing pay per view form validation without the bloat of mailchimp js
 //https://css-tricks.com/form-validation-part-4-validating-mailchimp-subscribe-form/
