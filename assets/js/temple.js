@@ -63,13 +63,15 @@ $(document).ready(function() {
       }
     }
   });
+  //$(".sidenav").sidenav();
+  //sidenav init island
   (function($){
     $(function(){
-
-      $('.sidenav').sidenav();
-
+      $(".sidenav").sidenav();
     });
-  })// end sidenav initialization
+  })
+  // end sidenav init island
+  
 });
 //END (document).ready
 
