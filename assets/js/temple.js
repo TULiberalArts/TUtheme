@@ -43,13 +43,13 @@ $(document).ready(function() {
     });
 
   // Nav Toggle
-  $('[nav-toggle]').click(function() {
-    $('body').toggleClass('nav-is-open');
-  });
-
-  $('[college-dropdown-toggle]').click(function() {
-    $('body').toggleClass('college-dropdown-is-open');
-  });
+  // $('[nav-toggle]').click(function() {
+  //   $('body').toggleClass('nav-is-open');
+  // });
+  //
+  // $('[college-dropdown-toggle]').click(function() {
+  //   $('body').toggleClass('college-dropdown-is-open');
+  // });
 
 
   // Support closing nav with escape key
