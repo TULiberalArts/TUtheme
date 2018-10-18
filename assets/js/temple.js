@@ -1,6 +1,6 @@
 $(document).ready(function() {
-  $('.sidenav').sidenav();
   $(".modal").modal();
+  $('.sidenav').sidenav();
   //
   // initialization of stuff
   //$('.collapsible').collapsible();
