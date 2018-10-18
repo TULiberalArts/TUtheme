@@ -1,7 +1,6 @@
 $(document).ready(function() {
-
-  //$(".modal").modal();
-
+  //$('.sidenav').sidenav();
+  $(".modal").modal();
   //
   // initialization of stuff
   //$('.collapsible').collapsible();
@@ -42,11 +41,11 @@ $(document).ready(function() {
       }
     });
 
-   Nav Toggle
+  // Nav Toggle
   $('[nav-toggle]').click(function() {
     $('body').toggleClass('nav-is-open');
   });
-  
+
   $('[college-dropdown-toggle]').click(function() {
     $('body').toggleClass('college-dropdown-is-open');
   });
@@ -63,10 +62,8 @@ $(document).ready(function() {
       }
     }
   });
-  //$(".button-collapse").sideNav();
-  
+
 });
-//END (document).ready
 
 // sttream lining our marketing pay per view form validation without the bloat of mailchimp js
 //https://css-tricks.com/form-validation-part-4-validating-mailchimp-subscribe-form/
