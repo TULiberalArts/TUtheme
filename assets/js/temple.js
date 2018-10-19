@@ -1,7 +1,6 @@
 $(document).ready(function() {
-  //$(".modal").modal();
-  //
   // initialization of stuff
+  $(".modal").modal();
   //$('.collapsible').collapsible();
   //Smooth scroll
   // Select all links with hashes
