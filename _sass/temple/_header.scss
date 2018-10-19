@@ -79,12 +79,8 @@ header.tla-header {
   }
 
   .sidenav {
+    position: fixed;
     background-color: $tu-cherry;
-    z-index: 999;
-  }
-
-  sidenav-overlay {
-    z-index: 950;
   }
 
   ul.sidenav {
