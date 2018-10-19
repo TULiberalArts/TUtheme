@@ -61,7 +61,7 @@ $(document).ready(function() {
   //     }
   //   }
   // });
-  $('.sidenav').sidenav();
+  $(".button-collapse").sideNav();
 });
 
 // sttream lining our marketing pay per view form validation without the bloat of mailchimp js
