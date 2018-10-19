@@ -20,7 +20,7 @@ header.tla-header {
   }
 
   .header-column{
-    padding: 0em 0em 0em 1em;
+    padding: 0em;
   }
 
   .cla-modal-ul {
@@ -115,7 +115,8 @@ header.tla-header {
     }
 
     div.inner-row {
-      width: 1044px;
+      width: 1030px;
+      padding-left: 1em;
     }
 
     .container {
