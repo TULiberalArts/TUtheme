@@ -1,6 +1,5 @@
 $(document).ready(function() {
   $(".modal").modal();
-  //$('.sidenav').sidenav();
   //
   // initialization of stuff
   //$('.collapsible').collapsible();
@@ -39,6 +38,7 @@ $(document).ready(function() {
           });
         }
       }
+      $('.sidenav').sidenav();
     });
 
   // Nav Toggle
