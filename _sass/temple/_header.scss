@@ -20,7 +20,7 @@ header.tla-header {
   }
 
   .header-column{
-    padding: 0em 0em 0em 0em;
+    padding: 0em;
   }
 
   .cla-modal-ul {
@@ -84,6 +84,7 @@ header.tla-header {
 
   .sidenav {
     position: fixed;
+    z-index: 999;
     background-color: $tu-cherry;
   }
 
