@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $(".modal").modal();
+  //$(".modal").modal();
   //
   // initialization of stuff
   //$('.collapsible').collapsible();
