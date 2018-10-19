@@ -156,7 +156,7 @@
   </div>
 </div>
 <!-- BEGIN SIDENAV -->
-<ul id="slide-out" class="sidenav" style="z-index: 2000">
+<ul id="slide-out" class="sidenav">
   <!-- <li>
     <div class="user-view">
       <div class="background">
@@ -169,31 +169,6 @@
   <li {% if page.url==item.url %} class="active" {% endif %}><a href="{{ item.url | prepend: site.baseurl }}" class="waves-effect {% if current[1] == {{ item.url | prepend: site.baseurl }} %}current{% endif %}">{{ item.text }}</a></li>
   {% endfor %}
 </ul>
-
-<!-- <ul id="slide-out" class="sidenav">
-  <li>
-    <div class="user-view">
-      <div class="background">
-        <img src="">
-      </div>
-    </div>
-  </li>
-  <li>
-    <a href="/jewish-studies/" title="Program Homepage" class="home-link"><i class="material-icons">home</i>Home</a></li>
-  <li><a href="/jewish-studies/undergraduate/" class="waves-effect current">Undergraduate</a></li>
-
-  <li><a href="/jewish-studies/graduate/" class="waves-effect current">Graduate</a></li>
-
-  <li><a href="/jewish-studies/faculty/" class="waves-effect current">Faculty</a></li>
-
-  <li><a href="/jewish-studies/student-life/" class="waves-effect current">Student Life</a></li>
-
-  <li><a href="/jewish-studies/research/" class="waves-effect current">Research</a></li>
-
-  <li><a href="/jewish-studies/clinical-services/" class="waves-effect current">Clinical Services</a></li>
-
-  <li><a href="/jewish-studies/next-stops/" class="waves-effect current">Next Stops</a></li>
-</ul> -->
 <!-- END SIDENAV -->
 
 <!-- Modal Structure -->
