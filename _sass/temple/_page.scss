@@ -1,5 +1,11 @@
 .tla-dark {background-color: #222222;}
 .dark{background-color: #222222;}
+.bg-color-band{
+  height: 400px;
+  width: 100hw;
+  background-color: $tu-cherry;
+  z-index: -1;
+}
 main {
   // background: $tu-light-gray;
   font-family: $content-font-family;
