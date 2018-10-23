@@ -8,14 +8,8 @@
           <li><a class="white-text" href="{{ '/' | prepend: site.baseurl }}">{{ site.title }}</a></li>
           {% if site.data.profiles %}{% if site.data.profiles != "" %}
             <li><a href="{{ '/faculty' | prepend: site.baseurl }}" class="white-text"><i class="material-icons">people</i>Faculty List</a></li>
-          <!-- if there is a staff list -->
-          {% if page.staff %}
-              {% include {{ page.staff }} %}
-            {% endif %}
-          <!-- if there is a researcher list -->
-          {% if page.staff %}
-              {% include {{ page.researcher }} %}
-            {% endif %}
+            <li><a href="{{ '/staff' | prepend: site.baseurl }}" class="white-text"><i class="material-icons">people</i>Faculty List</a></li>
+            <li><a href="{{ '/researchers' | prepend: site.baseurl }}" class="white-text"><i class="material-icons">people</i>Faculty List</a></li>
           {% endif %}{% endif %}
         </ul>
       </div>
