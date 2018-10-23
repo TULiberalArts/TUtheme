@@ -88,8 +88,9 @@ header.tla-header {
     top: -14px;
     height: 100%;
     width: 250px;
-    z-index: 999;
+    padding: 25px;
     background-color: $tu-cherry;
+    z-index: 999;
   }
 
   ul.sidenav {
