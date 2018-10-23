@@ -1,6 +1,6 @@
 $(document).ready(function() {
   // initialization of stuff
-  //$(".modal").modal();
+  $(".modal").modal();
   //$('.collapsible').collapsible();
   //Smooth scroll
   // Select all links with hashes
@@ -60,7 +60,7 @@ $(document).ready(function() {
       }
     }
   });
-  //$(".button-collapse").sideNav();
+  $(".button-collapse").sideNav();
 });
 
 // sttream lining our marketing pay per view form validation without the bloat of mailchimp js
