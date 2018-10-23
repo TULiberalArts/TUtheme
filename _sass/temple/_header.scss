@@ -1,7 +1,12 @@
 header.tla-header {
   overflow: visible;
   padding-left: 0;
-
+  .bg-color-band{
+    height: 500px;
+    width: 100hw;
+    background-color: $tu-cherry;
+    z-index: -1;
+  }
   .modal {
     white-space: normal;
     font-size: 1em;
