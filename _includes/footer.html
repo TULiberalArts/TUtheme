@@ -6,15 +6,13 @@
           <li><a class="white-text" href="{{ site.university.url }}"><strong>{{ site.university.name }}</strong></a></li>
           <li><a class="white-text" href="{{ site.college.url }}">{{ site.college.name }}</a></li>
           <li><a class="white-text" href="{{ '/' | prepend: site.baseurl }}">{{ site.title }}</a></li>
-          {% if site.data.profiles %}
-            {% if site.data.profiles != "" %}
+
               {% if site.faculty-page %}
                 <li><a href="{{ site.faculty-page | prepend: site.baseurl }}" class="white-text"><i class="material-icons">people</i>Faculty List</a></li>
                {% else %}
                 <li><a href="{{ '/faculty' | prepend: site.baseurl }}" class="white-text"><i class="material-icons">people</i>Faculty List</a></li>
               {% endif %}
-            {% endif %}
-          {% endif %}
+
         </ul>
       </div>
       <div class="col l3 m6 s12">
