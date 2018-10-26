@@ -17,7 +17,9 @@ layout: doc
     <div class="container">
       {{ content }}
        <!-- there is persons -->
-      {% include {{ page.faculty }} %}
+      {% if page.faculty %}
+        {% include {{ page.faculty }} %}
+      {% endif %}
       <!-- if there are affiliated -->
       {% if page.affiliated %}
         {% include {{ page.affiliated }} %}
