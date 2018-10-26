@@ -17,9 +17,11 @@
 .content-row-wrapper {
   position: relative;
   top: -400px;
-  z-index: 10;
+  padding: 0 .75rem;
   border-top: 5px solid #fcb426;
   background-color: #fff;
+  height: 100%;
+  z-index: 10;
 }
 
 main {
