@@ -14,11 +14,11 @@
   z-index: 0;
 }
 
-.page-content-wrapper {
-  position: relative;
-  top: -400px;
-  z-index: 10;
-}
+// .page-content-wrapper {
+//   position: relative;
+//   top: -400px;
+//   z-index: 10;
+// }
 
 main {
   // background: $tu-light-gray;
@@ -95,17 +95,20 @@ main {
   }
 }
 // Lead
+
 .lead {
   //, .content-homepage > p:first-of-type {
   font-size: 1.35em;
   line-height: 1.35em;
 }
 // Page header
+
 .page-header {
   border-bottom: 4px solid lightgray;
   padding-bottom: 0.5rem;
 }
 // Page feature
+
 .page-feature {
   margin-bottom: 2em;
   padding: 4em 0;
@@ -149,6 +152,7 @@ main {
 }
 // Page content
 // Feed content
+
 a.feed-item {
   display: block;
   border-bottom: 1px solid lightgray;
