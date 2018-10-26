@@ -17,9 +17,10 @@
 .content-row-wrapper {
   position: relative;
   top: -400px;
-  padding: 0 .75rem;
+  margin: 0 .75rem;
+  padding-top: 2rem;
   border-top: 5px solid #fcb426;
-  background-color: #fff;
+  background: #fff;
   height: 100%;
   z-index: 10;
 }
