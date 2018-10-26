@@ -11,14 +11,14 @@ layout: doc
   <!-- hero is not smart yet. It lives in the site program repo  @todo make it a smart hero -->
   <div class="bg-color-band">
   </div>
-  <div class="main-wrapper">
-    <main class="main">
 
-      {% if page.hero %}
-      {% include {{ page.hero }} %}
-      {% endif %}
-      <!-- content comes fromt the page's markdown in the programs repo-->
+  <main class="main">
 
+    {% if page.hero %}
+    {% include {{ page.hero }} %}
+    {% endif %}
+    <!-- content comes fromt the page's markdown in the programs repo-->
+    <div class="page-content-wrapper">
       <div class="page-content">
         <div class="container">
           <div class="row">
@@ -31,10 +31,10 @@ layout: doc
           </div>
         </div>
       </div>
+    </div>
+    <!-- END page-content-wrapper -->
+  </main>
 
-    </main>
-  </div>
-  <!-- END main-wrapper -->
   <footer class="tla-footer">
     <!-- @todo create a ppv-footer include. -->
     {% include footer.html %}
