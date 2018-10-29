@@ -15,7 +15,7 @@
 
 .hz-bg-band {
   background-color: $tu-cherry;
-  height: 400px;
+  min-height: 400px;
   padding-top: 5em;
 
   #content-container {
