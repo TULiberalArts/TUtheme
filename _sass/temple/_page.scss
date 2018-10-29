@@ -14,7 +14,7 @@
   z-index: 0;
 }
 
-.content-row-wrapper {
+div.content-container{
   position: relative;
   top: -400px;
   margin: 0 .75rem;
@@ -24,6 +24,17 @@
   height: 100%;
   z-index: 10;
 }
+
+// .content-row-wrapper {
+//   position: relative;
+//   top: -400px;
+//   margin: 0 .75rem;
+//   padding-top: 2rem;
+//   border-top: 5px solid #fcb426;
+//   background: #fff;
+//   height: 100%;
+//   z-index: 10;
+// }
 
 main {
   // background: $tu-light-gray;
