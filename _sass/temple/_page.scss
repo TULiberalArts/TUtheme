@@ -15,8 +15,8 @@
 
 .hz-bg-band {
   background-color: $tu-cherry;
-  min-height: 400px;
-  padding-top: 5em;
+  height: 400px;
+  padding-top: 3em;
 
   #content-container {
     border-top: 5px solid #fcb426;
@@ -81,7 +81,7 @@ main {
 
   .page-content,
   .page-header .container {
-    padding: 2rem 0;
+    // padding: 2rem 0;
   }
 
   .page-header h1 {
