@@ -14,11 +14,17 @@
   z-index: 0;
 }
 
-#content-container{
-  padding-top: 2rem;
-  border-top: 5px solid #fcb426;
-  background: #fff;
-  z-index: 10;
+.hz-bg-band {
+  background-color: $tu-cherry;
+  height: 400px;
+  padding-top: 5em;
+
+  #content-container {
+    border-top: 5px solid #fcb426;
+    margin: auto;
+    min-height: 500px;
+    background: #fff;
+  }
 }
 
 main {
