@@ -5,13 +5,13 @@
 //   background-color: #222222;
 // }
 
-.bg-color-band {
-  position: relative;
-  height: 400px;
-  width: 100hw;
-  background-color: $tu-cherry;
-  z-index: 0;
-}
+// .bg-color-band {
+//   position: relative;
+//   height: 400px;
+//   width: 100hw;
+//   background-color: $tu-cherry;
+//   z-index: 0;
+// }
 
 .hz-bg-band {
   background-color: $tu-cherry;
@@ -23,6 +23,7 @@
     margin: auto;
     min-height: 500px;
     background: #fff;
+    padding: 1.5em 60px 60px 0em;
   }
 }
 
