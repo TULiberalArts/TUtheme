@@ -4,7 +4,6 @@
 // .dark {
 //   background-color: #222222;
 // }
-
 // .bg-color-band {
 //   position: relative;
 //   height: 400px;
@@ -14,17 +13,28 @@
 // }
 
 .hz-bg-band {
-  background-color: $tu-cherry;
   min-height: 400px;
   padding-top: 3em;
+  // background-color: $tu-cherry;
+  background-repeat: no-repeat;
+  /* Gradient 1 */
+  background-image:linear-gradient(to right, RGB(164,30,53), RGB(164,30,53)),
+  /* Gradient 2 */
+  linear-gradient(to right, RGB(255, 255, 255), RGB(255, 255, 255)); /* Grad Pos 1 */
+  background-position:0 0,
+  /* Grad Pos 2 */
+  0 400px;
+  /* Grad Size 1 */
+  background-size:100% 400px,
+  /* Grad Size 2 */
+  100% 100%;
 
   #content-container {
     border-top: 5px solid #fcb426;
     margin: auto;
     min-height: 500px;
     background: #fff;
-    padding: 60px 60px;
-    padding-top: 1em;
+    padding: 1em 60px 60px;
   }
 }
 
