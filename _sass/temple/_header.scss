@@ -1,7 +1,7 @@
 header.tla-header {
   overflow: visible;
   padding-left: 0;
-  
+
   .modal {
     white-space: normal;
     font-size: 1em;
@@ -85,6 +85,7 @@ header.tla-header {
   }
 
   .sidenav {
+    display: none;
     position: fixed;
     top: -14px;
     height: 100%;
