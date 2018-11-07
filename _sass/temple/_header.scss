@@ -17,7 +17,7 @@ header.tla-header {
     background-color: #222;
     font-family: "open-sans", Arial, sans-serif;
     margin-bottom: 0;
-    padding: 0.5em 0.1em;
+    // padding: 0.5em 0.1em;
   }
 
   .header-column {
@@ -33,8 +33,7 @@ header.tla-header {
   }
 
   nav.program-nav {
-    z-depth-0;
-
+    box-shadow: none;
     ul {
       font-weight: 400;
 
