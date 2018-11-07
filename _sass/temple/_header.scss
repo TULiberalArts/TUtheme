@@ -1,5 +1,5 @@
 header.tla-header {
-  font-family: opensans_regular, sans-serif;
+  font-family: 'opensans_regular', sans-serif;
   overflow: visible;
   padding-left: 0;
 
@@ -16,7 +16,7 @@ header.tla-header {
 
   .header-row {
     background-color: #222;
-    font-family: "open-sans", Arial, sans-serif;
+    // font-family: "open-sans", Arial, sans-serif;
     margin-bottom: 0;
     // padding: 0.5em 0.1em;
   }
@@ -117,7 +117,7 @@ header.tla-header {
 
   .row {
     background-color: #222;
-    font-family: "open-sans", Arial, sans-serif;
+    // font-family: "open-sans", Arial, sans-serif;
     margin-bottom: 0;
 
     .divider {
