@@ -35,6 +35,7 @@ header.tla-header {
 
   nav.program-nav {
     box-shadow: none;
+
     ul {
       font-weight: 400;
 
@@ -64,6 +65,14 @@ header.tla-header {
   }
 
   .program-nav {
+    a:hover {
+      text-decoration: none;
+    }
+
+    a:active {
+      text-decoration: none;
+    }
+
     a {
       height: 64px;
       font-size: 1.2em;
