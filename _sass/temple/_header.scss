@@ -5,7 +5,7 @@ header.tla-header {
 
   .modal {
     white-space: normal;
-    font-size: 1em;
+    font-size: 1.2em;
     max-height: 85%;
     background-color: #222;
   }
@@ -97,6 +97,7 @@ header.tla-header {
   }
 
   .sidenav {
+    font-size: 1.2em;
     display: none;
     position: fixed;
     top: -14px;
