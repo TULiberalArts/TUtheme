@@ -136,11 +136,13 @@ header.tla-header {
 
     .divider {
       background-color: #222;
+      height: 0.5em;
+      width: 100%;
     }
 
-    div.inner-row {
-      width: 1040px;
-    }
+    // div.inner-row {
+    //   width: 1040px;
+    // }
 
     .container {
       background-color: inherit;
