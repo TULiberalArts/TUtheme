@@ -111,10 +111,12 @@ header.tla-header {
     line-height: 2.5em;
     background-color: $tu-cherry;
     z-index: 999;
+
     li {
       a {
         color: #fff;
       }
+
       a.home-link {
         i.material-icons {
           color: #fff;
