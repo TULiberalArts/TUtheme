@@ -111,20 +111,29 @@ header.tla-header {
     line-height: 2.5em;
     background-color: $tu-cherry;
     z-index: 999;
-  }
-
-  ul.sidenav {
     li {
       a {
         color: #fff;
       }
-    }
-  }
+      a.home-link {
+        i.material-icons {
+          color: #fff;
+        }
+      }
+      a:link {
+        background-color: #a41e35;
+      }
 
-  li {
-    a.home-link {
-      i.material-icons {
-        color: #fff;
+      a:visited {
+        background-color: #0000ff;
+      }
+
+      a:hover {
+        background-color: #333;
+      }
+
+      a:active {
+        background-color: #000;
       }
     }
   }
