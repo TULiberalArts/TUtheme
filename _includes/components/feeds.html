@@ -28,7 +28,7 @@
         {% else %}
           <h2>Upcoming Events</h2>
           {% for item in site.data.events limit:4 %}
-            <a href="{{ item['Page Path'] }}" target="_blank" class="feed-item">
+            <a href="{{ item['Event Path'] }}" target="_blank" class="feed-item">
               <strong>{{ item['Title'] }}</strong>
               <span class="meta">{{ item['Sort Date'] }}</span>
             </a>
