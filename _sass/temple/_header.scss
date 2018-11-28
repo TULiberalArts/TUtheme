@@ -122,21 +122,21 @@ header.tla-header {
           color: #fff;
         }
       }
-      // a:link {
-      //   background-color: #a41e35;
-      // }
-      //
+      a:link {
+        background-color: #a41e35;
+      }
+
       // a:visited {
       //   background-color: #0000ff;
       // }
-      //
-      // a:hover {
-      //   background-color: #333;
-      // }
-      //
-      // a:active {
-      //   background-color: #000;
-      // }
+
+      a:hover {
+        background-color: #333;
+      }
+
+      a:active {
+        background-color: #000;
+      }
     }
   }
 
