@@ -112,8 +112,10 @@ header.tla-header {
     background-color: $tu-cherry;
     z-index: 999;
 
-    li:active {
-      background-color: #000;
+    li.active {
+      a{
+        background-color: #000;
+      }
     }
     // li {
     //   a {
