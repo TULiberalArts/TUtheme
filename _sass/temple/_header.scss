@@ -114,7 +114,8 @@ header.tla-header {
 
     li.active {
       a {
-        background-color: #000;
+        // background-color: #000;
+        @extend #a41e35, .darken-1;
       }
     }
 
