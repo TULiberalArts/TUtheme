@@ -1,0 +1,249 @@
+<div class="header-row row">
+
+  <div class="container valign-wrapper">
+
+    <div class="logo">
+      <a href="https://www.temple.edu">
+        <img class="" src="https://www.temple.edu/sites/all/modules/tu_global/images/svg/temple-logo-t-box.svg">
+      </a>
+    </div>
+    <div class="inner-row">
+      <div class="header-row row">
+        <div class="mast-container">
+
+          <div class="header-column col l8 m8 s12">
+            <div class="mast">
+
+              <div class="breadcrumbs">
+                <a href="https://www.temple.edu/academics/schools-and-colleges" class="breadcrumb">Explore Temple Univeristy</a>
+
+                <!-- Modal Trigger -->
+                <a href="#cla-modal" class="breadcrumb modal-trigger">College of Liberal Arts</a>
+
+              </div>
+              <h1 class="header-title">{{ site.title }}</h1>
+
+            </div>
+            <!-- End mast -->
+
+          </div>
+
+          <div class="icon-column col l4 m4 s12">
+
+            <div class="college-link-set hide-on-med-and-down">
+              <div class="college-link center-align">
+                {% if site.data.news == null or site.data.news[0] == null %}
+                <a href="https://liberalarts.temple.edu/news" target="_blank">
+                  <i class="material-icons">description</i><br>
+                  News
+                </a>
+                {% else %}
+                {% capture news_link %}
+                {{ site.program_news }}
+                {% endcapture %}
+                <a href="{{ site.program_news }}" target="_blank">
+                  <i class="material-icons">description</i><br>
+                  News
+                </a>
+                {% endif %}
+              </div>
+
+              <div class="college-link center-align">
+                {% if site.data.events == null or site.data.events[0] == null %}
+                <a href="https://events.temple.edu/department/college-of-liberal-arts" target="_blank">
+                  <i class="material-icons">event</i><br>
+                  Events
+                </a>
+                {% else %}
+                {% capture events_link %}
+                {{ site.program_events }}
+                {% endcapture %}
+                <a href="{{ site.program_events }}" target="_blank">
+                  <i class="material-icons">event</i><br>
+                  Events
+                </a>
+                {% endif %}
+              </div>
+
+              <div class="college-link center-align">
+                <a href="https://www.temple.edu/admissions" target="_blank">
+                  <!-- <img src="/psychology/assets/img/icons/heart-red.svg" alt="Heart" height="20" width="20"><br> -->
+                  <i class="material-icons">school</i><br> Apply
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <!-- End column -->
+
+        </div>
+        <!-- End mast-container -->
+
+      </div>
+      <!-- End header-row row  -->
+
+    </div>
+    <!-- End div.inner-row  -->
+
+  </div>
+  <!-- container valign-wrapper -->
+
+</div>
+
+<div class="header-row row">
+
+  <div class="divider"></div>
+
+  <div class="container valign-wrapper">
+    <nav class="program-nav hide-on-med-and-down">
+
+      <div class="container">
+        <ul>
+          <li {% if page.url=='/' %} class="active" {% endif %}><a href="{{ '/' | prepend: site.baseurl }}" title="Program Homepage" class="home-link hide-on-med-and-down waves-effect"><i class="material-icons">home</i></a></li>
+          {% for item in site.data.navigation %}
+          <li {% if page.url==item.url %} class="active" {% endif %}><a href="{{ item.url | prepend: site.baseurl }}" class="waves-effect {% if current[1] == {{ item.url | prepend: site.baseurl }} %}current{% endif %}">{{ item.text }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+<div class="navbar-spacer"></div>
+<!-- end of row -->
+
+<div class="college-link-set-mobile hide-on-large-only center-align">
+
+  <div class="header-row row">
+    <div class="container">
+      <div class="col s12 m12">
+        <div class="header-row row">
+          <div class="col s3 m3">
+            <div class="menu-link-mobile college-link center-align">
+              <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i><br>
+                <div class="menu-link-mobile-text">Menu</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col s3 m3">
+            <div class="college-link-mobile center-align">
+              <a href="https://liberalarts.temple.edu/news/jewish-studies" target="_blank">
+                <i class="material-icons">description</i><br>
+                News
+              </a>
+            </div>
+          </div>
+          <div class="col s3 m3">
+            <div class="college-link-mobile center-align">
+
+              <a href="https://events.temple.edu/department/college-of-liberal-arts" target="_blank">
+                <i class="material-icons">event</i><br>
+                Events
+              </a>
+
+            </div>
+          </div>
+          <div class="col s3 m3">
+            <div class="college-link-mobile center-align">
+              <a href="#" target="_blank">
+
+                <i class="material-icons">school</i><br> Apply
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- BEGIN SIDENAV -->
+<ul id="slide-out" class="sidenav">
+  <!-- <li>
+    <div class="user-view">
+      <div class="background">
+        <img src="" />
+      </div>
+    </div>
+  </li> -->
+  <li {% if page.url=='/' %} class="active" {% endif %}><a href="{{ '/' | prepend: site.baseurl }}" title="Program Homepage" class="home-link waves-effect"><i class="material-icons">home</i></a></li>
+  {% for item in site.data.navigation %}
+  <li {% if page.url==item.url %} class="active" {% endif %}><a href="{{ item.url | prepend: site.baseurl }}" class="waves-effect {% if current[1] == {{ item.url | prepend: site.baseurl }} %}current{% endif %}">{{ item.text }}</a></li>
+  {% endfor %}
+</ul>
+<!-- END SIDENAV -->
+
+<!-- Modal Structure -->
+<div id="cla-modal" class="modal">
+  <div class="modal-content" style="width: 100%; padding: 0px;">
+    <div class="container" style="width: 100%; margin-left: 0px; margin-right: 0px;">
+      <div class="modal-row row" style="width: 100%; margin-left: 0px; margin-right: 0px;">
+        <div class="col m3 s12">
+          <ul class="cla-modal-ul">
+            <li><b><a href="https://liberalarts.temple.edu/">College of Liberal Arts</a></b></li>
+            <li><a href="https://liberalarts.temple.edu/about-us/">About Us</a></li>
+            <li><a href="https://liberalarts.temple.edu/admissions/">Admissions</a></li>
+            <li><a href="https://liberalarts.temple.edu/academics/">Academics</a></li>
+            <li><a href="https://liberalarts.temple.edu/advising/">Advising</a></li>
+            <li><a href="https://liberalarts.temple.edu/our-alumni">Our Alumni</a></li>
+          </ul>
+        </div>
+        <!-- TODO: Move this to global data file as soon as Jekyll adds support -->
+        <div class="col m3 s12">
+          <ul class="cla-modal-ul">
+            <li><b><a href="https://liberalarts.temple.edu/">Program Sites</a></b></li>
+            <li><a href="https://www.cla.temple.edu/africology-and-african-american-studies/">Africology and African American Studies</a></li>
+            <li><a href="https://www.cla.temple.edu/american-studies/">American Studies</a></li>
+            <li><a href="https://www.cla.temple.edu/anthropology/">Anthropology</a></li>
+            <li><a href="https://www.cla.temple.edu/arabic/">Arabic</a></li>
+            <li><a href="https://www.cla.temple.edu/asian-studies/">Asian Studies</a></li>
+            <li><a href="https://www.cla.temple.edu/chinese/">Chinese</a></li>
+            <li><a href="https://www.cla.temple.edu/creative-writing/">Creative Writing</a></li>
+            <li><a href="https://www.cla.temple.edu/criminal-justice/">Criminal Justice</a></li>
+            <li><a href="https://www.cla.temple.edu/economics/">Economics</a></li>
+            <li><a href="https://www.cla.temple.edu/english/">English</a></li>
+            <li><a href="https://www.cla.temple.edu/environmental-studies/">Environmental Studies</a></li>
+            <li><a href="https://www.cla.temple.edu/french/">French</a></li>
+          </ul>
+        </div>
+        <div class="col m3 s12">
+          <ul class="cla-modal-ul">
+            <li class="hide-on-small-only">&nbsp;</li>
+            <li><a href="https://www.cla.temple.edu/gender-sexuality-and-womens-studies/">Gender, Sexuality and Women’s Studies</a></li>
+            <li><a href="https://www.cla.temple.edu/geographic-information-systems/">Geographic Information Systems</a></li>
+            <li><a href="https://www.cla.temple.edu/geography-and-urban-studies/">Geography and Urban Studies</a></li>
+            <li><a href="http://www.cla.temple.edu/german/">German</a></li>
+            <li><a href="https://www.cla.temple.edu/global-studies/">Global Studies</a></li>
+            <li><a href="https://www.cla.temple.edu/greek-and-roman-classics/">Greek and Roman Classics</a></li>
+            <li><a href="https://www.cla.temple.edu/history/">History</a></li>
+            <li><a href="https://www.cla.temple.edu/intellectual-heritage/ ">Intellectual Heritage</a></li>
+            <li><a href="https://www.cla.temple.edu/italian/">Italian</a></li>
+            <li><a href="https://www.cla.temple.edu/japanese/">Japanese</a></li>
+            <!-- @TODO -->
+            <li><a href="https://www.cla.temple.edu/latin-american-studies/">Latin American Studies</a></li>
+          </ul>
+        </div>
+        <div class="col m3 s12">
+          <ul class="cla-modal-ul">
+            <li class="hide-on-small-only">&nbsp;</li>
+            <li><a href="https://www.cla.temple.edu/liberal-studies/">Liberal Studies</a></li>
+            <li><a href="https://www.cla.temple.edu/neuroscience/">Neuroscience</a></li>
+            <li><a href="https://www.cla.temple.edu/philosophy/">Philosophy</a></li>
+            <li><a href="https://www.cla.temple.edu/political-science/">Political Science</a></li>
+            <!-- @TODO -->
+            <li><a href="https://www.cla.temple.edu/portuguese/">Portuguese</a></li>
+            <li><a href="https://www.cla.temple.edu/pre-law/">Pre-Law</a></li>
+            <li><a href="https://www.cla.temple.edu/psychology/">Psychology</a></li>
+            <li><a href="https://www.cla.temple.edu/public-policy/">Public Policy</a></li>
+            <li><a href="https://www.cla.temple.edu/religion/">Religion</a></li>
+            <li><a href="https://www.cla.temple.edu/russian/">Russian</a></li>
+            <li><a href="https://www.cla.temple.edu/sociology/">Sociology</a></li>
+            <!-- @TODO -->
+            <li><a href="https://www.cla.temple.edu/spanish/">Spanish</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- END MODAL -->
