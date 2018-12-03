@@ -114,8 +114,7 @@ header.tla-header {
 
     li.active {
       a {
-        background-color: #000;
-        //@extend .red, .darken-1;
+        background-color: darken($tu-cherry, 20%);
       }
     }
 
