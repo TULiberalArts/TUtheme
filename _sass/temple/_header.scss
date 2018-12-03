@@ -136,7 +136,7 @@ header.tla-header {
       //   background-color: #0000ff;
       // }
       a:hover {
-        background-color: #333;
+        background-color: lighten($tu-cherry, 10%);
       }
     }
   }
