@@ -171,9 +171,9 @@
   <li {% if page.url==item.url %} class="active" {% endif %}><a href="{{ item.url | prepend: site.baseurl }}" class="waves-effect {% if current[1] == {{ item.url | prepend: site.baseurl }} %}current{% endif %}">{{ item.text }}</a></li>
   {% endfor %}
   <br>
-  <a class="waves-effect waves-light btn" href="#">Visit</a>
+  <a href="#" class="waves-effect waves-light btn" style="width: 200px">Visit</a>
   <br>
-  <a class="waves-effect waves-light btn">Apply</a>
+  <a href="#" class="waves-effect waves-light btn" style="width: 200px">Apply</a>
 </ul>
 <!-- END SIDENAV -->
 
