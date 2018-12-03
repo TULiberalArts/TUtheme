@@ -198,6 +198,9 @@ hr {
       opacity: 1;
     }
   }
+  .card2-action{
+    @extend .center-align;
+  }
 }
 // Header shadow fix
 header {
