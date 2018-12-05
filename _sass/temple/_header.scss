@@ -43,6 +43,9 @@ header.tla-header {
       font-weight: 400;
 
       li {
+        padding-left: 1em;
+        padding-right: 1em;
+
         &:first-of-type {
           a {
             border-left-width: 0;
