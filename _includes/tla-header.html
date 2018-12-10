@@ -157,14 +157,17 @@
 </div>
 <!-- BEGIN SIDENAV -->
 <ul id="slide-out" class="sidenav">
+  {% if page.feature %}
   <li>
+    <!-- @TODO: Change "user-view" to something more appropriate -->
     <div class="user-view">
       <div class="background" style="overflow: hidden">
-        <!-- Include to replace hard coded absolute image path -->
-        <img src="https://www.cla.temple.edu/jewish-studies/media/Religion Hero.png" />
+        <div style="min-height:240px; background-image: url('{{ page.feature-image }}');">
+        </div>
       </div>
     </div>
   </li>
+  {% endif %}
   <li {% if page.url=='/' %} class="active" {% endif %}><a href="{{ '/' | prepend: site.baseurl }}" title="Program Homepage" class="home-link waves-effect"><i class="material-icons">home</i></a></li>
   {% for item in site.data.navigation %}
   <li {% if page.url==item.url %} class="active" {% endif %}><a href="{{ item.url | prepend: site.baseurl }}" class="waves-effect {% if current[1] == {{ item.url | prepend: site.baseurl }} %}current{% endif %}">{{ item.text }}</a></li>
