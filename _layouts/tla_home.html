@@ -1,26 +1,26 @@
 ---
 layout: doc
 ---
-<header class="site-header">
-{% include temp_header.html %}
+<header class="tla-header">
+  {% include tla-header.html %}
 </header>
 <!-- tla-home -->
 <main>
-{% if page.feature %}
-<div class="page-feature" style="min-height:250px; background-image: url('{{ page.feature-image }}');">
-  <div class="container">
+  {% if page.feature %}
+  <div class="page-feature" style="min-height:250px; background-image: url('{{ page.feature-image }}');">
+    <div class="container">
       {% if page.feature-title %}<h1>{{ page.feature-title }}</h1>{% endif %}
       {% if page.feature-title %}<p>{{ page.feature-body }}</p>{% endif %}
+    </div>
   </div>
-</div>
-{% endif %}
-<div class="page-content">
-  <div class="container">
+  {% endif %}
+  <div class="page-content">
+    <div class="container">
       <div class="">
         {{ content }}
       </div>
+    </div>
   </div>
-</div>
 </main>
 
 {% include components/feeds.html %}
