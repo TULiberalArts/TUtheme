@@ -157,7 +157,7 @@
 </div>
 <!-- BEGIN SIDENAV -->
 <ul id="slide-out" class="sidenav">
-  {% if page.feature %}
+  <!-- {% if page.feature %} -->
   <li>
     <!-- @TODO: Change "user-view" to something more appropriate -->
     <div class="user-view">
@@ -167,15 +167,15 @@
       </div>
     </div>
   </li>
-  {% endif %}
-  <br />
+  <!-- {% endif %} -->
+  <!-- <br> -->
   <li {% if page.url=='/' %} class="active" {% endif %}><a href="{{ '/' | prepend: site.baseurl }}" title="Program Homepage" class="home-link waves-effect"><i class="material-icons">home</i></a></li>
   {% for item in site.data.navigation %}
   <li {% if page.url==item.url %} class="active" {% endif %}><a href="{{ item.url | prepend: site.baseurl }}" class="waves-effect {% if current[1] == {{ item.url | prepend: site.baseurl }} %}current{% endif %}">{{ item.text }}</a></li>
   {% endfor %}
-  <br />
+  <br>
   <a href="https://liberalarts.temple.edu/admissions/visit" target="_blank" class="waves-effect btn" style="text-align: center; width: 100%">Visit</a>
-  <br />
+  <br>
   <a href="https://www.temple.edu/admissions" class="waves-effect btn" target="_blank" style="text-align: center; width: 100%">Apply</a>
 </ul>
 <!-- END SIDENAV -->
