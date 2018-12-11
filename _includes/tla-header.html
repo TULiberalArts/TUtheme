@@ -157,8 +157,9 @@
 </div>
 <!-- BEGIN SIDENAV -->
 <ul id="slide-out" class="sidenav">
-  <!-- {% if page.feature %} -->
+
   <li>
+    {% if page.feature %}
     <!-- @TODO: Change "user-view" to something more appropriate -->
     <div class="user-view">
       <div class="background" style="overflow: hidden">
@@ -166,8 +167,9 @@
         </div>
       </div>
     </div>
+    {% endif %}
   </li>
-  <!-- {% endif %} -->
+
   <!-- <br> -->
   <li {% if page.url=='/' %} class="active" {% endif %}><a href="{{ '/' | prepend: site.baseurl }}" title="Program Homepage" class="home-link waves-effect"><i class="material-icons">home</i></a></li>
   {% for item in site.data.navigation %}
