@@ -157,20 +157,19 @@
 </div>
 <!-- BEGIN SIDENAV -->
 <ul id="slide-out" class="sidenav">
-
+  <!-- Begin Image area -->
+  <!-- {% if page.feature %}
   <li>
-    {% if page.feature %}
-    <!-- @TODO: Change "user-view" to something more appropriate -->
     <div class="user-view">
       <div class="background" style="overflow: hidden">
         <div style="min-height:240px; background-image: url('{{ page.feature-image }}'); background-position: center; background-size: auto 240px;">
         </div>
       </div>
     </div>
-    {% endif %}
   </li>
-
-  <!-- <br> -->
+  {% endif %}
+  <br> -->
+  <!-- End Image Area -->
   <li {% if page.url=='/' %} class="active" {% endif %}><a href="{{ '/' | prepend: site.baseurl }}" title="Program Homepage" class="home-link waves-effect"><i class="material-icons">home</i></a></li>
   {% for item in site.data.navigation %}
   <li {% if page.url==item.url %} class="active" {% endif %}><a href="{{ item.url | prepend: site.baseurl }}" class="waves-effect {% if current[1] == {{ item.url | prepend: site.baseurl }} %}current{% endif %}">{{ item.text }}</a></li>
