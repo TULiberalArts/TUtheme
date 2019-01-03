@@ -1,6 +1,7 @@
 #!/bin/sh
 
 set -e
-rvm get stable
+
 gem install bundler -v 1.17.3
+gem update system
 bundle install
