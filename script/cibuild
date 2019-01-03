@@ -2,7 +2,5 @@
 
 set -e
 
-gem install bundler -v 1.17.3
-gem update --system
 bundle exec jekyll build
 gem build tutheme.gemspec
