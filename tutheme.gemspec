@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "tutheme"
-  spec.version       = "1.0.0"
+  spec.version       = "0.11.1"
   spec.authors       = ["Chris Hill"]
   spec.email         = ["c.hill@temple.edu"]
 
@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
 
   spec.metadata["plugin_type"] = "theme"
 
-  spec.add_development_dependency "jekyll", "~> 3.8.5"
-  spec.add_development_dependency "bundler", "~> 1.7"
+  spec.add_development_dependency "jekyll", "~> 3.6"
+  spec.add_development_dependency "bundler", "~> 1.17.3"
   spec.add_development_dependency "rake", "~> 12.1"
 end
