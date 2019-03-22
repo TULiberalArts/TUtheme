@@ -69,7 +69,4 @@ DEPENDENCIES
   tutheme!
 
 BUNDLED WITH
-   2.0.0
-   
-$ bundle version
-Bundler version 2.0.0
+   2.0.1
