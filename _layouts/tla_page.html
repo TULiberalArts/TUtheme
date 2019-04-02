@@ -27,6 +27,10 @@ layout: doc
     {% if page.research %}
     {% include {{ page.research }} %}
     {% endif %}
+    <!-- if there are affiliated -->
+    {% if page.affiliated %}
+    {% include {{ page.affiliated }} %}
+    {% endif %}
   </div>
 </main>
 {% include footer.html %}
