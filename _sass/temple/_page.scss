@@ -13,6 +13,7 @@
 // }
 
 .hz-bg-band {
+  border-top: 5px solid #2f287e;
   min-height: 400px;
   padding-top: 3em;
   // background-color: $tu-cherry;
@@ -31,7 +32,7 @@
   100% 100%;
 
   #content-container {
-    border-top: 5px solid #2f287e;
+    //border-top: 5px solid #2f287e;
     margin: auto;
     min-height: 500px;
     background: #fff;
