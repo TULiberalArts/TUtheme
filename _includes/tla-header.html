@@ -126,10 +126,20 @@
 
           <div class="col s3 m3">
             <div class="college-link-mobile center-align">
-              <a href="https://liberalarts.temple.edu/news/jewish-studies" target="_blank">
+              {% if site.data.news == null or site.data.news[0] == null %}
+              <a href="https://liberalarts.temple.edu/news" target="_blank">
                 <i class="material-icons">description</i><br>
                 News
               </a>
+              {% else %}
+              {% capture news_link %}
+              {{ site.program_news }}
+              {% endcapture %}
+              <a href="{{ site.program_news }}"data-proofer-ignore target="_blank">
+                <i class="material-icons">description</i><br>
+                News
+              </a>
+              {% endif %}
             </div>
           </div>
           <div class="col s3 m3">
