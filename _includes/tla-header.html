@@ -144,12 +144,20 @@
           </div>
           <div class="col s3 m3">
             <div class="college-link-mobile center-align">
-
+              {% if site.data.events == null or site.data.events[0] == null %}
               <a href="https://events.temple.edu/department/college-of-liberal-arts" target="_blank">
                 <i class="material-icons">event</i><br>
                 Events
               </a>
-
+              {% else %}
+              {% capture events_link %}
+              {{ site.program_events }}
+              {% endcapture %}
+              <a href="{{ site.program_events }}" target="_blank">
+                <i class="material-icons">event</i><br>
+                Events
+              </a>
+              {% endif %}
             </div>
           </div>
           <div class="col s3 m3">
