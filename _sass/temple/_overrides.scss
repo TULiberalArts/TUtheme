@@ -239,3 +239,47 @@ header {
 
   padding:2em;
 }
+
+ul.flex-cards {
+  padding:0;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px;
+}
+li.flex-cards-item {
+  list-style: none;
+  background-color: gray;
+  padding: 1rem;
+  margin: 1rem;
+}
+.flex-card {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  flex-basis:auto;
+  justify-content: baseline-last;
+  align-items: space-between;
+  align-content: space-between;
+}
+.flex-card-title {
+  text-transform:capitalize;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.flex-btn {
+  text-transform:capitalize;
+  margin-left:40%;
+  padding: 0.5rem 0.75rem;
+  background-color: white;
+  border: 1px solid black;
+  color: gray;
+  align-self: flex-end;
+  
+}

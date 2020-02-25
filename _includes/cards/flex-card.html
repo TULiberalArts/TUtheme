@@ -1,0 +1,12 @@
+<div class="flex-card">
+  <div class="overlay-unit {{ include.color }}"></div>
+
+    {% if include.title %}<h2 class="flex-card-title">{{ include.title }}</h2>{% endif %}
+    {% if include.content % <p class="flex-card-content">{{ include.content }}</p>% endif %}
+
+  {% if include.button-text %}
+  <div class="card2-action">
+    <a href="{{ include.button-link }}" class="waves-effect waves-light btn-large">{{ include.button-text }} <i class="material-icons right">arrow_forward</i></a>
+  </div>
+  {% endif %}
+</div>
