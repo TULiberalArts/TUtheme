@@ -1,14 +1,10 @@
 ---
 layout: doc
 ---
-<!--@todo the dark class is hardcoded into this layout. it needs to be set in repo's _config or as a page frontmatter overrtide. default can be hardcoded here. -->
-<!-- <div class="tla-dark" style="background: white"> -->
-<!-- add new header this one is in TUTheme and using page variable from frontmatter in ppv-psm-gis.md -->
 <header class="tla-header">
   {% include tla-header.html %}
 </header>
-<!-- tla-page -->
-<!-- hero is not smart yet. It lives in the site program repo  @todo make it a smart hero -->
+<!-- tla-home -->
 <main>
   <!-- {% if page.feature %}
   <div class="page-feature" style="min-height:250px; background-image: url('{{ page.feature-image }}');">
@@ -27,6 +23,7 @@ layout: doc
           {% endif %} -->
           <div>
             {{ content }}
+            {% include components/flex[cards].html %}
           </div>
         </div>
       </div>
@@ -37,8 +34,3 @@ layout: doc
 {% include components/feeds.html %}
 
 {% include footer.html %}
-
-___
-
-<!-- @note that we can taget elements by using the selectors .dark, .ppv-header, .ppv-main, and ppv-footer
-  this file is part of the TUTheme theme https://github.com/TULiberalArts/TUtheme -->
