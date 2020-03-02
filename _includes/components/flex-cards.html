@@ -1,10 +1,12 @@
 <ul class="flex-cards">
+   {% for item in site.data.cta limit:3 %}
   <li class="flex-cards-item">
     <div class="flex-card">
-      {% for item in site.data.cta limit:3 %}
+     
       <h2 class="flex-card-title">{{ item.title] }}</h2>
       <p class="flex-card-text"> {{ item.text] }} </p> <button href="{{ item.url] }}" class="btn btn--block card__btn">Button</button>
-        {% endfor %}
+        
     </div>
   </li>
+  {% endfor %}
 </ul>
