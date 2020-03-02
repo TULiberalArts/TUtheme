@@ -21,15 +21,16 @@ layout: doc
 
           <div>
             {{ content }}
-            {% if page.cta %}
-            {% include components/flex-cards.html %}
-            {% endif %}
+
           </div>
         </div>
       </div>
     </div>
   </div>
 </main>
+{% if page.cta %}
+{% include components/flex-cards.html %}
+{% endif %}
 {% if page.feeds %}
 {% include components/feeds.html %}
 {% endif %}
