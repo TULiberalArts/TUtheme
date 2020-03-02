@@ -6,7 +6,7 @@ layout: doc
 </header>
 <!-- tla-home -->
 <main>
- {% if page.feature %}
+  {% if page.feature %}
   <div class="page-feature" style="min-height:250px; background-image: url('{{ page.feature-image }}');">
     <div class="container">
       {% if page.feature-title %}<h1>{{ page.feature-title }}</h1>{% endif %}
@@ -18,19 +18,19 @@ layout: doc
     <div class="hz-bg-band">
       <div id="content-container" class="container z-depth-4">
         <div class="row">
-          <!-- {% if page.title %}
-          <h1>{{ page.title }}</h1>
-          {% endif %} -->
+
           <div>
             {{ content }}
+            {% if page.cta %}
             {% include components/flex-cards.html %}
+            {% endif %}
           </div>
         </div>
       </div>
     </div>
   </div>
 </main>
-
+{% if page.feeds %}
 {% include components/feeds.html %}
-
+{% endif %}
 {% include footer.html %}

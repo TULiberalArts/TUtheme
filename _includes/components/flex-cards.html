@@ -1,41 +1,10 @@
 <ul class="flex-cards">
   <li class="flex-cards-item">
     <div class="flex-card">
-
-      <h2 class="flex-card-title">card</h2>
-      <p class="flex-card-text">
-        This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters
-        (flex-shrink and flex-basis) are optional. Default is 0 1 auto.
-
-      </p>
-      <button class="btn btn--block card__btn">Button</button>
-
-    </div>
-  </li>
-  <li class="flex-cards-item">
-    <div class="flex-card">
-
-      <h2 class="flex-card-title">card</h2>
-      <p class="flex-card-text">
-        This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters
-        (flex-shrink and flex-basis) are optional. Default is 0 1 auto and this goes on to have more background-color:
-        gray; background-color: gray; background-color: gray; background-c
-      </p>
-      <button class="btn btn--block card__btn">Button</button>
-
-    </div>
-  </li>
-  <li class="flex-cards-item">
-    <div class="flex-card">
-
-      <h2 class="flex-card-title">card</h2>
-      <p class="flex-card-text">
-        This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters
-        (flex-shrink and flex-basis) are optional. Default is 0 1 auto.
-      </p>
-
-      <button class="btn">Button</button>
-
+      {% for item in site.data.cta limit:3 %}
+      <h2 class="flex-card-title">{{ item['Title'] }}</h2>
+      <p class="flex-card-text" </p> <button class="btn btn--block card__btn">Button</button>
+        {% endfor %}
     </div>
   </li>
 </ul>
