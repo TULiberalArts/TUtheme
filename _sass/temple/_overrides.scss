@@ -240,7 +240,7 @@ header {
   padding:2em;
 }
 
-ul.flex-cards {
+.flex-cards {
   padding:0;
   display: flex;
   flex-wrap: nowrap;
@@ -251,7 +251,7 @@ ul.flex-cards {
   border-radius: 0.25rem;
   box-shadow: 0 20px 40px -14px;
 }
-li.flex-cards-item {
+.flex-cards-item {
   list-style: none;
   background-color: gray;
   padding: 1rem;
