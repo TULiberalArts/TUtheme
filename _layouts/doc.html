@@ -12,7 +12,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
     {{ content }}
-    
+
     <!--Import jQuery before materialize.js-->
  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
  <script type="text/javascript" src="{{ '/assets/js/bin/materialize.js' | prepend: site.baseurl }}"></script>
@@ -35,18 +35,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     });
     </script>
     {% endif %}
-    
- <!-- First script from dude. placed at bottom of CLA footer right above closing body.-->
- <script>
-document.querySelector('[type="submit"]').addEventListener('click', function(){
-var seet_int = setInterval(function(){
-if(document.querySelector('.success-message').innerHTML == "Thank you! Our department will reach out to you via email with more information."){
-gtag('event', 'conversion', {'send_to': 'AW-961589169/9yyiCK_93oYBELHfwsoD'});
-clearInterval(seet_int);
-}
-}, 700);
-});
-</script>
+
+ <!-- First script from dude. placed at bottom of CLA footer right above closing body and was deleted because there is a trigger already set in GTM -->
+
 
   </body>
 </html>
