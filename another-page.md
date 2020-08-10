@@ -1,9 +1,5 @@
 ---
-layout: tla_page
+layout: page
 ---
 
 ## Welcome to another page
-
-_yay_
-
-[back](./)
