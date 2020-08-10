@@ -1,13 +1,1 @@
-_site
-.sass-cache
-*.gem
-Gemfile.lock
-.jekyll-metadata
-.idea
-.idea/workspace.xml
-.DS_Store
-test_content
-_data
-_posts
-/.bundle
-/vendor
+
