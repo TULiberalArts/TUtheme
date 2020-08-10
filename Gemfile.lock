@@ -63,7 +63,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 2.0.0)
+  bundler (~> 2.1.4)
   jekyll (~> 3.6)
   rake (~> 12.1)
   tutheme!
