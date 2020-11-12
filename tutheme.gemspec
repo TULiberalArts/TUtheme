@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "tutheme"
-  spec.version       = "0.11.1"
-  spec.authors       = ["Chris Hill"]
-  spec.email         = ["c.hill@temple.edu"]
+  spec.version       = "0.11.2"
+  spec.authors       = ["TULiberalArts"]
+  spec.email         = ["libarts@temple.edu"]
 
-  spec.summary       = "Temple University College Jekyll Theme"
+  spec.summary       = "Temple University College of Liberal Arts Jekyll Theme"
   spec.homepage      = "https://github.com/TULiberalArts/tutheme"
   spec.license       = "MIT"
 
