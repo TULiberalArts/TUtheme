@@ -2,6 +2,6 @@
 
 set -e
 
-gem install bundler -v 1.17.3
+gem install bundler
 gem update system
 bundle install
