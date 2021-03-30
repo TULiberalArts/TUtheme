@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    tutheme (0.11.1)
+    tutheme (0.11.2)
 
 GEM
   remote: https://rubygems.org/
@@ -16,7 +16,6 @@ GEM
     eventmachine (1.2.7)
     ffi (1.13.1)
     forwardable-extended (2.6.0)
-    gem (0.0.1.alpha)
     http_parser.rb (0.6.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
@@ -38,7 +37,7 @@ GEM
       sass (~> 3.4)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
-    kramdown (2.3.0)
+    kramdown (2.3.1)
       rexml
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
@@ -67,8 +66,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 2.0.0)
-  gem (~> 0.0.1.alpha)
+  bundler (~> 2.1.4)
   jekyll (= 3.9)
   rake (~> 12.1)
   tutheme!
